@@ -1,36 +1,14 @@
-import { Nav } from "./component/Nav";
-import { Footer } from "./component/Footer";
-import { Home } from "./component/Home";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-
-const Layout = () => {
-  return (
-    <>
-      <Nav />
-      <Outlet />
-      <Footer />
-    </>
-  );
-};
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-    ],
-  },
-]);
+import Header from "./component/Header/Header";
+import Footer from "./component/Footer/Footer";
+import Home from "./component/Home/Home";
+// import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 function App() {
   return (
     <div className="app">
-      <div className="container">
-        <RouterProvider router={router} />
-      </div>
+      <Header />
+      <Home />
+      <Footer />
     </div>
   );
 }
