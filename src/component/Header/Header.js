@@ -1,6 +1,7 @@
 import logo from "./wood-logo.png";
 import "./HeaderStyle.scss";
 import { Menu, Drawer } from "antd";
+import { MenuOutlined, PhoneOutlined } from "@ant-design/icons";
 function Header() {
   function getItem(label, key, children) {
     return {
@@ -62,12 +63,6 @@ function Header() {
     ]),
     getItem(
       <a className="link-for-res" href="/">
-        Packages
-      </a>,
-      "packages"
-    ),
-    getItem(
-      <a className="link-for-res" href="/">
         Blog
       </a>,
       "blog"
@@ -83,21 +78,84 @@ function Header() {
     <div className="header">
       <div className="header-content">
         <div className="container">
-          <div className="d-flex">
-            <div className="logo">
+          <div className="row">
+            <div className="logo col-2">
               <a href="/">
                 <img src={logo} />
               </a>
             </div>
-            <div className="menu">
-              <Menu
+            <div className="menu col-6">
+              <div>
+                <a className="link" href="/">
+                  Home
+                </a>
+              </div>
+              <div>
+                <a className="link" href="/">
+                  About Us
+                </a>
+              </div>
+              <div class="dropdown">
+                <a class="link">Services</a>
+                <div class="dropdown-content">
+                  <div className="div-for-a">
+                    <a href="" class="link-drop">
+                      Flooring
+                    </a>
+                  </div>
+                  <div className="div-for-a">
+                    <a href="" class="link-drop">
+                      Floor Raising
+                    </a>
+                  </div>
+                  <div className="div-for-a">
+                    <a href="" class="link-drop">
+                      Carpet Flooring
+                    </a>
+                  </div>
+                  <div className="div-for-a">
+                    <a href="" class="link-drop">
+                      PVC Flooring
+                    </a>
+                  </div>
+                  <div className="div-for-a">
+                    <a href="" class="link-drop">
+                      Wood Flooring
+                    </a>
+                  </div>
+                  <div className="div-for-a">
+                    <a href="" class="link-drop">
+                      All Service
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a className="link" href="/">
+                  Blog
+                </a>
+              </div>
+              <div>
+                <a className="link" href="/">
+                  Contact
+                </a>
+              </div>
+              {/* <Menu
                 style={{
                   width: "100%",
                 }}
                 mode="inline"
                 theme="light"
                 items={items}
-              />
+              /> */}
+            </div>
+            <div className="phone d-flex col-3">
+              <div className="icon">
+                <MenuOutlined />
+              </div>
+              <div className="phone-number">
+                <PhoneOutlined /> +1 (234) 567 89 10
+              </div>
             </div>
           </div>
         </div>

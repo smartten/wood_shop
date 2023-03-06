@@ -1,0 +1,768 @@
+.home {
+    background              : #fff;
+    position                : relative;
+    font-size               : 16px;
+    overflow                : hidden;
+    margin                  : 0 auto;
+    color                   : #000000;
+    line-height             : 1.7;
+    -webkit-text-size-adjust: 100%;
+    font-family             : 'Open Sans', sans-serif;
+    -webkit-font-smoothing  : antialiased;
+
+    .slider {
+        position   : relative;
+        display    : block;
+        box-sizing : border-box;
+        user-select: none;
+        overflow   : hidden;
+
+        .siler-list {
+
+            // transform: translate3d(0, 0, 0);
+            .slider-item-home {
+                background-size          : cover;
+                background-repeat        : no-repeat;
+                // background-position   : top;
+                display                  : flex;
+                align-items              : center;
+                background-image         : url('https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/08/slider-wood-3.jpg');
+                height                   : 100vh !important;
+                min-height               : 1px;
+                float                    : left;
+                width                    : 100% !important;
+                // background-color   : #a4a4a4;
+                opacity                  : 1;
+
+                .container {
+                    position: relative;
+
+                    // margin-left: 200px;
+                    .slide-content {
+                        padding: 0;
+
+                        .text-slider {
+                            overflow: hidden;
+
+                            // transform: translateX(38px);
+                            .text-title {
+                                color               : #fff;
+                                font-size           : 60px;
+                                line-height         : 70px;
+                                font-weight         : 600;
+                                // text-transform   : uppercase;
+                                margin              : 0px;
+                            }
+
+                            .sub-text {
+                                color      : #ffffff;
+                                font-size  : 30px;
+                                line-height: 45px;
+                                width      : 51%;
+                                margin-top : 30px;
+                            }
+
+                            .btn-detail {
+                                color           : #fff !important;
+                                background-color: #92602d;
+                                border-color    : #92602d !important;
+                                font-size       : 25px;
+                                padding         : 15px 60px;
+                                font-weight     : 600;
+
+                                svg {
+                                    margin-bottom: 7px;
+                                    margin-left  : 10px
+                                }
+
+                                &:hover {
+                                    background-color: #543312;
+                                    border-color    : #543312 !important;
+                                }
+                            }
+                        }
+
+                        .form-dowload {
+                            position        : relative;
+                            z-index         : 999;
+                            background-color: #fff;
+                            border          : 1px solid #f8f8f8;
+                            padding         : 45px 35px;
+                            margin-top      : 0;
+                            margin-right    : 0;
+                            margin-bottom   : 30px;
+                            border-radius   : 20px;
+                            box-shadow      : 0 15px 20px 0 rgb(5 5 5 / 10%);
+
+                            // text-align      : center;
+                            .title-dowload {
+                                color    : #000;
+                                font-size: 30px;
+                            }
+
+                            .form-sub {
+                                .btn-submit {
+                                    width         : 100% !important;
+                                    // margin-left: 85px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slider-item-home-2 {
+                background-size          : cover;
+                background-repeat        : 50%;
+                // background-position   : top;
+                display                  : flex;
+                align-items              : center;
+                background-image         : url('https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/08/slider-wood-1.jpg');
+                height                   : 100vh !important;
+                min-height               : 1px;
+                float                    : left;
+                width                    : 100% !important;
+                // background-color   : #a4a4a4;
+                opacity                  : 1;
+
+                .container {
+                    position: relative;
+
+                    // margin-left: 200px;
+                    .slide-content {
+                        padding: 0;
+
+                        .text-slider {
+                            overflow: hidden;
+
+                            // transform: translateX(38px);
+                            .text-title {
+                                color               : #fff;
+                                font-size           : 60px;
+                                line-height         : 70px;
+                                font-weight         : 600;
+                                // text-transform   : uppercase;
+                                margin              : 0px;
+                            }
+
+                            .sub-text {
+                                color      : #ffffff;
+                                font-size  : 30px;
+                                line-height: 45px;
+                                width      : 51%;
+                                margin-top : 30px;
+                            }
+
+                            .btn-detail {
+                                color           : #fff !important;
+                                background-color: #92602d;
+                                border-color    : #92602d !important;
+                                font-size       : 25px;
+                                padding         : 15px 60px;
+                                font-weight     : 600;
+
+                                svg {
+                                    margin-bottom: 7px;
+                                    margin-left  : 10px
+                                }
+
+                                &:hover {
+                                    background-color: #543312;
+                                    border-color    : #543312 !important;
+                                }
+                            }
+                        }
+
+                        .form-dowload {
+                            position        : relative;
+                            z-index         : 999;
+                            background-color: #fff;
+                            border          : 1px solid #f8f8f8;
+                            padding         : 45px 35px;
+                            margin-top      : 0;
+                            margin-right    : 0;
+                            margin-bottom   : 30px;
+                            border-radius   : 20px;
+                            box-shadow      : 0 15px 20px 0 rgb(5 5 5 / 10%);
+
+                            // text-align      : center;
+                            .title-dowload {
+                                color    : #000;
+                                font-size: 30px;
+                            }
+
+                            .form-sub {
+                                .btn-submit {
+                                    width         : 100% !important;
+                                    // margin-left: 85px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slider-item-home-3 {
+                background-size          : cover;
+                background-repeat        : 50%;
+                // background-position   : top;
+                display                  : flex;
+                align-items              : center;
+                background-image         : url('https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/08/slider-wood-2.jpg');
+                height                   : 100vh !important;
+                min-height               : 1px;
+                float                    : left;
+                width                    : 100% !important;
+                // background-color   : #a4a4a4;
+                opacity                  : 1;
+
+                .container {
+                    position: relative;
+
+                    // margin-left: 200px;
+                    .slide-content {
+                        padding: 0;
+
+                        .text-slider {
+                            overflow: hidden;
+
+                            // transform: translateX(38px);
+                            .text-title {
+                                color               : #fff;
+                                font-size           : 60px;
+                                line-height         : 70px;
+                                font-weight         : 600;
+                                // text-transform   : uppercase;
+                                margin              : 0px;
+                            }
+
+                            .sub-text {
+                                color      : #ffffff;
+                                font-size  : 30px;
+                                line-height: 45px;
+                                width      : 51%;
+                                margin-top : 30px;
+                            }
+
+                            .btn-detail {
+                                color           : #fff !important;
+                                background-color: #92602d;
+                                border-color    : #92602d !important;
+                                font-size       : 25px;
+                                padding         : 15px 60px;
+                                font-weight     : 600;
+
+                                svg {
+                                    margin-bottom: 7px;
+                                    margin-left  : 10px
+                                }
+
+                                &:hover {
+                                    background-color: #543312;
+                                    border-color    : #543312 !important;
+                                }
+                            }
+                        }
+
+                        .form-dowload {
+                            position        : relative;
+                            z-index         : 999;
+                            background-color: #fff;
+                            border          : 1px solid #f8f8f8;
+                            padding         : 45px 35px;
+                            margin-top      : 0;
+                            margin-right    : 0;
+                            margin-bottom   : 30px;
+                            border-radius   : 20px;
+                            box-shadow      : 0 15px 20px 0 rgb(5 5 5 / 10%);
+
+                            // text-align      : center;
+                            .title-dowload {
+                                color    : #000;
+                                font-size: 30px;
+                            }
+
+                            .form-sub {
+                                .btn-submit {
+                                    width         : 100% !important;
+                                    // margin-left: 85px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick-dots {
+            .slick-active {
+                width: 60px !important;
+            }
+        }
+
+    }
+
+    .tablo {
+        padding-top   : 30px;
+        padding-bottom: 80px;
+
+        .tablo-content {
+            display        : flex;
+            width          : 100%;
+            justify-content: space-around;
+
+            .img-content {
+                width: 50%;
+
+                img {
+                    transform: skewY(-10deg);
+                }
+            }
+
+            .text-content {
+                width: 40%;
+
+                .text-title {
+                    width: 80%;
+
+                    h3 {
+                        font-weight: 700;
+                        color      : #92602d;
+                        font-size  : 30px;
+                    }
+                }
+
+                .sub-text {
+                    width     : 90%;
+                    margin-top: 40px;
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+
+        }
+
+        .divider {
+            opacity       : .5;
+            height        : auto;
+            max-width     : 100%;
+            vertical-align: top;
+        }
+
+        .content-2 {
+            display   : flex;
+            margin-top: 20px;
+
+            .icon {
+                width: 15%;
+
+
+            }
+
+            .title-icon {
+                font-size  : 20px;
+                font-weight: 600;
+                color      : #92602d;
+            }
+
+            .content-icon {
+                width: 70%;
+            }
+
+            svg {
+                font-size: 60px;
+                color    : #92602d;
+            }
+        }
+
+        .button-get {
+            margin-top: 50px;
+
+            a {
+                text-decoration : none;
+                background-color: #92602d;
+                color           : #fff;
+                padding         : 20px 40px;
+                font-size       : 20px;
+            }
+
+            svg {
+                margin-bottom: 5px;
+            }
+        }
+
+        .countb {
+            background    : #92602d;
+            font-family   : Satoshi Black;
+            position      : absolute;
+            margin-top    : -36rem;
+            margin-left   : 28.5rem;
+            width         : 215px;
+            padding       : 15px;
+            padding-bottom: 43px;
+            padding-top   : 2.5rem;
+            padding-right : 12px;
+            border-radius : 113px;
+            z-index       : 4
+        }
+
+        .countt {
+            background    : #92602d;
+            font-family   : Satoshi Black;
+            position      : absolute;
+            margin-top    : 13rem;
+            margin-left   : -26.5rem;
+            width         : 203px;
+            padding       : 15px;
+            padding-bottom: 43px;
+            padding-top   : 2.5rem;
+            padding-right : 12px;
+            border-radius : 113px;
+            z-index       : 4
+        }
+
+        .counter-box {
+            width        : 100%;
+            display      : flex;
+            flex-wrap    : wrap;
+            padding      : 3px;
+            text-align   : center;
+            border-radius: 1px;
+            margin-top   : -3rem;
+        }
+
+        .odometer {
+            line-height: 1;
+            margin     : 0 auto;
+            font-size  : 100px;
+            color      : #fff;
+            font-weight: 700;
+        }
+
+        .odometer-auto-theme {
+            padding       : 0.1em;
+            display       : inline-block;
+            vertical-align: middle;
+            position      : relative;
+        }
+
+        .odometer-inside {}
+
+        .odometer-digit {
+            padding       : 0 0.1em;
+            font-size     : 40px;
+            display       : inline-block;
+            vertical-align: middle;
+            position      : relative
+        }
+
+        .odometer-digit-spacer {
+            display       : inline-block;
+            vertical-align: middle;
+            visibility    : hidden
+        }
+
+        .odometer-digit-inner {
+            text-align: left;
+            display   : block;
+            position  : absolute;
+            top       : 0;
+            right     : 0;
+            bottom    : 0;
+            overflow  : hidden;
+            left      : 0.1em;
+        }
+
+        .odometer-ribbon {
+            display: block;
+        }
+
+        .odometer-ribbon-inner {
+            display                    : block;
+            -webkit-backface-visibility: hidden;
+        }
+
+        .odometer-value {
+            display          : block;
+            -webkit-transform: translateZ(0)
+        }
+
+        h6 {
+            color      : #fff;
+            font-size  : 20px;
+            font-weight: 700
+        }
+    }
+
+    .our-services {
+        // padding-top        : 70px;
+        background-image   : url('./img/our-service.jpg');
+        background-size    : cover;
+        background-repeat  : no-repeat;
+        background-position: 50%;
+        height             : 850px;
+        display            : flex;
+
+        .title-service {
+            color     : #fff;
+            text-align: center;
+
+            h3 {
+                font-size  : 30px;
+                font-weight: 600;
+                margin-top : 40px;
+            }
+        }
+
+        .row {
+            display        : flex;
+            flex-direction : row;
+            justify-content: space-around;
+            align-items    : center;
+            flex-wrap      : wrap;
+            width          : 100%;
+            margin-top     : 4rem;
+
+            .col-3 {
+                height          : 100%;
+                // margin       : 5px;  
+                position        : relative;
+                border-radius   : 1px;
+                transform       : skewY(-10deg);
+
+            }
+
+            img {
+                border: 10px solid #fff
+            }
+
+            .text-service {
+                display              : flex;
+                flex-direction       : column;
+                justify-content      : space-between;
+                align-items          : flex-start;
+                position             : absolute;
+                top                  : 421px;
+                left                 : 0;
+                // height            : 100%;
+                width                : 100%;
+                padding              : 20px;
+                border               : 0.7rem solid transparent;
+                border-image-slice   : 1;
+                cursor               : pointer;
+                transition           : all 0.3s ease;
+                border-radius        : 3rem;
+
+                h2 {
+                    color      : #92602d;
+                    font-size  : 21px;
+                    padding    : 5px;
+                    margin-top : 3.5rem;
+                    font-family: Satoshi Black;
+                    font-weight: 600;
+                }
+
+
+            }
+        }
+
+        .buttn-slider {
+            margin-top   : 70px;
+            text-align   : center;
+            // z-index   : 100;
+
+            .button-1 {
+                svg {
+                    margin-bottom   : 5px;
+                    color           : #543312;
+                    // font-weight  : 700;
+                }
+            }
+
+            button {
+                margin-right       : 10px;
+                border-radius      : 50%;
+                width              : 60px;
+                height             : 60px;
+                color              : #543312;
+                border             : 3px solid #543312;
+                background-color   : #fff;
+                // z-index         : 100;
+
+                svg {
+                    font-size: 20px;
+                }
+
+                &:hover {
+                    background-color: #543312;
+
+                    svg {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding-top   : 50px;
+        padding-bottom: 50px;
+
+        .contact-content {
+            margin-top: 2rem;
+
+            .text-contact {
+                text-align: center;
+
+                .title-contact {
+                    font-size              : 30px;
+                    font-family            : Satoshi Black;
+                    font-weight            : 700;
+                    background-image       : linear-gradient(to right, #92602d, #543312);
+                    color                  : transparent;
+                    -webkit-background-clip: text;
+                }
+
+                .sub-contact {
+                    color      : #212529;
+                    font-family: Satoshi Regular;
+                    font-size  : 16px;
+                    font-weight: 400;
+
+                    // margin-top : 2rem;
+                }
+
+            }
+
+            .input-form {
+                max-width    : 100%;
+                height       : 70px;
+                padding      : 0 30px;
+                background   : #fff;
+                border-radius: 1px;
+                border-bottom: 0.3rem solid #92602d;
+            }
+
+            .btn-contact {
+                width           : 96%;
+                height          : 70px;
+                padding         : 0 30px;
+                background      : #fff;
+                border-radius   : 1px;
+                border-bottom   : 0.3rem solid #92602d;
+                border-top      : 1px solid #c8c8c8;
+                border-left     : 1px solid #c8c8c8;
+                border-right    : 1px solid #c8c8c8;
+                margin-left     : 15px;
+                color           : rgb(130, 130, 130);
+                // border       : 1px solid rgb(171, 171, 171);
+            }
+
+            svg {
+                margin-bottom: 5px;
+            }
+        }
+
+        .form-contact {
+            margin-top: 40px !important;
+        }
+    }
+
+    .comment {
+        background       : transparent url(https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/07/comment-paint-bg1.jpg) center center/cover no-repeat scroll;
+        height           : 900px;
+        display          : flex;
+        // padding-bottom: 70px !important;
+
+        .icon {
+            text-align: center;
+            margin-top: 30px;
+
+            span {
+                border                : 1px solid;
+                font-size             : 50px;
+                color                 : white;
+                background-color      : #92602d;
+                width                 : 100px;
+                height                : 100px;
+                // align-items     : center;
+                // text-align         : center;
+                border-radius         : 50%;
+
+                svg {
+                    // align-items: center;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .title-comment {
+            .title-text {
+                text-align   : center;
+                margin-top   : 20px;
+                font-size    : 30px;
+                color        : #92602d;
+                font-weight  : 700;
+                margin-bottom: 0px;
+            }
+
+            .sub-text {
+                font-size : 16px;
+                text-align: center;
+            }
+        }
+
+        .row {
+            justify-content: space-between;
+            margin-top     : 80px;
+
+            .col-3 {
+                // width: 90% !important;
+                max-width: 24%;
+            }
+
+            .class-box {
+                min-height     : 430px;
+                border-radius  : 1px;
+                flex-flow      : column;
+                display        : flex;
+                justify-content: center;
+                flex-wrap      : wrap;
+                background     : #fff;
+                transform      : skewY(-10deg);
+
+                .testimon-text {
+                    padding        : 2em;
+                    line-height    : 1.7em;
+                    position       : relative;
+                    font-size      : 18px;
+                    text-align     : center;
+                    display        : flex;
+                    justify-content: center;
+                    flex-wrap      : wrap;
+                    color          : #666666
+                }
+
+                .img-testimon {
+                    display        : flex;
+                    justify-content: center;
+
+                    img {
+                        width: 30%;
+                    }
+                }
+
+                .name-test {
+                    margin-top: 30px;
+                    color     : #92602d;
+                    text-align: center;
+                    font-size : 17px;
+                }
+            }
+        }
+    }
+}
