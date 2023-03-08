@@ -1,4 +1,4 @@
-import "./FlooringStyle.scss";
+import "./CarpetFlooringStyle.scss";
 import {
   RightOutlined,
   ArrowRightOutlined,
@@ -8,7 +8,7 @@ import img1 from "./imgFlooring/wood-services-big-1.jpg";
 import img2 from "./imgFlooring/divider.jpg";
 import React, { useEffect } from "react";
 
-function Flooring() {
+function CarpetFlooring() {
   const onHover = () => {
     const ele = document.getElementById("box");
     const ele1 = document.getElementById("content1");
@@ -43,7 +43,7 @@ function Flooring() {
   //     // document.title = "AVEO Global - Financial";
   //   }, []);
   return (
-    <div className="flooring">
+    <div className="carpet-flooring">
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item">
@@ -51,10 +51,10 @@ function Flooring() {
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
-                    <span>Flooring</span>
+                    <span>Carpet Flooring</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> Flooring
+                    Home <RightOutlined /> Carpet Flooring
                   </p>
                 </div>
               </div>
@@ -67,10 +67,7 @@ function Flooring() {
           <div className="content">
             <div className="menu-left">
               <div className="menu-content">
-                <div
-                  className="link-menu"
-                  style={{ backgroundColor: "#543312" }}
-                >
+                <div className="link-menu">
                   <a href="/flooring">
                     <RightOutlined /> Flooring
                   </a>
@@ -80,7 +77,10 @@ function Flooring() {
                     <RightOutlined /> Floor Raising
                   </a>
                 </div>
-                <div className="link-menu">
+                <div
+                  className="link-menu"
+                  style={{ backgroundColor: "#543312" }}
+                >
                   <a href="/carpet-flooring">
                     <RightOutlined /> Carpet Flooring
                   </a>
@@ -145,26 +145,26 @@ function Flooring() {
               </div>
               <div className="content-text-right">
                 <div className="title-right">
-                  <h2>Flooring</h2>
+                  <h2>Carpet Flooring</h2>
                 </div>
                 <div className="sub-text">
-                  Industrial flooring is a type of flooring that is generally
-                  used in factories, warehouses, workplaces, warehouses, petrol
-                  stations and parking lots. Production is carried out,
-                  transported and stored on this type of floor. It should be
-                  easy to clean and non-slip since they are frequently exposed
-                  to chemicals.
+                  Carpet tile, also known as modular carpet, is a versatile
+                  flooring option that is growing in popularity for commercial
+                  projects of almost any type. There is carpet everywhere you
+                  go. Carpet can be found at work, in your home, and even in
+                  bathrooms. Carpet tiles can be installed in numerous
+                  configurations to create different effects. Most commonly, the
+                  same tile is used for rooms in a solid color or a simple
+                  pattern.
                 </div>
                 <img className="img-text" src={img2} />
                 <div className="sub-text">
-                  Flooring service, which is the most trendy floor covering type
-                  of today, is one of the latest products of technology. It is
-                  resistant to the harshest chemicals with a highly durable
-                  structure. Friction and abrasion resistant floors are mostly
-                  used in high-level operating floors such as factories and
-                  hangars. This floor, which is long-lasting and has positive
-                  effects on human health, is also known for being very easy to
-                  clean.
+                  The seams between carpet tiles can be hidden or highlighted
+                  depending on the overall effect desired, and the modularity of
+                  carpet tiles can make it a great creative tool for architects
+                  and interior designers. Besides the amazing flooring effects
+                  you can achieve, carpet tiles provide significant savings in
+                  terms of both cost and time to wall-to-wall carpet.
                 </div>
               </div>
               <div className="tablo">
@@ -238,4 +238,4 @@ function Flooring() {
   );
 }
 
-export default Flooring;
+export default CarpetFlooring;

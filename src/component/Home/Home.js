@@ -1,5 +1,6 @@
 import React from "react";
-import { Carousel } from "antd";
+// import { Carousel } from "antd";
+import Carousel from "react-bootstrap/Carousel";
 import {
   ArrowRightOutlined,
   SmileOutlined,
@@ -25,32 +26,35 @@ function Home() {
     textAlign: "center",
     background: "#364d79",
   };
+
   return (
     <div className="home">
-      <Carousel effect="fade" dots={true}>
-        <section className="slider">
-          <div className="siler-list">
-            <div className="slider-item-home">
-              <div className="container">
-                <div className="slide-content">
-                  <div className="text-slider">
-                    <p className="text-title">
-                      <span>Innovative Modern </span>
-                    </p>
-                    <p className="text-title">Flooring Service</p>
-                    <p className="sub-text">
-                      Custom flooring within your budget.
-                    </p>
-                    <a href="" target="_blank" className="btn btn-detail">
-                      Learn More <ArrowRightOutlined />
-                    </a>
+      <Carousel fade>
+        <Carousel.Item>
+          <section className="slider">
+            <div className="siler-list">
+              <div className="slider-item-home">
+                <div className="container">
+                  <div className="slide-content">
+                    <div className="text-slider">
+                      <p className="text-title">
+                        <span>Innovative Modern </span>
+                      </p>
+                      <p className="text-title">Flooring Service</p>
+                      <p className="sub-text">
+                        Custom flooring within your budget.
+                      </p>
+                      <a href="" target="_blank" className="btn btn-detail">
+                        Learn More <ArrowRightOutlined />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <div>
+          </section>
+        </Carousel.Item>
+        <Carousel.Item>
           <section className="slider">
             <div className="siler-list">
               <div className="slider-item-home-2">
@@ -73,8 +77,8 @@ function Home() {
               </div>
             </div>
           </section>
-        </div>
-        <div>
+        </Carousel.Item>
+        <Carousel.Item>
           <section className="slider">
             <div className="siler-list">
               <div className="slider-item-home-3">
@@ -97,7 +101,7 @@ function Home() {
               </div>
             </div>
           </section>
-        </div>
+        </Carousel.Item>
       </Carousel>
       <section className="tablo">
         <div className="container">

@@ -1,0 +1,139 @@
+.blog {
+    .slider {
+        position   : relative;
+        display    : block;
+        box-sizing : border-box;
+        user-select: none;
+        overflow   : hidden;
+
+        .siler-list {
+            transform: translate3d(0, 0, 0);
+
+            .slider-item {
+                background-size    : cover;
+                background-repeat  : no-repeat;
+                background-position: 40%;
+                display            : flex;
+                align-items        : center;
+                background-image   : url('./imgFlooring/pageheader-wood3.jpg');
+                height             : 60vh !important;
+                min-height         : 1px;
+                float              : left;
+                width              : 100% !important;
+                background-color   : #f1f1f1;
+
+                .container {
+                    position: relative;
+
+                    .slide-content {
+                        align-items       : center;
+                        // justify-content: space-between;
+
+                        .text {
+                            overflow   : hidden;
+                            width      : 100%;
+                            margin-left: 35px;
+                            margin-top : 200px;
+
+                            .text-title {
+                                color      : #ffffff;
+                                font-size  : 55px;
+                                line-height: 45px;
+                                font-weight: 700;
+                                text-align : center;
+                            }
+
+                            .breadcrumb-text {
+                                text-align : center;
+                                color      : #fff;
+                                font-size  : 20px;
+                                margin-top : 25px;
+                                font-weight: 700;
+
+                                svg {
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+
+                        .image {
+                            width: 40%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .news {
+        // padding-top   : 100px;   
+        padding-bottom: 150px;
+
+        .row {
+            flex-wrap      : wrap;
+            margin-top     : 100px;
+            justify-content: space-around;
+
+            .col-3 {
+                flex     : 0 0 30%;
+                max-width: 30% !important;
+            }
+
+            .img-news {
+                img {
+                    width    : 100%;
+                    transform: skewY(-8deg);
+                }
+            }
+
+            .content-new {
+                margin-top: 25px;
+                text-align: center;
+
+                .time-new {
+                    color      : #000;
+                    font-weight: 600;
+                    text-align : center;
+                }
+
+                .title-new {
+                    color        : #92602d;
+                    font-weight  : 700;
+                    font-size    : 22px;
+                    margin-bottom: 0px;
+                    text-align   : center;
+                }
+
+                .sub-new {
+                    font-size    : 17px;
+                    float        : left;
+                    margin-bottom: 50px;
+                    text-align   : left !important;
+                }
+
+                a {
+
+                    &:hover {
+                        text-decoration : none;
+                        background-color: #6c4723;
+                    }
+                }
+
+                .more {
+                    background-color: #92602d;
+                    color           : #fff;
+                    font-size       : 16px;
+                    padding         : 20px 40px;
+                    font-weight     : 600;
+                    text-align      : center;
+                    margin-top      : 20px;
+                }
+            }
+        }
+    }
+}

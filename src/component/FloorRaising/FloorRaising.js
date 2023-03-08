@@ -1,4 +1,4 @@
-import "./FlooringStyle.scss";
+import "./FloorRaisingStyle.scss";
 import {
   RightOutlined,
   ArrowRightOutlined,
@@ -8,7 +8,7 @@ import img1 from "./imgFlooring/wood-services-big-1.jpg";
 import img2 from "./imgFlooring/divider.jpg";
 import React, { useEffect } from "react";
 
-function Flooring() {
+function FloorRaising() {
   const onHover = () => {
     const ele = document.getElementById("box");
     const ele1 = document.getElementById("content1");
@@ -43,7 +43,7 @@ function Flooring() {
   //     // document.title = "AVEO Global - Financial";
   //   }, []);
   return (
-    <div className="flooring">
+    <div className="flooring-raising">
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item">
@@ -51,10 +51,10 @@ function Flooring() {
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
-                    <span>Flooring</span>
+                    <span>Floor Raising</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> Flooring
+                    Home <RightOutlined /> Floor Raising
                   </p>
                 </div>
               </div>
@@ -67,15 +67,15 @@ function Flooring() {
           <div className="content">
             <div className="menu-left">
               <div className="menu-content">
-                <div
-                  className="link-menu"
-                  style={{ backgroundColor: "#543312" }}
-                >
+                <div className="link-menu">
                   <a href="/flooring">
                     <RightOutlined /> Flooring
                   </a>
                 </div>
-                <div className="link-menu">
+                <div
+                  className="link-menu"
+                  style={{ backgroundColor: "#543312" }}
+                >
                   <a href="/floor-raising">
                     <RightOutlined /> Floor Raising
                   </a>
@@ -145,26 +145,22 @@ function Flooring() {
               </div>
               <div className="content-text-right">
                 <div className="title-right">
-                  <h2>Flooring</h2>
+                  <h2>Floor Raising</h2>
                 </div>
                 <div className="sub-text">
-                  Industrial flooring is a type of flooring that is generally
-                  used in factories, warehouses, workplaces, warehouses, petrol
-                  stations and parking lots. Production is carried out,
-                  transported and stored on this type of floor. It should be
-                  easy to clean and non-slip since they are frequently exposed
-                  to chemicals.
+                  Raised floor is a modular system of elements designed for the
+                  interior and exterior floors of a building. This very
+                  effective technology makes it possible to create an
+                  uninterrupted technical space below the surface of the floor
+                  for laying various types of cables: electricity, plumbing,
+                  telephone and data transmission networks, climate control and
+                  security.
                 </div>
                 <img className="img-text" src={img2} />
                 <div className="sub-text">
-                  Flooring service, which is the most trendy floor covering type
-                  of today, is one of the latest products of technology. It is
-                  resistant to the harshest chemicals with a highly durable
-                  structure. Friction and abrasion resistant floors are mostly
-                  used in high-level operating floors such as factories and
-                  hangars. This floor, which is long-lasting and has positive
-                  effects on human health, is also known for being very easy to
-                  clean.
+                  Thanks to its experience in this field, our company offers
+                  high performance raised floor solutions with both resistance,
+                  durability and high aesthetic content.
                 </div>
               </div>
               <div className="tablo">
@@ -238,4 +234,4 @@ function Flooring() {
   );
 }
 
-export default Flooring;
+export default FloorRaising;

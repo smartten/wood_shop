@@ -25,50 +25,50 @@ function Header() {
     ),
     getItem(<a className="link-for-res">Services</a>, "services", [
       getItem(
-        <a className="link-for-sub" href="/offshore-development">
+        <a className="link-for-sub" href="/flooring">
           Flooring
         </a>,
         "1"
       ),
       getItem(
-        <a className="link-for-sub" href="/web-application">
+        <a className="link-for-sub" href="/floor-raising">
           Floor Raising
         </a>,
         "2"
       ),
       getItem(
-        <a className="link-for-sub" href="/mobile-application">
+        <a className="link-for-sub" href="/carpet-flooring">
           Carpet Flooring
         </a>,
         "3"
       ),
       getItem(
-        <a className="link-for-sub" href="/custom-software">
+        <a className="link-for-sub" href="/pvc-flooring">
           PVC Flooring
         </a>,
         "11"
       ),
       getItem(
-        <a className="link-for-sub" href="/testing-service">
+        <a className="link-for-sub" href="/wood-flooring">
           Wood Flooring
         </a>,
         "4"
       ),
       getItem(
-        <a className="link-for-sub" href="/cloud-service">
+        <a className="link-for-sub" href="/all-services">
           All Services
         </a>,
         "5"
       ),
     ]),
     getItem(
-      <a className="link-for-res" href="/">
+      <a className="link-for-res" href="/blog">
         Blog
       </a>,
       "blog"
     ),
     getItem(
-      <a className="link-for-res" href="/">
+      <a className="link-for-res" href="/contact">
         Contact
       </a>,
       "contact"
@@ -91,7 +91,7 @@ function Header() {
                 </a>
               </div>
               <div>
-                <a className="link" href="/">
+                <a className="link" href="/about-us">
                   About Us
                 </a>
               </div>
@@ -99,44 +99,44 @@ function Header() {
                 <a class="link">Services</a>
                 <div class="dropdown-content">
                   <div className="div-for-a">
-                    <a href="" class="link-drop">
+                    <a href="/flooring" class="link-drop">
                       Flooring
                     </a>
                   </div>
                   <div className="div-for-a">
-                    <a href="" class="link-drop">
+                    <a href="/floor-raising" class="link-drop">
                       Floor Raising
                     </a>
                   </div>
                   <div className="div-for-a">
-                    <a href="" class="link-drop">
+                    <a href="/carpet-flooring" class="link-drop">
                       Carpet Flooring
                     </a>
                   </div>
                   <div className="div-for-a">
-                    <a href="" class="link-drop">
+                    <a href="pvc-flooring" class="link-drop">
                       PVC Flooring
                     </a>
                   </div>
                   <div className="div-for-a">
-                    <a href="" class="link-drop">
+                    <a href="wood-flooring" class="link-drop">
                       Wood Flooring
                     </a>
                   </div>
                   <div className="div-for-a">
-                    <a href="" class="link-drop">
+                    <a href="all-services" class="link-drop">
                       All Service
                     </a>
                   </div>
                 </div>
               </div>
               <div>
-                <a className="link" href="/">
+                <a className="link" href="/blog">
                   Blog
                 </a>
               </div>
               <div>
-                <a className="link" href="/">
+                <a className="link" href="/contact">
                   Contact
                 </a>
               </div>
