@@ -1,4 +1,6 @@
 .about-us {
+    padding-bottom: 100px;
+
     .slider {
         position   : relative;
         display    : block;
@@ -386,7 +388,7 @@
                 position          : absolute;
                 border-radius     : 1px;
                 left              : 15px;
-                bottom            : 118px;
+                bottom            : 123px;
                 color             : #fff;
                 transform         : translateY(100%);
                 background        : #9E4B47;
@@ -425,10 +427,8 @@
                 cursor: pointer;
 
                 img {
-                    transform: scale(1.02);
+                    // transform: scale(1.02);
                 }
-
-                .info {}
             }
         }
     }

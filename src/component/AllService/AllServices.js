@@ -9,12 +9,23 @@ import imgservice1 from "./imgFlooring/img-service1.jpg";
 import imgservice2 from "./imgFlooring/img-service2.jpg";
 import imgservice3 from "./imgFlooring/img-service3.jpg";
 import imgservice4 from "./imgFlooring/wood-services-4.jpg";
+import imgservice5 from "./imgFlooring/wood-services-5.jpg";
 import imgContact from "./imgFlooring/img-contact.jpg";
 import img1 from "./imgFlooring/wood-services-big-1.jpg";
 import img2 from "./imgFlooring/divider.jpg";
+import Slider from "react-slick";
 import React, { useEffect } from "react";
 
 function AllServices() {
+  const settings = {
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 500,
+    // arrows: false,
+    // dotsClass: ".button-1",
+  };
   const onHover = () => {
     const ele = document.getElementById("box");
     const ele1 = document.getElementById("content1");
@@ -70,11 +81,7 @@ function AllServices() {
       </section>
       <section className="our-services">
         <div className="container">
-          <div className="title-service">
-            <h3>Our Flooring Services</h3>
-            <p>We are at your service for all your flooring.</p>
-          </div>
-          <div className="row">
+          <Slider {...settings}>
             <div className="col-3">
               <div className="img-service">
                 <img src={imgservice1} />
@@ -107,15 +114,15 @@ function AllServices() {
                 <h2>PVC Flooring</h2>
               </div>
             </div>
-          </div>
-          <div className="buttn-slider">
-            <button className="button-1">
-              <LeftOutlined />
-            </button>
-            <button className="button-1">
-              <RightOutlined />
-            </button>
-          </div>
+            <div className="col-3">
+              <div className="img-service">
+                <img src={imgservice5} />
+              </div>
+              <div className="text-service">
+                <h2>Wood Flooring</h2>
+              </div>
+            </div>
+          </Slider>
         </div>
       </section>
       <section className="contact">

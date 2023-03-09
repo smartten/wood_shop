@@ -17,6 +17,8 @@ import imgservice1 from "./img/img-service1.jpg";
 import imgservice2 from "./img/img-service2.jpg";
 import imgservice3 from "./img/img-service3.jpg";
 import imgservice4 from "./img/wood-services-4.jpg";
+import imgservice5 from "./img/wood-services-5.jpg";
+import Slider from "react-slick";
 import "./HomeStyle.scss";
 function Home() {
   const contentStyle = {
@@ -27,9 +29,19 @@ function Home() {
     background: "#364d79",
   };
 
+  const settings = {
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 500,
+    // arrows: false,
+    // dotsClass: ".button-1",
+  };
+
   return (
     <div className="home">
-      <Carousel fade>
+      <Carousel slide={false}>
         <Carousel.Item>
           <section className="slider">
             <div className="siler-list">
@@ -263,48 +275,59 @@ function Home() {
             <h3>Our Flooring Services</h3>
             <p>We are at your service for all your flooring.</p>
           </div>
-          <div className="row">
-            <div className="col-3">
-              <div className="img-service">
-                <img src={imgservice1} />
+
+          <div>
+            <Slider {...settings}>
+              <div className="col-3">
+                <div className="img-service">
+                  <img src={imgservice1} />
+                </div>
+                <div className="text-service">
+                  <h2>Flooring</h2>
+                </div>
               </div>
-              <div className="text-service">
-                <h2>Flooring</h2>
+              <div className="col-3">
+                <div className="img-service">
+                  <img src={imgservice2} />
+                </div>
+                <div className="text-service">
+                  <h2>Carpet Flooring</h2>
+                </div>
               </div>
-            </div>
-            <div className="col-3">
-              <div className="img-service">
-                <img src={imgservice2} />
+              <div className="col-3">
+                <div className="img-service">
+                  <img src={imgservice3} />
+                </div>
+                <div className="text-service">
+                  <h2>Floor Raising</h2>
+                </div>
               </div>
-              <div className="text-service">
-                <h2>Carpet Flooring</h2>
+              <div className="col-3">
+                <div className="img-service">
+                  <img src={imgservice4} />
+                </div>
+                <div className="text-service">
+                  <h2>PVC Flooring</h2>
+                </div>
               </div>
-            </div>
-            <div className="col-3">
-              <div className="img-service">
-                <img src={imgservice3} />
+              <div className="col-3">
+                <div className="img-service">
+                  <img src={imgservice5} />
+                </div>
+                <div className="text-service">
+                  <h2>Wood Flooring</h2>
+                </div>
               </div>
-              <div className="text-service">
-                <h2>Floor Raising</h2>
-              </div>
-            </div>
-            <div className="col-3">
-              <div className="img-service">
-                <img src={imgservice4} />
-              </div>
-              <div className="text-service">
-                <h2>PVC Flooring</h2>
-              </div>
-            </div>
+            </Slider>
           </div>
-          <div className="buttn-slider">
+          {/* <div className="buttn-slider">
             <button className="button-1">
               <LeftOutlined />
             </button>
             <button className="button-1">
               <RightOutlined />
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="contact">

@@ -1,0 +1,218 @@
+.contact-us {
+    .slider {
+        position   : relative;
+        display    : block;
+        box-sizing : border-box;
+        user-select: none;
+        overflow   : hidden;
+
+        .siler-list {
+            transform: translate3d(0, 0, 0);
+
+            .slider-item {
+                background-size    : cover;
+                background-repeat  : no-repeat;
+                background-position: 40%;
+                display            : flex;
+                align-items        : center;
+                background-image   : url('./imgFlooring/pageheader-wood3.jpg');
+                height             : 60vh !important;
+                min-height         : 1px;
+                float              : left;
+                width              : 100% !important;
+                background-color   : #f1f1f1;
+
+                .container {
+                    position: relative;
+
+                    .slide-content {
+                        align-items       : center;
+                        // justify-content: space-between;
+
+                        .text {
+                            overflow   : hidden;
+                            width      : 100%;
+                            margin-left: 35px;
+                            margin-top : 200px;
+
+                            .text-title {
+                                color      : #ffffff;
+                                font-size  : 55px;
+                                line-height: 45px;
+                                font-weight: 700;
+                                text-align : center;
+                            }
+
+                            .breadcrumb-text {
+                                text-align : center;
+                                color      : #fff;
+                                font-size  : 20px;
+                                margin-top : 25px;
+                                font-weight: 700;
+
+                                svg {
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+
+                        .image {
+                            width: 40%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .tablo {
+        max-width      : 119rem;
+        margin         : 0 auto;
+        width          : 100%;
+        display        : flex;
+        justify-content: center;
+        flex-wrap      : wrap;
+        padding-top    : 30px;
+
+        .row {
+            justify-content: space-around;
+
+            .col-4 {
+                max-width          : 28% !important;
+                text-align         : center;
+                // background-color: pink;
+                box-shadow         : 8px 8px 8px 8px rgb(0 0 0 / 10%);
+                padding            : 10px;
+                border-radius      : 20px;
+
+                .icon {
+                    font-size    : 50px;
+                    color        : white;
+                    margin-bottom: 20px;
+                    margin-top   : 20px;
+
+                    span {
+                        background-color: #92602d;
+                        padding         : 20px;
+                        border-radius   : 50%;
+                    }
+                }
+
+                .title-tablo {
+                    color: #92602d;
+
+                    h3 {
+                        font-size  : 23px;
+                        font-weight: 700;
+                    }
+                }
+
+                .content-tablo {
+                    p {
+                        color: #92602d;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding-bottom: 50px;
+
+        .col-12 {
+            display        : flex;
+            justify-content: space-around;
+            flex-wrap      : wrap;
+
+            input {
+                width: 32%;
+            }
+        }
+
+        .form-contact {
+            margin-top           : 20px;
+            border-radius        : 1px;
+            width                : 100%;
+            justify-content      : center;
+            flex-wrap            : wrap;
+            background           : #fff;
+            // box-shadow     : 3px 3px 13px 0 rgb(0 0 0 / 8%);
+            // height            : 430px;
+
+            .title-form {
+                text-align: center;
+
+                h2 {
+                    font-size    : 25px;
+                    font-weight  : 700;
+                    color        : #92602d;
+                    margin-bottom: 0px !important;
+                }
+            }
+
+            .sub-title {
+                text-align: center;
+
+                p {
+                    margin: 0px !important;
+                }
+            }
+        }
+
+        .input-form {
+            max-width    : 100%;
+            height       : 70px;
+            padding      : 0 30px;
+            background   : #fff;
+            border-radius: 1px;
+            border-bottom: 0.3rem solid #92602d;
+            margin-top   : 10px;
+
+            &:focus {
+                border-color: none;
+            }
+        }
+
+        .form-control:focus {
+            border-color: none !important;
+            box-shadow  : none;
+        }
+
+        textarea {
+            max-width       : 99%;
+            height          : 70px;
+            // padding      : 0 30px;
+            background      : #fff;
+            border-radius   : 1px;
+            border-bottom   : 0.3rem solid #92602d;
+            margin-top      : 10px;
+            height          : 150px;
+        }
+
+        .btn-contact {
+            margin-top   : 20px;
+            width        : 18%;
+            height       : 50px;
+            padding      : 0 30px;
+            background   : #92602d;
+            border-radius: 1px;
+            margin-left  : 40%;
+            color        : rgb(130, 130, 130);
+            border       : none;
+            color        : #fff;
+        }
+    }
+
+    .maps {
+        padding-bottom: - 20px;
+
+        iframe {
+            height: 500px;
+        }
+    }
+}
