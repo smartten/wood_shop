@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import { Carousel } from "antd";
 import Carousel from "react-bootstrap/Carousel";
 import {
@@ -39,6 +39,100 @@ function Home() {
     // dotsClass: ".button-1",
   };
 
+  // function animateNumber(finalNumber, delay, startNumber = 0, callback) {
+  //   let currentNumber = startNumber;
+  //   const interval = window.setInterval(updateNumber, delay);
+  //   function updateNumber() {
+  //     if (currentNumber >= finalNumber) {
+  //       clearInterval(interval);
+  //     } else {
+  //       currentNumber++;
+  //       callback(currentNumber);
+  //     }
+  //   }
+  // }
+
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   animateNumber(400, 1, 0, function (number) {
+  //     const formattedNumber = number.toLocaleString();
+  //     document.getElementById("transaction-count").innerText = formattedNumber;
+  //   });
+
+  //   animateNumber(9, 50, 0, function (number) {
+  //     const formattedNumber = number.toLocaleString();
+  //     document.getElementById("city-count").innerText = formattedNumber;
+  //   });
+  // });
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      var up1 = document.getElementsByClassName("up1");
+      var up2 = document.getElementsByClassName("up2");
+      var up3 = document.getElementsByClassName("up3");
+      var up4 = document.getElementsByClassName("up4");
+      var up5 = document.getElementsByClassName("upopen");
+      var up6 = document.getElementsByClassName("upservices");
+      var up7 = document.getElementsByClassName("right-contact");
+      var up8 = document.getElementsByClassName("up-contact");
+      var up9 = document.getElementsByClassName("left-comment");
+      var up10 = document.getElementsByClassName("up-comment");
+      // var bigGuy = document.getElementsByClassName("big-guys");
+      if (window.scrollY >= 200) {
+        for (var i = 0; i < up1.length; i++) {
+          up1[i].classList.add("fadeInRight", "cssanimation");
+        }
+        for (var i = 0; i < up5.length; i++) {
+          up5[i].classList.add("fadeInOpen", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 250) {
+        for (var i = 0; i < up2.length; i++) {
+          up2[i].classList.add("fadeInRight", "cssanimation");
+        }
+      }
+      // if (window.scrollY >= 1560) {
+      //   for (var i = 0; i < bigGuy.length; i++) {
+      //     bigGuy[i].classList.add("fadeInLeft", "cssanimation");
+      //   }
+      // }
+      if (window.scrollY >= 420) {
+        for (var i = 0; i < up3.length; i++) {
+          up3[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 450) {
+        for (var i = 0; i < up4.length; i++) {
+          up4[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 600) {
+        for (var i = 0; i < up6.length; i++) {
+          up6[i].classList.add("fadeInOpen", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 940) {
+        for (var i = 0; i < up8.length; i++) {
+          up8[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 1070) {
+        for (var i = 0; i < up7.length; i++) {
+          up7[i].classList.add("fadeInRight", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 1400) {
+        for (var i = 0; i < up10.length; i++) {
+          up10[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+      if (window.scrollY >= 1440) {
+        for (var i = 0; i < up9.length; i++) {
+          up9[i].classList.add("fadeInLeft", "cssanimation");
+        }
+      }
+    });
+    console.log(window.scrollY);
+  }, []);
   return (
     <div className="home">
       <Carousel slide={false}>
@@ -118,10 +212,13 @@ function Home() {
       <section className="tablo">
         <div className="container">
           <div className="tablo-content">
-            <div className="img-content">
+            <div
+              className="img-content upopen"
+              style={{ visibility: "visible" }}
+            >
               <img src={img1} />
               <div
-                className="countb wow fadeInLeft"
+                className="countb"
                 data-wow-delay="1.1s"
                 style={{
                   visibility: "visible",
@@ -149,7 +246,12 @@ function Home() {
                         <span className="odometer-digit-inner">
                           <span className="odometer-ribbon">
                             <span className="odometer-ribbon-inner">
-                              <span className="odometer-value">4</span>
+                              <span
+                                className="odometer-value"
+                                // id="transaction-count"
+                              >
+                                4
+                              </span>
                             </span>
                           </span>
                         </span>
@@ -215,10 +317,10 @@ function Home() {
               </div>
             </div>
             <div className="text-content">
-              <div className="text-title">
+              <div className="text-title up1">
                 <h3>Do you need flooring services?</h3>
               </div>
-              <div className="sub-text">
+              <div className="sub-text up3">
                 <p>
                   With our expert staff, we add a new perspective to your home
                   in economic, luxury, fast and quality flooring and
@@ -236,7 +338,7 @@ function Home() {
                   src="https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/05/divider.jpg"
                 />
               </div>
-              <div className="content-2">
+              <div className="content-2 up2">
                 <div className="icon">
                   <SmileOutlined />
                 </div>
@@ -248,7 +350,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="content-2">
+              <div className="content-2 up2">
                 <div className="icon">
                   <ClockCircleOutlined />
                 </div>
@@ -260,7 +362,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="button-get">
+              <div className="button-get up4">
                 <a href="">
                   Get to know us <ArrowRightOutlined />
                 </a>
@@ -276,7 +378,7 @@ function Home() {
             <p>We are at your service for all your flooring.</p>
           </div>
 
-          <div>
+          <div className="upservices">
             <Slider {...settings}>
               <div className="col-3">
                 <div className="img-service">
@@ -333,12 +435,12 @@ function Home() {
       <section className="contact">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 up-contact">
               <img src={imgContact} />
             </div>
             <div className="col-lg-6">
               <div className="contact-content">
-                <div className="text-contact">
+                <div className="text-contact up-contact">
                   <p className="title-contact">
                     Let's Create A Great Design Together!
                   </p>
@@ -347,7 +449,7 @@ function Home() {
                     services.
                   </p>
                 </div>
-                <div className="form-contact">
+                <div className="form-contact right-contact">
                   <form>
                     <div className="d-flex">
                       <div className="form-group col-4">
@@ -399,14 +501,14 @@ function Home() {
       </section>
       <section className="comment">
         <div className="container">
-          <div className="icon">
+          <div className="icon up-comment">
             <LikeOutlined />
           </div>
-          <div className="title-comment">
+          <div className="title-comment up-comment">
             <p className="title-text">What Are Our Customers Saying ?</p>
             <p className="sub-text">Opinions from our happy customers.</p>
           </div>
-          <div className="row">
+          <div className="row left-comment">
             <div className="col-3">
               <div className="class-box">
                 <div className="testimon-text">

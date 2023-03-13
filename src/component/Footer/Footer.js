@@ -11,7 +11,7 @@ import "./FooterStyle.scss";
 function Footer() {
   return (
     <div className="footer">
-      <div className="container footerv0">
+      <div className="footerv0">
         <div className="join">
           <div className="row">
             <div className="col-5">

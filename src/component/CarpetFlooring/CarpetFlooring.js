@@ -39,14 +39,39 @@ function CarpetFlooring() {
     ele2.classList.add("d-none");
     ele3.classList.add("d-none");
   };
-  //   useEffect(() => {
-  //     // document.title = "AVEO Global - Financial";
-  //   }, []);
+  useEffect(() => {
+    var up1 = document.getElementsByClassName("up1");
+    var up2 = document.getElementsByClassName("up2");
+    var up3 = document.getElementsByClassName("up3");
+    var up4 = document.getElementsByClassName("up4");
+    var up5 = document.getElementsByClassName("up5");
+    if (window.scrollY >= 0) {
+      for (var i = 0; i < up1.length; i++) {
+        up1[i].classList.add("fadeInRight", "cssanimation");
+      }
+      for (var i = 0; i < up2.length; i++) {
+        up2[i].classList.add("fadeInLeft", "cssanimation");
+      }
+      for (var i = 0; i < up5.length; i++) {
+        up5[i].classList.add("fadeInUp", "cssanimation1s");
+      }
+    }
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 300) {
+        for (var i = 0; i < up4.length; i++) {
+          up4[i].classList.add("fadeInRight", "cssanimation");
+        }
+        for (var i = 0; i < up3.length; i++) {
+          up3[i].classList.add("fadeInLeft", "cssanimation");
+        }
+      }
+    });
+  }, []);
   return (
     <div className="carpet-flooring">
       <section className="slider">
         <div className="siler-list">
-          <div className="slider-item">
+          <div className="slider-item up5">
             <div className="container">
               <div className="slide-content d-flex">
                 <div className="text">
@@ -65,7 +90,7 @@ function CarpetFlooring() {
       <section className="content-flooring">
         <div className="container">
           <div className="content">
-            <div className="menu-left">
+            <div className="menu-left up2">
               <div className="menu-content">
                 <div className="link-menu">
                   <a href="/flooring">
@@ -139,9 +164,9 @@ function CarpetFlooring() {
                 </div>
               </div>
             </div>
-            <div className="content-right">
+            <div className="content-right up1">
               <div className="img-flo">
-                <img src={img1} />
+                <img src={img1} style={{ width: "100%" }} />
               </div>
               <div className="content-text-right">
                 <div className="title-right">

@@ -56,14 +56,39 @@ function AllServices() {
     ele2.classList.add("d-none");
     ele3.classList.add("d-none");
   };
-  //   useEffect(() => {
-  //     // document.title = "AVEO Global - Financial";
-  //   }, []);
+  useEffect(() => {
+    var up1 = document.getElementsByClassName("up1");
+    var up2 = document.getElementsByClassName("up2");
+    var up3 = document.getElementsByClassName("up3");
+    var up4 = document.getElementsByClassName("up4");
+    var up5 = document.getElementsByClassName("up5");
+    if (window.scrollY >= 0) {
+      for (var i = 0; i < up1.length; i++) {
+        up1[i].classList.add("fadeInUp", "cssanimation");
+      }
+      for (var i = 0; i < up2.length; i++) {
+        up2[i].classList.add("fadeInLeft", "cssanimation");
+      }
+      for (var i = 0; i < up5.length; i++) {
+        up5[i].classList.add("fadeInUp", "cssanimation1s");
+      }
+    }
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 300) {
+        for (var i = 0; i < up4.length; i++) {
+          up4[i].classList.add("fadeInRight", "cssanimation");
+        }
+        for (var i = 0; i < up3.length; i++) {
+          up3[i].classList.add("fadeInUp", "cssanimation");
+        }
+      }
+    });
+  }, []);
   return (
     <div className="all-services">
       <section className="slider">
         <div className="siler-list">
-          <div className="slider-item">
+          <div className="slider-item up5">
             <div className="container">
               <div className="slide-content d-flex">
                 <div className="text">
@@ -79,7 +104,7 @@ function AllServices() {
           </div>
         </div>
       </section>
-      <section className="our-services">
+      <section className="our-services up1">
         <div className="container">
           <Slider {...settings}>
             <div className="col-3">
@@ -128,10 +153,10 @@ function AllServices() {
       <section className="contact">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 up3">
               <img src={imgContact} />
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 up4">
               <div className="contact-content">
                 <div className="text-contact">
                   <p className="title-contact">

@@ -1,6 +1,92 @@
 .all-services {
     padding-bottom: 20px;
 
+    .cssanimation {
+        animation-duration : 3s;
+        animation-fill-mode: both;
+    }
+
+    .cssanimation1s {
+        animation-duration : 2s;
+        animation-fill-mode: both;
+    }
+
+    .fadeInRight {
+        -webkit-animation-name: fadeInRight;
+        animation-name        : fadeInRight;
+        display               : block !important;
+    }
+
+    .fadeInLeft {
+        -webkit-animation-name: fadeInLeft;
+        animation-name        : fadeInLeft;
+        display               : block !important;
+    }
+
+    .fadeInUp {
+        -webkit-animation-name   : fadeInUp;
+        animation-name           : fadeInUp;
+        // display               : block !important;
+    }
+
+    .fadeInOpen {
+        -webkit-animation-name: fadeInOpen;
+        animation-name        : fadeInOpen;
+        display               : block !important;
+    }
+
+    @keyframes fadeInLeft {
+        0% {
+            opacity  : 0;
+            transform: translate3d(-20%, 0, 0);
+        }
+
+        100% {
+            opacity  : 1;
+            transform: none
+        }
+    }
+
+    @keyframes fadeInOpen {
+        0% {
+            opacity            : 0;
+            // transition      : opacity 0.5s ease;
+            // transition-delay: 0.2s;
+            transform          : translate3d(0, 0, 0);
+
+        }
+
+        100% {
+            opacity  : 1;
+            transform: none
+        }
+    }
+
+    @keyframes fadeInRight {
+        0% {
+            opacity  : 0;
+            transform: translate3d(20%, 0, 0);
+        }
+
+        100% {
+            opacity  : 1;
+            transform: none;
+        }
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity  : 0;
+            transform: translate3d(0, 50%, 0);
+        }
+
+        100% {
+            opacity  : 1;
+            transform: none;
+        }
+    }
+
+
     .slider {
         position   : relative;
         display    : block;
