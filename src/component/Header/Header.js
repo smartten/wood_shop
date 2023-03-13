@@ -1,4 +1,5 @@
 import logo from "./wood-logo.png";
+import logo2 from "./wood-logo2.png";
 import "./HeaderStyle.scss";
 import { Menu, Drawer } from "antd";
 import { MenuOutlined, PhoneOutlined } from "@ant-design/icons";
@@ -76,6 +77,14 @@ function Header() {
   ];
   return (
     <div className="header">
+      <div style={{ zIndex: 999 }} id="infor" className="overlay transition">
+        <p class="loader-content">
+          <img src={logo2} style={{ width: "40%" }} />
+        </p>
+        <div class="loader-line-mask">
+          <div class="loader-line"></div>
+        </div>
+      </div>
       <div className="header-content">
         <div className="container">
           <div className="row">
