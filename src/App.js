@@ -12,6 +12,7 @@ import AllServices from "./component/AllService/AllServices";
 import AboutUs from "./component/AboutUs/AboutUs";
 import Blog from "./component/Blog/Blog";
 import ContactUs from "./component/ContactUs/ContactUs";
+import BackToTop from "./component/BackToTop/BackToTop";
 // import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
+      <BackToTop />
     </div>
   );
 }

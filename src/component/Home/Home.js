@@ -36,6 +36,19 @@ function Home() {
     slidesToScroll: 1,
     speed: 500,
     // arrows: false,
+    swipeToSlide: true,
+    // dotsClass: ".button-1",
+  };
+
+  const settings1 = {
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 500,
+    arrows: false,
+    dots: false,
+    swipeToSlide: true,
     // dotsClass: ".button-1",
   };
 
@@ -508,59 +521,71 @@ function Home() {
             <p className="title-text">What Are Our Customers Saying ?</p>
             <p className="sub-text">Opinions from our happy customers.</p>
           </div>
-          <div className="row left-comment">
-            <div className="col-3">
-              <div className="class-box">
-                <div className="testimon-text">
-                  We needed a floor covering for the living room of our house.
-                  They did professional work. Thank you.
-                  {/* <i class="fas fa-quote-right quote" aria-hidden="true"></i> */}
+          <div className="left-comment">
+            <Slider {...settings1}>
+              {/* <div className="row left-comment"> */}
+              <div className="col-3">
+                <div className="class-box">
+                  <div className="testimon-text">
+                    We needed a floor covering for the living room of our house.
+                    They did professional work. Thank you.
+                  </div>
+                  <div className="img-testimon">
+                    <img src={imgtest} />
+                  </div>
+                  <div className="name-test">Nguyen</div>
                 </div>
-                <div className="img-testimon">
-                  <img src={imgtest} />
-                </div>
-                <div className="name-test">Adam</div>
               </div>
-            </div>
-            <div className="col-3">
-              <div className="class-box">
-                <div className="testimon-text">
-                  We needed a floor covering for the living room of our house.
-                  They did professional work. Thank you.
-                  {/* <i class="fas fa-quote-right quote" aria-hidden="true"></i> */}
+              <div className="col-3">
+                <div className="class-box">
+                  <div className="testimon-text">
+                    We needed a floor covering for the living room of our house.
+                    They did professional work. Thank you.
+                  </div>
+                  <div className="img-testimon">
+                    <img src={imgtest} />
+                  </div>
+                  <div className="name-test">Minh</div>
                 </div>
-                <div className="img-testimon">
-                  <img src={imgtest} />
-                </div>
-                <div className="name-test">Adam</div>
               </div>
-            </div>
-            <div className="col-3">
-              <div className="class-box">
-                <div className="testimon-text">
-                  We needed a floor covering for the living room of our house.
-                  They did professional work. Thank you.
-                  {/* <i class="fas fa-quote-right quote" aria-hidden="true"></i> */}
+              <div className="col-3">
+                <div className="class-box">
+                  <div className="testimon-text">
+                    We needed a floor covering for the living room of our house.
+                    They did professional work. Thank you.
+                  </div>
+                  <div className="img-testimon">
+                    <img src={imgtest} />
+                  </div>
+                  <div className="name-test">Hieu</div>
                 </div>
-                <div className="img-testimon">
-                  <img src={imgtest} />
-                </div>
-                <div className="name-test">Adam</div>
               </div>
-            </div>
-            <div className="col-3">
-              <div className="class-box">
-                <div className="testimon-text">
-                  We needed a floor covering for the living room of our house.
-                  They did professional work. Thank you.
-                  {/* <i class="fas fa-quote-right quote" aria-hidden="true"></i> */}
+              <div className="col-3">
+                <div className="class-box">
+                  <div className="testimon-text">
+                    We needed a floor covering for the living room of our house.
+                    They did professional work. Thank you.
+                  </div>
+                  <div className="img-testimon">
+                    <img src={imgtest} />
+                  </div>
+                  <div className="name-test">NMH</div>
                 </div>
-                <div className="img-testimon">
-                  <img src={imgtest} />
-                </div>
-                <div className="name-test">Adam</div>
               </div>
-            </div>
+              <div className="col-3">
+                <div className="class-box">
+                  <div className="testimon-text">
+                    We needed a floor covering for the living room of our house.
+                    They did professional work. Thank you.
+                  </div>
+                  <div className="img-testimon">
+                    <img src={imgtest} />
+                  </div>
+                  <div className="name-test">NMH1</div>
+                </div>
+              </div>
+              {/* </div> */}
+            </Slider>
           </div>
         </div>
       </section>

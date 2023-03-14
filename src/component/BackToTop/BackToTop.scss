@@ -1,0 +1,23 @@
+.back {
+    .btnTop {
+        position        : fixed;
+        bottom          : 10px;
+        right           : 20px;
+        height          : 60px;
+        width           : 50px;
+        font-size       : 30px;
+        border          : none;
+        background-color: #92602d;
+        color           : #fff;
+        border-radius   : 10px;
+
+        svg {
+            margin-bottom: 10px;
+        }
+
+        &:focus {
+            // border: none;
+            outline: none;
+        }
+    }
+}

@@ -880,9 +880,9 @@
 
     .comment {
         background       : transparent url(https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/07/comment-paint-bg1.jpg) center center/cover no-repeat scroll;
-        height           : 900px;
+        height           : 920px;
         display          : flex;
-        // padding-bottom: 70px !important;
+        // padding-bottom: 80px !important;
 
         .icon {
             text-align: center;
@@ -907,6 +907,44 @@
             }
         }
 
+        .slick-dots li button:before {
+            font-family           : 'slick';
+            font-size             : 6px;
+            line-height           : 20px;
+            position              : absolute;
+            top                   : 0;
+            background            : rgb(150, 150, 150);
+            left                  : 0;
+            width                 : 25px;
+            height                : 10px;
+            content               : '';
+            text-align            : center;
+            opacity               : .25;
+            color                 : rgb(147, 147, 147);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .slick-dots li button {
+            font-size  : 0;
+            line-height: 0;
+            display    : block;
+            width      : 25px;
+            height     : 10px;
+            padding    : 5px;
+            cursor     : pointer;
+            color      : black;
+            border     : 0;
+            outline    : none;
+            background : #e2e2e2;
+        }
+
+        .slick-dots li.slick-active button:before {
+            opacity           : 1;
+            background        : rgb(150, 150, 150);
+            // width          : 50px;
+            // margin-right: 20px;
+        }
+
         .title-comment {
             .title-text {
                 text-align   : center;
@@ -918,58 +956,61 @@
             }
 
             .sub-text {
-                font-size : 16px;
+                font-size : 18px;
                 text-align: center;
             }
         }
 
-        .row {
-            justify-content: space-between;
-            margin-top     : 80px;
+        // .row {
+        //     justify-content: space-between;
+        //     margin-top     : 80px;
 
-            .col-3 {
-                // width: 90% !important;
-                max-width: 24%;
-            }
+        .col-3 {
+            max-width : 100%;
+            height    : 500px;
+            margin-top: 60px;
+        }
 
-            .class-box {
-                min-height     : 430px;
-                border-radius  : 1px;
-                flex-flow      : column;
+        .class-box {
+            min-height     : 430px;
+            border-radius  : 1px;
+            flex-flow      : column;
+            display        : flex;
+            justify-content: center;
+            flex-wrap      : wrap;
+            background     : #fff;
+            transform      : skewY(-10deg);
+
+            .testimon-text {
+                padding        : 2em;
+                line-height    : 1.7em;
+                position       : relative;
+                font-size      : 16px;
+                text-align     : center;
                 display        : flex;
                 justify-content: center;
                 flex-wrap      : wrap;
-                background     : #fff;
-                transform      : skewY(-10deg);
+                color          : #666666;
+                width          : 90%;
+            }
 
-                .testimon-text {
-                    padding        : 2em;
-                    line-height    : 1.7em;
-                    position       : relative;
-                    font-size      : 18px;
-                    text-align     : center;
-                    display        : flex;
-                    justify-content: center;
-                    flex-wrap      : wrap;
-                    color          : #666666
-                }
+            .img-testimon {
+                display        : flex;
+                justify-content: center;
 
-                .img-testimon {
-                    display        : flex;
-                    justify-content: center;
-
-                    img {
-                        width: 30%;
-                    }
-                }
-
-                .name-test {
-                    margin-top: 30px;
-                    color     : #92602d;
-                    text-align: center;
-                    font-size : 17px;
+                img {
+                    width: 30%;
                 }
             }
+
+            .name-test {
+                margin-top: 30px;
+                color     : #92602d;
+                text-align: center;
+                font-size : 17px;
+            }
         }
+
+        // }
     }
 }
