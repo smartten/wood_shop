@@ -19,6 +19,7 @@ import imgservice3 from "./img/img-service3.jpg";
 import imgservice4 from "./img/wood-services-4.jpg";
 import imgservice5 from "./img/wood-services-5.jpg";
 import Slider from "react-slick";
+import { Card } from "antd";
 import "./HomeStyle.scss";
 function Home() {
   const contentStyle = {
@@ -28,7 +29,7 @@ function Home() {
     textAlign: "center",
     background: "#364d79",
   };
-
+  const { Meta } = Card;
   const settings = {
     focusOnSelect: true,
     infinite: true,
@@ -38,6 +39,34 @@ function Home() {
     // arrows: false,
     swipeToSlide: true,
     // dotsClass: ".button-1",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          focusOnSelect: true,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          speed: 500,
+          arrows: false,
+          dots: false,
+          swipeToSlide: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          focusOnSelect: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500,
+          arrows: false,
+          dots: false,
+          swipeToSlide: true,
+        },
+      },
+    ],
   };
 
   const settings1 = {
@@ -50,7 +79,118 @@ function Home() {
     dots: false,
     swipeToSlide: true,
     // dotsClass: ".button-1",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          focusOnSelect: true,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 500,
+          arrows: false,
+          dots: false,
+          swipeToSlide: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          focusOnSelect: true,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          speed: 500,
+          arrows: false,
+          dots: false,
+          swipeToSlide: true,
+        },
+      },
+    ],
   };
+
+  const settings2 = {
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    speed: 500,
+    arrows: true,
+    dots: false,
+    swipeToSlide: true,
+    // dotsClass: ".button-1",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          focusOnSelect: true,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          speed: 500,
+          arrows: false,
+          dots: false,
+          swipeToSlide: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          focusOnSelect: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500,
+          arrows: false,
+          dots: false,
+          swipeToSlide: true,
+        },
+      },
+    ],
+  };
+
+  const datasanpham1 = [
+    {
+      name: "Sản phẩm 1",
+      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      price: "200 000 VND",
+    },
+    {
+      name: "Sản phẩm 2",
+      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      price: "200 000 VND",
+    },
+    {
+      name: "Sản phẩm 3",
+      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      price: "200 000 VND",
+    },
+    {
+      name: "Sản phẩm 4",
+      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      price: "200 000 VND",
+    },
+    {
+      name: "Sản phẩm 5",
+      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      price: "200 000 VND",
+    },
+    {
+      name: "Sản phẩm 6",
+      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      price: "200 000 VND",
+    },
+    {
+      name: "Sản phẩm 7",
+      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      price: "200 000 VND",
+    },
+    {
+      name: "Sản phẩm 8",
+      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      price: "200 000 VND",
+    },
+  ];
 
   // function animateNumber(finalNumber, delay, startNumber = 0, callback) {
   //   let currentNumber = startNumber;
@@ -90,7 +230,7 @@ function Home() {
       var up9 = document.getElementsByClassName("left-comment");
       var up10 = document.getElementsByClassName("up-comment");
       // var bigGuy = document.getElementsByClassName("big-guys");
-      if (window.scrollY >= 200) {
+      if (window.scrollY >= 700) {
         for (var i = 0; i < up1.length; i++) {
           up1[i].classList.add("fadeInRight", "cssanimation");
         }
@@ -98,7 +238,7 @@ function Home() {
           up5[i].classList.add("fadeInOpen", "cssanimation");
         }
       }
-      if (window.scrollY >= 250) {
+      if (window.scrollY >= 750) {
         for (var i = 0; i < up2.length; i++) {
           up2[i].classList.add("fadeInRight", "cssanimation");
         }
@@ -108,37 +248,37 @@ function Home() {
       //     bigGuy[i].classList.add("fadeInLeft", "cssanimation");
       //   }
       // }
-      if (window.scrollY >= 420) {
+      if (window.scrollY >= 920) {
         for (var i = 0; i < up3.length; i++) {
           up3[i].classList.add("fadeInUp", "cssanimation");
         }
       }
-      if (window.scrollY >= 450) {
+      if (window.scrollY >= 950) {
         for (var i = 0; i < up4.length; i++) {
           up4[i].classList.add("fadeInUp", "cssanimation");
         }
       }
-      if (window.scrollY >= 600) {
+      if (window.scrollY >= 1100) {
         for (var i = 0; i < up6.length; i++) {
           up6[i].classList.add("fadeInOpen", "cssanimation");
         }
       }
-      if (window.scrollY >= 940) {
+      if (window.scrollY >= 1440) {
         for (var i = 0; i < up8.length; i++) {
           up8[i].classList.add("fadeInUp", "cssanimation");
         }
       }
-      if (window.scrollY >= 1070) {
+      if (window.scrollY >= 1570) {
         for (var i = 0; i < up7.length; i++) {
           up7[i].classList.add("fadeInRight", "cssanimation");
         }
       }
-      if (window.scrollY >= 1400) {
+      if (window.scrollY >= 1900) {
         for (var i = 0; i < up10.length; i++) {
           up10[i].classList.add("fadeInUp", "cssanimation");
         }
       }
-      if (window.scrollY >= 1440) {
+      if (window.scrollY >= 1940) {
         for (var i = 0; i < up9.length; i++) {
           up9[i].classList.add("fadeInLeft", "cssanimation");
         }
@@ -222,6 +362,30 @@ function Home() {
           </section>
         </Carousel.Item>
       </Carousel>
+      <section className="product">
+        <div className="container">
+          <div className="product-name">
+            <h2 className="title-name">Ghế Gỗ</h2>
+          </div>
+          <Slider {...settings2}>
+            {datasanpham1.map((data) => (
+              <div>
+                <Card
+                  hoverable
+                  style={
+                    {
+                      // width: 240,
+                    }
+                  }
+                  cover={<img alt="product" src={data.img} />}
+                >
+                  <Meta title={data.name} description={data.price} />
+                </Card>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </section>
       <section className="tablo">
         <div className="container">
           <div className="tablo-content">

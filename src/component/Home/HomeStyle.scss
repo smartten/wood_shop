@@ -426,6 +426,7 @@
 
                 img {
                     transform: skewY(-10deg);
+                    width    : 100%;
 
                     &:hover {
                         transform: perspective(500px) rotateX(1.03deg) rotateY(0deg);
@@ -1012,5 +1013,96 @@
         }
 
         // }
+    }
+
+    .product {
+        padding-top   : 50px;
+        padding-bottom: 50px;
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-family                 : 'slick';
+            // font-size                : 30px;
+            line-height                 : 1;
+            opacity                     : 1;
+            color                       : black;
+            -webkit-font-smoothing      : antialiased;
+        }
+
+        .slick-prev:before {
+            content         : '⬅';
+            font-size       : 25px;
+            color           : white;
+            font-weight     : 700;
+            background-color: #92602d;
+        }
+
+        .slick-next:before {
+            content         : '➞';
+            font-size       : 25px;
+            color           : white;
+            font-weight     : 700;
+            background-color: #92602d;
+
+        }
+
+        .slick-prev,
+        .slick-next {
+            font-size          : 0;
+            line-height        : 0;
+            position           : absolute;
+            // top          : 50%;
+            display            : block;
+            // width           : 20px;
+            // height          : 20px;
+            padding            : 0;
+            transform          : translate(0, -50%);
+            cursor             : pointer;
+            color              : transparent;
+            border             : none;
+            outline            : none;
+            margin-top         : 200px;
+            background         : #fff;
+            width              : 30px;
+            height             : 30px;
+            // border          : 2px solid #92602d !important;
+            // border-radius   : 50%;
+        }
+
+        .slick-prev {
+            margin-left: 93%;
+        }
+
+        .slick-next {
+            margin-right: 5%;
+        }
+
+        .product-name {
+            width           : 300px;
+            background-color: #92602d;
+            height          : 44px;
+            margin-bottom   : 20px;
+            border-radius   : 10px;
+
+            .title-name {
+                font-size     : 30px;
+                line-height   : 45px;
+                margin-left   : 10px;
+                color         : white;
+                text-transform: uppercase;
+                font-family   : 'Times New Roman Condensed', sans-serif !important;
+            }
+        }
+
+        .ant-card-meta-description {
+            color      : #92602d !important;
+            font-weight: 500;
+            font-size  : 20px;
+
+        }
+
+        .ant-card-bordered {
+            width: 240px;
+        }
     }
 }
