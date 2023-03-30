@@ -12,7 +12,7 @@ function ContactUs() {
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item">
-            <div className="container">
+            <div className="containerv1">
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
@@ -28,7 +28,7 @@ function ContactUs() {
         </div>
       </section>
       <section className="tablo">
-        <div className="container">
+        <div className="containerv1">
           <div className="row">
             <div className="col-4">
               <div className="icon">
@@ -67,7 +67,7 @@ function ContactUs() {
         </div>
       </section>
       <section className="contact">
-        <div className="container">
+        <div className="containerv1">
           <div className="form-contact">
             <div className="form-submit">
               <form>

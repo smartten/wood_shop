@@ -89,7 +89,7 @@ function AllServices() {
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item up5">
-            <div className="container">
+            <div className="containerv1">
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
@@ -105,7 +105,7 @@ function AllServices() {
         </div>
       </section>
       <section className="our-services up1">
-        <div className="container">
+        <div className="containerv1">
           <Slider {...settings}>
             <div className="col-3">
               <div className="img-service">
@@ -151,7 +151,7 @@ function AllServices() {
         </div>
       </section>
       <section className="contact">
-        <div className="container">
+        <div className="containerv1">
           <div className="row">
             <div className="col-lg-6 up3">
               <img src={imgContact} />

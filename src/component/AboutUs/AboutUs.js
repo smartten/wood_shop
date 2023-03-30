@@ -77,7 +77,7 @@ function AboutUs() {
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item">
-            <div className="container">
+            <div className="containerv1">
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
@@ -93,7 +93,7 @@ function AboutUs() {
         </div>
       </section>
       <section className="tablo">
-        <div className="container">
+        <div className="containerv1">
           <div className="tablo-content">
             <div className="img-content">
               <img src={img1} />
@@ -246,7 +246,7 @@ function AboutUs() {
           </div>
         </div>
       </section>
-      <section className="tablov2 container">
+      <section className="tablov2 containerv1">
         <div
           className="tablo--1-ve-2"
           onMouseOver={onHover}
@@ -376,7 +376,7 @@ function AboutUs() {
         data-background="#f9f9f9"
         style={{ background: "rgb(249, 249, 249)" }}
       >
-        <div className="container">
+        <div className="containerv1">
           <div className="row align-items-center no-gutters">
             <div className="col-lg-12">
               <div
@@ -418,7 +418,7 @@ function AboutUs() {
         </div>
       </section>
       <section className="flooring-master">
-        <div className="container">
+        <div className="containerv1">
           <div className="row">
             <div className="col-3">
               <img src={img2} />

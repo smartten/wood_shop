@@ -45,7 +45,7 @@ function Home() {
         settings: {
           focusOnSelect: true,
           infinite: true,
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           speed: 500,
           arrows: false,
@@ -118,7 +118,6 @@ function Home() {
     arrows: true,
     dots: false,
     swipeToSlide: true,
-    // dotsClass: ".button-1",
     responsive: [
       {
         breakpoint: 1024,
@@ -293,7 +292,7 @@ function Home() {
           <section className="slider">
             <div className="siler-list">
               <div className="slider-item-home">
-                <div className="container">
+                <div className="containerv1">
                   <div className="slide-content">
                     <div className="text-slider">
                       <p className="text-title">
@@ -317,7 +316,7 @@ function Home() {
           <section className="slider">
             <div className="siler-list">
               <div className="slider-item-home-2">
-                <div className="container">
+                <div className="containerv1">
                   <div className="slide-content">
                     <div className="text-slider">
                       <p className="text-title">
@@ -341,7 +340,7 @@ function Home() {
           <section className="slider">
             <div className="siler-list">
               <div className="slider-item-home-3">
-                <div className="container">
+                <div className="containerv1">
                   <div className="slide-content">
                     <div className="text-slider">
                       <p className="text-title">
@@ -363,7 +362,7 @@ function Home() {
         </Carousel.Item>
       </Carousel>
       <section className="product">
-        <div className="container">
+        <div className="containerv1">
           <div className="product-name">
             <h2 className="title-name">Ghế Gỗ</h2>
           </div>
@@ -387,7 +386,7 @@ function Home() {
         </div>
       </section>
       <section className="tablo">
-        <div className="container">
+        <div className="containerv1">
           <div className="tablo-content">
             <div
               className="img-content upopen"
@@ -549,7 +548,7 @@ function Home() {
         </div>
       </section>
       <section className="our-services">
-        <div className="container">
+        <div className="containerv1">
           <div className="title-service">
             <h3>Our Flooring Services</h3>
             <p>We are at your service for all your flooring.</p>
@@ -610,7 +609,7 @@ function Home() {
         </div>
       </section>
       <section className="contact">
-        <div className="container">
+        <div className="containerv1">
           <div className="row">
             <div className="col-lg-6 up-contact">
               <img src={imgContact} />
@@ -677,7 +676,7 @@ function Home() {
         </div>
       </section>
       <section className="comment">
-        <div className="container">
+        <div className="containerv1">
           <div className="icon up-comment">
             <LikeOutlined />
           </div>

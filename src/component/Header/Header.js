@@ -86,7 +86,7 @@ function Header() {
         </div>
       </div>
       <div className="header-content">
-        <div className="container">
+        <div className="containerv1">
           <div className="row">
             <div className="logo col-2">
               <a href="/">

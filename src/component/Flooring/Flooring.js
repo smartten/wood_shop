@@ -72,7 +72,7 @@ function Flooring() {
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item up5">
-            <div className="container">
+            <div className="containerv1">
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
@@ -88,7 +88,7 @@ function Flooring() {
         </div>
       </section>
       <section className="content-flooring">
-        <div className="container">
+        <div className="containerv1">
           <div className="content">
             <div className="menu-left up2">
               <div className="menu-content">

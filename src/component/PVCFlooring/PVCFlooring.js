@@ -70,7 +70,7 @@ function PVCFlooring() {
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item up5">
-            <div className="container">
+            <div className="containerv1">
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
@@ -86,7 +86,7 @@ function PVCFlooring() {
         </div>
       </section>
       <section className="content-flooring">
-        <div className="container">
+        <div className="containerv1">
           <div className="content">
             <div className="menu-left">
               <div className="menu-content up2">

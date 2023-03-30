@@ -42,10 +42,10 @@ function Footer() {
         </div>
       </div>
       <div className="footer-v1">
-        <div className="container">
+        <div className="containerv1">
           <div className="text-content">
             <div className="row">
-              <div className="col-3" style={{ marginTop: "150px" }}>
+              <div className="col-3">
                 <div className="logo">
                   <img src={logo1} />
                 </div>
@@ -60,7 +60,7 @@ function Footer() {
                   <MailOutlined /> example@mail.com
                 </div>
               </div>
-              <div className="col-3" style={{ marginTop: "150px" }}>
+              <div className="col-3">
                 <div className="title">
                   <h2>Services</h2>
                 </div>
@@ -82,7 +82,7 @@ function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-3" style={{ marginTop: "150px" }}>
+              <div className="col-3">
                 <div className="title">
                   <h2>Quick Links</h2>
                 </div>
@@ -104,7 +104,7 @@ function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-3" style={{ marginTop: "150px" }}>
+              <div className="col-3">
                 <div className="title">
                   <h2>Get In Touch</h2>
                 </div>

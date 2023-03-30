@@ -11,7 +11,7 @@ function Blog() {
       <section className="slider">
         <div className="siler-list">
           <div className="slider-item">
-            <div className="container">
+            <div className="containerv1">
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
@@ -27,7 +27,7 @@ function Blog() {
         </div>
       </section>
       <section className="news">
-        <div className="container">
+        <div className="containerv1">
           <div className="row">
             <div className="col-3">
               <div className="img-news">
