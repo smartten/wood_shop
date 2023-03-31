@@ -20,7 +20,10 @@ import imgservice4 from "./img/wood-services-4.jpg";
 import imgservice5 from "./img/wood-services-5.jpg";
 import Slider from "react-slick";
 import "./HomeStyle.scss";
+import { Card } from 'antd';
+
 function Home() {
+  const { Meta } = Card;
   const contentStyle = {
     height: "100vh",
     color: "#fff",
@@ -28,6 +31,31 @@ function Home() {
     textAlign: "center",
     background: "#364d79",
   };
+  const settings2 = {
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    speed: 500,
+   swipeToSlide: true,
+   arrows: true,
+   autoplay: true,
+   autoplaySpeed: 2000,
+   responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        //dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      }
+    }
+   ]
+  }
+  
 
   const settings = {
     focusOnSelect: true,
@@ -37,6 +65,17 @@ function Home() {
     speed: 500,
     // arrows: false,
     // dotsClass: ".button-1",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          //dots: true
+        }
+      }
+     ]
   };
 
   // function animateNumber(finalNumber, delay, startNumber = 0, callback) {
@@ -209,7 +248,147 @@ function Home() {
           </section>
         </Carousel.Item>
       </Carousel>
+      <section className="Product">
+        <div className="text-product">
+          <h3>Product</h3>
+        </div>
+        <div className="contenproduct">
+          <Slider {...settings2}>
+            <div className="col-5">
+            <Card
+                 hoverable
+             style={{
+              width: 240,
+                  }}
+               cover={<img alt="example" src="https://noithatdangkhoa.com/wp-content/uploads/2020/05/ghe-ca-phe-dep-ghe-go-cabin-gcfdk16-2-510x510.jpg" />}
+                      >
+                 <Meta title="Flooring1" description="$200" />
+             </Card>
+            </div>
+            <div className="col-5">
+            <Card
+                 hoverable
+             style={{
+              width: 240,
+                  }}
+               cover={<img alt="example" src="https://noithatdangkhoa.com/wp-content/uploads/2020/05/ghe-ca-phe-dep-ghe-go-cabin-gcfdk16-2-510x510.jpg" />}
+                      >
+                 <Meta title="Flooring2" description="$200" />
+             </Card>
+            </div>
+            <div className="col-5">
+            <Card
+                 hoverable
+             style={{
+              width: 240,
+                  }}
+               cover={<img alt="example" src="https://noithatdangkhoa.com/wp-content/uploads/2020/05/ghe-ca-phe-dep-ghe-go-cabin-gcfdk16-2-510x510.jpg" />}
+                      >
+                 <Meta title="Flooring3" description="$200" />
+             </Card>
+            </div>
+            <div className="col-5">
+            <Card
+                 hoverable
+             style={{
+              width: 240,
+                  }}
+               cover={<img alt="example" src="https://noithatdangkhoa.com/wp-content/uploads/2020/05/ghe-ca-phe-dep-ghe-go-cabin-gcfdk16-2-510x510.jpg" />}
+                      >
+                 <Meta title="Flooring4" description="$200" />
+             </Card>
+            </div>
+            <div className="col-5">
+            <Card
+                 hoverable
+             style={{
+              width: 240,
+                  }}
+               cover={<img alt="example" src="https://noithatdangkhoa.com/wp-content/uploads/2020/05/ghe-ca-phe-dep-ghe-go-cabin-gcfdk16-2-510x510.jpg" />}
+                      >
+                 <Meta title="Flooring5" description="$200" />
+             </Card>
+            </div>
+            <div className="col-5">
+            <Card
+                 hoverable
+             style={{
+              width: 240,
+                  }}
+               cover={<img alt="example" src="https://noithatdangkhoa.com/wp-content/uploads/2020/05/ghe-ca-phe-dep-ghe-go-cabin-gcfdk16-2-510x510.jpg" />}
+                      >
+                 <Meta title="Flooring6" description="$200" />
+             </Card>
+            </div>
+            <div className="col-5">
+            <Card
+                 hoverable
+             style={{
+              width: 240,
+                  }}
+               cover={<img alt="example" src="https://noithatdangkhoa.com/wp-content/uploads/2020/05/ghe-ca-phe-dep-ghe-go-cabin-gcfdk16-2-510x510.jpg" />}
+                      >
+                 <Meta title="Flooring7" description="$200" />
+             </Card>
+            </div>
+            <div className="col-5">
+            <Card
+                 hoverable
+             style={{
+              width: 240,
+                  }}
+               cover={<img alt="example" src="https://noithatdangkhoa.com/wp-content/uploads/2020/05/ghe-ca-phe-dep-ghe-go-cabin-gcfdk16-2-510x510.jpg" />}
+                      >
+                 <Meta title="Flooring8" description="$200" />
+             </Card>
+            </div>
+          </Slider>
+        </div>
+      </section>
+
       <section className="tablo">
+       {/* <div className="product">
+          <div className="contenproduct">
+              <h3> Product </h3>
+          </div>
+              <div className="Text-product">
+                <div></div>
+              <Slider {...settings}>
+                <div className="col-5">
+                  <div className="img-product">
+                   <img src={imgservice1} />
+                  </div>
+                 <div className="letter-product">
+                  <h2>Flooring</h2>
+                 </div>
+                </div>
+                 <div className="col-5">
+                   <div className="img-product">
+                    <img src={imgservice2} />
+                  </div>
+                   <div className="letter-product">
+                    <h2>Flooring</h2>
+                   </div>
+                </div>
+                  <div className="col-5">
+                    <div className="img-product">
+                     <img src={imgservice3} />
+                    </div>
+                  <div className="letter-product">
+                   <h2>Flooring</h2>
+                  </div>
+                </div>
+              <div className="col-5">
+                <div className="img-product">
+                  <img src={imgservice4} />
+                </div>
+                <div className="letter-product">
+                  <h2>Flooring</h2>
+                </div>
+              </div>
+                </Slider>
+            </div>
+        </div> */}
         <div className="container">
           <div className="tablo-content">
             <div
@@ -316,6 +495,7 @@ function Home() {
                 </div>
               </div>
             </div>
+           
             <div className="text-content">
               <div className="text-title up1">
                 <h3>Do you need flooring services?</h3>
