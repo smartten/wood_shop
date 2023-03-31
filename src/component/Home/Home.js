@@ -151,42 +151,42 @@ function Home() {
   const datasanpham1 = [
     {
       name: "Sản phẩm 1",
-      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      img: "https://www.cleanipedia.com/images/5iwkm8ckyw6v/7JKvudtEMyjoj5bLADD1ng/48e9fa576c6085295996f0f499f01599/aW1hZ2UucG5n/940w-627h/m%E1%BA%ABu-b%C3%A0n-gh%E1%BA%BF-sofa-b%E1%BB%99.jpg",
       price: "200 000 VND",
     },
     {
       name: "Sản phẩm 2",
-      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      img: "https://www.cleanipedia.com/images/5iwkm8ckyw6v/7JKvudtEMyjoj5bLADD1ng/48e9fa576c6085295996f0f499f01599/aW1hZ2UucG5n/940w-627h/m%E1%BA%ABu-b%C3%A0n-gh%E1%BA%BF-sofa-b%E1%BB%99.jpg",
       price: "200 000 VND",
     },
     {
       name: "Sản phẩm 3",
-      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      img: "https://www.cleanipedia.com/images/5iwkm8ckyw6v/7JKvudtEMyjoj5bLADD1ng/48e9fa576c6085295996f0f499f01599/aW1hZ2UucG5n/940w-627h/m%E1%BA%ABu-b%C3%A0n-gh%E1%BA%BF-sofa-b%E1%BB%99.jpg",
       price: "200 000 VND",
     },
     {
       name: "Sản phẩm 4",
-      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      img: "https://www.cleanipedia.com/images/5iwkm8ckyw6v/7JKvudtEMyjoj5bLADD1ng/48e9fa576c6085295996f0f499f01599/aW1hZ2UucG5n/940w-627h/m%E1%BA%ABu-b%C3%A0n-gh%E1%BA%BF-sofa-b%E1%BB%99.jpg",
       price: "200 000 VND",
     },
     {
       name: "Sản phẩm 5",
-      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      img: "https://www.cleanipedia.com/images/5iwkm8ckyw6v/7JKvudtEMyjoj5bLADD1ng/48e9fa576c6085295996f0f499f01599/aW1hZ2UucG5n/940w-627h/m%E1%BA%ABu-b%C3%A0n-gh%E1%BA%BF-sofa-b%E1%BB%99.jpg",
       price: "200 000 VND",
     },
     {
       name: "Sản phẩm 6",
-      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      img: "https://www.cleanipedia.com/images/5iwkm8ckyw6v/7JKvudtEMyjoj5bLADD1ng/48e9fa576c6085295996f0f499f01599/aW1hZ2UucG5n/940w-627h/m%E1%BA%ABu-b%C3%A0n-gh%E1%BA%BF-sofa-b%E1%BB%99.jpg",
       price: "200 000 VND",
     },
     {
       name: "Sản phẩm 7",
-      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      img: "https://www.cleanipedia.com/images/5iwkm8ckyw6v/7JKvudtEMyjoj5bLADD1ng/48e9fa576c6085295996f0f499f01599/aW1hZ2UucG5n/940w-627h/m%E1%BA%ABu-b%C3%A0n-gh%E1%BA%BF-sofa-b%E1%BB%99.jpg",
       price: "200 000 VND",
     },
     {
       name: "Sản phẩm 8",
-      img: "https://noithatmk11.com/wp-content/uploads/2021/08/ghe-cherry2.jpg",
+      img: "https://www.cleanipedia.com/images/5iwkm8ckyw6v/7JKvudtEMyjoj5bLADD1ng/48e9fa576c6085295996f0f499f01599/aW1hZ2UucG5n/940w-627h/m%E1%BA%ABu-b%C3%A0n-gh%E1%BA%BF-sofa-b%E1%BB%99.jpg",
       price: "200 000 VND",
     },
   ];
@@ -228,7 +228,7 @@ function Home() {
       var up8 = document.getElementsByClassName("up-contact");
       var up9 = document.getElementsByClassName("left-comment");
       var up10 = document.getElementsByClassName("up-comment");
-      // var bigGuy = document.getElementsByClassName("big-guys");
+
       if (window.scrollY >= 700) {
         for (var i = 0; i < up1.length; i++) {
           up1[i].classList.add("fadeInRight", "cssanimation");
@@ -242,11 +242,7 @@ function Home() {
           up2[i].classList.add("fadeInRight", "cssanimation");
         }
       }
-      // if (window.scrollY >= 1560) {
-      //   for (var i = 0; i < bigGuy.length; i++) {
-      //     bigGuy[i].classList.add("fadeInLeft", "cssanimation");
-      //   }
-      // }
+
       if (window.scrollY >= 920) {
         for (var i = 0; i < up3.length; i++) {
           up3[i].classList.add("fadeInUp", "cssanimation");
