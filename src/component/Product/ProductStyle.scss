@@ -1,5 +1,37 @@
-.about-us {
+.Product {
     padding-bottom: 100px;
+    .buy-amount{
+        display: flex;
+        align-items: center;
+        //justify-content: center;
+    
+        
+        button{
+
+            width: 35px;
+            height: 35px;
+            outline: none;
+            background: none;
+            border: 1px solid #ececec;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color:#ececec ;
+        }
+        button svg{
+            color: #909090;
+        }
+        button svg:hover{
+            color: #4f4f4f;
+        }
+        input{
+            width: 40px;
+            text-align: center;
+            border: 1px solid #ececec;
+            height: 35px;
+            
+        }
+    }
 
     .slider {
         position   : relative;
@@ -71,8 +103,85 @@
             }
         }
     }
+    .Product{
+        margin: 10px; 
+        padding-bottom: 80px;
+        width          : 100%;
+        //justify-content: space-around;
+
+
+      h3 {
+          //font-weight: 700;
+          display: inline-block;
+          border:1px solid #92602d;
+          padding: 1px;
+          font-size  : 30px;
+          //clear: both;
+          box-sizing: border-box;
+          font-family: 'Times New Roman Condensed', sans-serif !important;
+          margin-left: 20px;
+         // margin-bottom: 20px;
+         font-weight: 700;  
+      }
+      .text-product{
+          width: 300px;
+          border-radius: 5px;
+          background-color:#92602d;
+          margin-bottom: 20px;
+          margin-left: 205px;
+          
+
+      }
+      .text-product:hover{
+          color: beige;
+          position: relative;
+      }
+      .contenproduct{
+          width: 78%;
+          //height: 100px;
+         //margin: auto;
+         //margin-left: 10px;
+         margin-left: 188px;
+         
+         .col-5{
+          img{
+              margin-right: 0px;
+          };
+         }
+         
+      .col-5:hover{
+
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+        
+      }
+      
+      }
+      .ant-card-meta-description{
+      color: red !important;
+  
+
+  } 
+  .slick-prev:before {
+      content: '←';
+      color: #92602d;
+  }
+  .slick-next:before {
+      content: '→';
+      color: #92602d;
+  }
+
+  }
 
     .tablo {
+        .slick-prev:before, .slick-next:before{
+            font-family: 'slick';
+           font-size: 20px;
+           line-height: 1;
+           opacity: .75;
+            color:#92602d;
+        -webkit-font-smoothing: antialiased;
+        }
         padding-top   : 50px;
         padding-bottom: 80px;
 
@@ -85,7 +194,10 @@
                 width: 50%;
 
                 img {
-                    transform: skewY(-10deg);
+                    //transform: skewY(-10deg);
+                    
+                     height: 435px;
+                    
                 }
             }
 
@@ -133,7 +245,7 @@
             }
 
             .title-icon {
-                font-size  : 20px;
+                font-size  : 30px;
                 font-weight: 700;
                 color      : #92602d;
             }
@@ -352,7 +464,7 @@
     }
 
     .ozellika {
-        padding: 5rem 0 7rem;
+        padding: 5rem 0 2rem;
 
         .no-gutters {
             margin-right: 0;
@@ -362,7 +474,15 @@
         .h2-baslik-hizmetler-2 {
             color      : #92602d;
             font-weight: 700;
+            margin-top: -60px;
+            margin-left: 0px;
         }
+        p {
+            margin-top: 30px;
+            margin-bottom: 2rem;
+            font-size: 23px;
+        }
+
     }
 
     .flooring-master {
@@ -370,6 +490,16 @@
         background-color: rgba(255, 255, 255, 0);
         margin-top      : -6rem;
         justify-content: space-between;
+        .text-content{
+            margin-top: 100px;
+            margin-bottom: 20px;
+            width: 300px;
+            border-radius: 5px;
+            background-color:#92602d;
+            margin-bottom: 20px;
+            margin-left: 215px;
+            height: 45px;
+        }
 
         .row {
             justify-content: space-between;
@@ -380,6 +510,8 @@
             max-width       : 23% !important;
             // border   : 5px solid #f7f7f7;
             background-color: #f7f7f7;
+            margin-left: -12px;
+
 
             img {
                 width: 815%;
@@ -388,13 +520,13 @@
             .info {
                 position          : absolute;
                 border-radius     : 1px;
-                left              : 15px;
-                bottom            : 123px;
+                left              : 16px;
+                bottom            : 90px;
                 color             : #fff;
                 transform         : translateY(100%);
                 background        : #9E4B47;
                 text-align        : center;
-                padding           : 15px;
+                padding           : 11px;
                 -webkit-transition: all .35s ease-in-out;
                 width             : 415%;
                 -moz-transition   : all .35s ease-in-out;
@@ -436,99 +568,209 @@
 }
 
 @media (max-width: 820px){
-    .about-us.tablo .tablo-content .text-content .text-title h3 {
-        margin-left: -185px;
+    .Product .tablo .tablo-content .img-content img{
+        height: 440px;
+    margin-left: 10px;
+
     }
-    .about-us .tablo .tablo-content .text-content{
+    .Product .tablo .tablo-content .img-content{
+        width: 90%;
+        margin-left: 30px;
+    }
+    :where(.css-dev-only-do-not-override-10ed4xt).ant-rate {
+        font-size: 35px;
+    }
+    .Product .tablo .tablo-content .text-content .text-title h3 {
+        margin-left: -195px;
+    }
+   .Product .tablo .tablo-content .text-content{
         width: 70%;
     }
-    .about-us .tablo .tablo-content .text-content .sub-text p {
+    .Product .Product{
+        margin: 0px;
+    }
+    .Product .text-content .input{
+        margin-left: 70px;
+        ant-input-number css-dev-only-do-not-override-10ed4xt{
+            max-width: 100%;
+        }
+    }
+    :where(.css-dev-only-do-not-override-10ed4xt).ant-input-number:hover {
+        width: 25%;
+    height: 50px;
+    }
+    :where(.css-dev-only-do-not-override-10ed4xt).ant-input-number .ant-input-number-input {
+        height: 45px;
+    }
+    :where(.css-dev-only-do-not-override-10ed4xt).ant-input-number {
+        font-size: 23px;
+    }
+    .Product .buy-amount{
+        margin-left: 70px;
+        
+    }
+    .Product .buy-amount input{
+        width: 60px;
+        height: 55px;
+        font-size: 25px;
+    }
+    .Product .buy-amount button{
+         width: 50px;
+    height: 55px;
+    }
+   
+    .Product .Product .contenproduct {
+        width: 85%;
+        margin-left: 70px;
+    }
+    .Product .tablo .tablo-content .text-content .sub-text{
+        margin-top: 20px;
+        margin-left: 5px
+    }
+    .Product .ozellika p{
+        margin-bottom: -1rem;
+        margin-left: 30px;
+    }
+    .Product .ozellika .h2-baslik-hizmetler-2{
+        margin-left: 30px;
+    }
+    .Product .flooring-master .text-content{
+        margin-left: 50px;
+    }
+    .Product .flooring-master .col-3 img{
+        width: 900%;
+    height: 400px;
+    }
+
+   .Product .tablo .tablo-content .text-content .sub-text p {
         font-size: 20px;
     margin-left: 60px;
     margin-right: -210px;
     }
-    .about-us .tablo .tablo-content .text-content .text-title h3{
+   .Product .tablo .tablo-content .text-content .text-title h3{
         margin-left: -185px;
     }
-    .about-us.tablo .content-2 svg{
+    .Product .tablo .content-2 svg{
         font-size: 120px;
         margin-bottom: 2px;
         margin-left  : 65px; 
     }
-    .about-us.tablo .button-get a{
+    .Product .tablo .button-get a{
         white-space:nowrap;
         padding: 30px 265px;
         font-size: 20px;
         text-align: center;
         margin-left: 80px;
     }
-    .about-us.our-services img{
+    .Product .our-services img{
         width: 100%;
     }
-    .about-us.our-services .text-service h2 {
+    .Product .our-services .text-service h2 {
         display: none;
     }
-    .about-us .tablo .content-2 .title-icon{
-        font-size: 2.9rem;
-        margin-left: 175px;
+   .Product .tablo .content-2 .title-icon{
+        font-size: 2.1rem;
+        margin-left: 70px;
         white-space: nowrap;
+        margin-top: -20px;
+        margin-bottom: -20px;
 
     }
-    .about-us .tablo .content-2 svg{
+    .Product .Product .text-product{
+        margin-left: 38px;
+        margin-bottom: -10px;
+    }
+    .Product .tablo .container.tablo-content .text-content .input{
+        margin-left: 70px;
+    }
+    .Product .tablo .content-icon .text-icon {
+        h2{
+            font-size: 2.1rem;
+            margin-left: -180px;
+        }
+        h3{
+            font-size: 2.1rem;
+            margin-left: -339px;
+        }
+    }
+   .Product .tablo .content-2 svg{
     font-size: 120px;
     margin-bottom: 2px;
     margin-left: 65px;
     }
-    .about-us .tablo .button-get a{
+   .Product .tablo .button-get a{
     white-space: nowrap;
     padding: 30px 265px;
     font-size: 20px;
     text-align: center;
-    margin-left: 80px;
+    margin-left: 70px;
     }
-    .about-us .tablov2{
+   .Product .tablov2{
         flex-direction: column;
     }
-    .about-us .tablov2 .tablo--1-ve-2{
+   .Product .tablov2 .tablo--1-ve-2{
         width: 100%;
         margin-top: 20px;
     }
-    .about-us .tablov2 .tablo--1-ve-2 .box-content .text-icon{
+   .Product .tablov2 .tablo--1-ve-2 .box-content .text-icon{
         width: 100%;
     }
-    .about-us .flooring-master .col-3 .info{
-        width: 400%;
+   .Product .flooring-master .col-3 .info{
+        width: 410%;
     }
+    .Product .flooring-master{
+        margin-bottom: -130px;
+    }
+    
 }
 @media  (max-width: 740px){
-    .about-us .tablo .countb{
+   .Product .tablo .countb{
+
         display:none;
+    }
+    .Product .Product .contenproduct{
+        margin-left: 60px;
+        width: 70%;
+        margin-top: 30px;
+        margin-bottom: -35px;
     }
     .header .logo img {
 
     }
-       .about-us .tablo .tablo-content .img-content img {
-        width: 200%;
-        margin-left: -50px;
+    .Product .tablo .tablo-content .img-content{
+        margin-left: 20px;
+
+    }
+    .Product .Product .text-product{
+        margin-left: 25px;
+    }
+      .Product .tablo .tablo-content .img-content img {
+        width: 300%;
+        margin-left: -15px;
         }
-       .about-us .tablo .countt{
+      .Product .tablo .countt{
             display: none;
         }
-       .about-us .tablo .tablo-content .text-content .text-title h3{
+      .Product .tablo .tablo-content .text-content .text-title h3{
             font-size: 20px;
             margin-left: -100px;
         }
-       .about-us .tablo .tablo-content .text-content .sub-text p{
+      .Product .tablo .tablo-content .text-content .sub-text p{
             font-size: 13px;
        }
-        .about-us .tablo .countt{
+       :where(.css-dev-only-do-not-override-10ed4xt).ant-rate{
+        font-size: 25px;
+        margin-left: 95px;
+        }
+
+       .Product .tablo .countt{
                 display: none;
             }
-        .about-us .tablo .tablo-content .text-content .text-title h3{
-                font-size: 20px;
-                margin-left: -100px;
+       .Product .tablo .tablo-content .text-content .text-title h3{
+                font-size: 16px;
+                margin-left: -120px;
             }
-        .about-us .tablo .tablo-content .text-content .sub-text p{
+       .Product .tablo .tablo-content .text-content .sub-text p{
                 font-size: 13px;
                 margin-left: -113px;
                 margin-left: 15px;
@@ -539,35 +781,55 @@
                 margin-left: 23px;
                 width: 40%;
             }
-           .about-us .tablo .content-2 svg{
+          .Product .tablo .content-2 svg{
                 font-size: 70px;
                 margin-left: 150px;
             }
-           .about-us .tablo .content-2 .title-icon{
-                font-size: 1.9rem;
-                margin-left: 30px;
+          .Product .tablo .content-2 .title-icon{
+                font-size: 1.3rem;
+                margin-left: 5px;
                 white-space: nowrap;
-                margin-top: 80px;
+                margin-top: -25px;
             }
+            .Product .tablo .content-icon .text-icon h2{
+                font-size: 1.3rem;
+                margin-left: -95px;
+            }
+            .Product .tablo .content-icon .text-icon h3{
+                font-size: 1.3rem;
+                margin-left: -190px;
+            }
+            .Product .buy-amount button{
+                width: 40px;
+              height: 45px;
+             }
+             .Product .buy-amount input{
+                width: 55px;
+                height: 45px;
+                font-size: 20px;
+             }
+             .Product .buy-amount{
+                margin-left: 5px;
+             }
             .text-icon{
                 font-size: 12px;
             }
-           .about-us .tablo .button-get a{
+          .Product .tablo .button-get a{
                 padding: 20px 118px;
                 font-size: 16px;
-                margin-left: 12px;
+                margin-left: 5px;
             }
-           .about-us .tablo {
+          .Product .tablo {
                 padding-top: 20px;
                 padding-bottom: 40px;
             }
-           .about-us .our-services .img-service{
+          .Product .our-services .img-service{
               width: 350%;
             }
-           .about-us .our-services .slick-track {
+          .Product .our-services .slick-track {
                 margin-left: 70px;
             }
-           .about-us .our-services .title-service h3{
+          .Product .our-services .title-service h3{
                 margin-top: 30px;
             }
             
@@ -578,17 +840,17 @@
             img{
                 width: 100%;
             }
-            .about-us .slider .siler-list .slider-item .container .slide-content .text .text-title{
+           .Product .slider .siler-list .slider-item .container .slide-content .text .text-title{
                 margin-left: 10px;
             }
-            .about-us .flooring-master .col-3 img{
+           .Product .flooring-master .col-3 img{
                 width: 600%;
             }
-            .about-us .flooring-master .col-3 .info{
-                width: 380%;
+           .Product .flooring-master .col-3 .info{
+                width: 395%;
             }
-            .about-us .flooring-master .col-3 .info{
-                bottom: 100px;
+           .Product .flooring-master .col-3 .info{
+                bottom: 75px;
                 padding: 5px;
             }
 

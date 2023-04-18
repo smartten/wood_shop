@@ -1,4 +1,4 @@
-import logo from "./wood-logo.png";
+import logo from "./wood-logo.svg";
 import "./HeaderStyle.scss";
 import { Menu, Drawer } from "antd";
 import { MenuOutlined, PhoneOutlined } from "@ant-design/icons";
@@ -23,6 +23,8 @@ function Header() {
       </a>,
       "about"
     ),
+    
+
     getItem(<a className="link-for-res">Services</a>, "services", [
       getItem(
         <a className="link-for-sub" href="/flooring">
@@ -54,6 +56,7 @@ function Header() {
         </a>,
         "4"
       ),
+
       getItem(
         <a className="link-for-sub" href="/all-services">
           All Services
@@ -61,6 +64,12 @@ function Header() {
         "5"
       ),
     ]),
+    getItem(
+      <a className="link-for-res" href="/">
+        Product
+      </a>,
+      "product"
+    ),
     getItem(
       <a className="link-for-res" href="/blog">
         Blog
@@ -129,6 +138,11 @@ function Header() {
                     </a>
                   </div>
                 </div>
+              </div>
+              <div>
+                <a className="link" href="/Product">
+                  Product
+                </a>
               </div>
               <div>
                 <a className="link" href="/blog">

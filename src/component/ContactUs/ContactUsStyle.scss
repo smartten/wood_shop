@@ -216,3 +216,46 @@
         }
     }
 }
+@media (max-width: 820px){
+    .contact-us .tablo .row{
+        flex-direction: column;
+        margin-top: -20px;
+        margin-left: 15px;
+    }
+    .contact-us .tablo .row .col-4{
+        margin-top: 35px;
+        max-width: 95% !important;
+    }
+    .contact-us .contact .btn-contact{
+        width: 95%;
+        margin-left: 15px;
+        height: 65px;
+        font-size: 20px;
+    }
+    .contact-us .maps{
+        width: 99%;
+     margin-left: 5px;
+     height: 444px;
+    
+    }
+}
+@media  (max-width: 740px){
+    .contact-us  .slider .siler-list .slider-item .container .slide-content .text .text-title{
+        margin-left: 10px;
+    }
+    .contact-us .contact .col-12{
+        flex-direction: column;
+        margin-left: 8px;
+    }
+    .contact-us .contact textarea{
+        height: 120px;
+        max-width: 100%;
+    }
+    .contact-us .contact .col-12 input{
+        width: 100%;
+    }
+    .contact-us .contact .btn-contact{
+        width: 93%;
+        margin-left: 20px;
+    }
+}

@@ -22,8 +22,11 @@ import Slider from "react-slick";
 import "./HomeStyle.scss";
 import { Card } from 'antd';
 
+
+
 function Home() {
   const { Meta } = Card;
+  
   const contentStyle = {
     height: "100vh",
     color: "#fff",
@@ -52,11 +55,52 @@ function Home() {
         autoplay: true,
         autoplaySpeed: 2000,
       }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        //dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
     }
+  }
    ]
   }
-  
-
+  const settings3 ={
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 500,
+    arrows: false,
+    dots: true,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          //dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          //dots: true,
+          //autoplay: true,
+          autoplaySpeed: 2000,
+      }
+    }
+     ]
+  }
   const settings = {
     focusOnSelect: true,
     infinite: true,
@@ -74,7 +118,18 @@ function Home() {
           infinite: true,
           //dots: true
         }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          //dots: true,
+          //autoplay: true,
+          autoplaySpeed: 2000,
       }
+    }
      ]
   };
 
@@ -299,14 +354,17 @@ function Home() {
              </Card>
             </div>
             <div className="col-5">
-            <Card
+            <Card 
                  hoverable
              style={{
               width: 240,
                   }}
                cover={<img alt="example" src="https://noithatdangkhoa.com/wp-content/uploads/2020/05/ghe-ca-phe-dep-ghe-go-cabin-gcfdk16-2-510x510.jpg" />}
                       >
-                 <Meta title="Flooring5" description="$200" />
+                       
+                 <Meta  title="Flooring5" description="$200" />
+                 <a href="Product">Detail</a>
+
              </Card>
             </div>
             <div className="col-5">
@@ -688,8 +746,9 @@ function Home() {
             <p className="title-text">What Are Our Customers Saying ?</p>
             <p className="sub-text">Opinions from our happy customers.</p>
           </div>
-          <div className="row left-comment">
-            <div className="col-3">
+          <div className="left-comment">
+            <Slider {...settings3}>
+               <div className="col-3">
               <div className="class-box">
                 <div className="testimon-text">
                   We needed a floor covering for the living room of our house.
@@ -741,6 +800,21 @@ function Home() {
                 <div className="name-test">Adam</div>
               </div>
             </div>
+            <div className="col-3">
+              <div className="class-box">
+                <div className="testimon-text">
+                  We needed a floor covering for the living room of our house.
+                  They did professional work. Thank you.
+                  {/* <i class="fas fa-quote-right quote" aria-hidden="true"></i> */}
+                </div>
+                <div className="img-testimon">
+                  <img src={imgtest} />
+                </div>
+                <div className="name-test">Adam</div>
+              </div>
+            </div>
+            </Slider>
+           
           </div>
         </div>
       </section>

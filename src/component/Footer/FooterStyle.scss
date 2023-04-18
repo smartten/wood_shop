@@ -126,13 +126,13 @@
 
 @media (min-width: 1440px) and (max-width: 1600px) {
     .footer {
-        .footerv0 {
+       /* .footerv0 {
             // position   : absolute;
             margin-left   : 0px !important;
             // margin-top : -75px;
             width         : 100% !important;
 
-        }
+        }*/
 
         .row {
             justify-content: space-between !important;
@@ -145,3 +145,4 @@
         }
     }
 }
+

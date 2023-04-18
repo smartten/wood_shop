@@ -12,6 +12,7 @@ import AllServices from "./component/AllService/AllServices";
 import AboutUs from "./component/AboutUs/AboutUs";
 import Blog from "./component/Blog/Blog";
 import ContactUs from "./component/ContactUs/ContactUs";
+import Product from "./component/Product/Product";
 // import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/product" element={<Product />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />

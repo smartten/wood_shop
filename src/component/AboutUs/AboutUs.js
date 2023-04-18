@@ -9,8 +9,42 @@ import {
 } from "@ant-design/icons";
 import img1 from "./imgFlooring/wood1-about.png";
 import img2 from "./imgFlooring/people1.jpg";
+import React, { Component } from "react";
+import Slider from "react-slick";
 
 function AboutUs() {
+  const settings ={
+    focusOnSelect: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 500,
+    arrows: false,
+    dots: true,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          //dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          //dots: true,
+          //autoplay: true,
+          autoplaySpeed: 2000,
+      }
+    }
+     ]
+  }
   const onHover = () => {
     const ele = document.getElementById("box");
     const ele1 = document.getElementById("content1");
@@ -417,9 +451,51 @@ function AboutUs() {
           </div>
         </div>
       </section>
+      
       <section className="flooring-master">
+
         <div className="container">
-          <div className="row">
+          
+          
+            <Slider {...settings}>
+            <div className="col-3">
+              <img src={img2} />
+              <div className="info">
+                <p className="name">Hieeus</p>
+                <p className="role">Nhan Vien</p>
+                <p className="icon">
+                  <span>
+                    <TwitterOutlined />
+                  </span>
+                  <span>
+                    <TwitterOutlined />
+                  </span>
+                  <span>
+                    <TwitterOutlined />
+                  </span>
+                </p>
+              </div>
+            </div>
+            
+              <div className="col-3">
+              <img src={img2} />
+              <div className="info">
+                <p className="name">Hieeus</p>
+                <p className="role">Nhan Vien</p>
+                <p className="icon">
+                  <span>
+                    <TwitterOutlined />
+                  </span>
+                  <span>
+                    <TwitterOutlined />
+                  </span>
+                  <span>
+                    <TwitterOutlined />
+                  </span>
+                </p>
+              </div>
+            </div>
+            
             <div className="col-3">
               <img src={img2} />
               <div className="info">
@@ -474,25 +550,9 @@ function AboutUs() {
                 </p>
               </div>
             </div>
-            <div className="col-3">
-              <img src={img2} />
-              <div className="info">
-                <p className="name">Hieeus</p>
-                <p className="role">Nhan Vien</p>
-                <p className="icon">
-                  <span>
-                    <TwitterOutlined />
-                  </span>
-                  <span>
-                    <TwitterOutlined />
-                  </span>
-                  <span>
-                    <TwitterOutlined />
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
+          </Slider>
+            
+          
         </div>
       </section>
     </div>

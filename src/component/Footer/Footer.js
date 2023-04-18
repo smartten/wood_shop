@@ -6,7 +6,7 @@ import {
   MailOutlined,
   InstagramOutlined,
 } from "@ant-design/icons";
-import logo1 from "./wood-logo-white.png";
+import logo1 from "./wood-logo.svg";
 import "./FooterStyle.scss";
 function Footer() {
   return (

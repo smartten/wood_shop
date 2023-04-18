@@ -364,3 +364,87 @@
 
     }
 }
+@media (max-width: 820px){
+    .flooring-raising .content-flooring .content{
+        flex-direction: column;
+    }
+    .flooring-raising .content-flooring .content .menu-left .menu-content{
+        width: 300%;
+        margin-left: 40px;
+    }
+    .flooring-raising .content-flooring .content .menu-left .form-contact{
+        width: 300%;
+        margin-left: 40px;
+    }
+    .flooring-raising .fadeInRight{
+        width: 135%;
+        margin-left: 40px;
+        margin-top: 60px;
+    }
+     .sub-text{
+        font-size: 100%;
+        line-height: 20px;
+        margin-left: 4px;
+    }
+    .flooring-raising .content-flooring .content .content-right .tablo{
+        flex-direction: column;
+    }
+    .flooring-raising .content-flooring .content .content-right .tablo .tablo--1-ve-2{
+        width: 110%;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+    .flooring-raising .content-flooring .content .content-right .tablo .tablo--1-ve-2 .box-content .text-icon{
+        width: 100%;
+ 
+    }
+    .flooring-raising .content-flooring .content .menu-left .btn-contact{
+        width: 96%;
+    }
+    .flooring-raising .content-flooring .content .content-right .content-text-right{
+        margin-right: -185px;
+    font-size: 16px;
+    }
+    .flooring-raising .content-flooring .content .content-right{
+        width: 67%;
+    }
+    .flooring-raising .content-flooring .content .content-right .tablo{
+        width: 110%;
+    margin-left: -77px;
+    margin-top: 20px;
+    }
+    .img-flo{
+        width: 100%;
+    }
+}
+@media  (max-width: 740px){
+    .flooring-raising .slider .siler-list .slider-item .container .slide-content .text .text-title{
+        margin-left: 10px;
+    }
+    .flooring-raising .content-flooring .content .content-right .content-text-right .img-text{
+        width: 35%;
+    }
+    .flooring-raising .content-flooring .content .menu-left .btn-contact{
+        width: 92%;
+    }
+    .flooring-raising .content-flooring{
+        margin-left: -35px;
+    }
+    .flooring-raising .content-flooring .content .content-right .tablo{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-left: -100px;
+    }
+    .flooring-raising .content-flooring .content .content-right .content-text-right .sub-text{
+        margin-right: 20px;
+    }
+    .flooring-raising .content-flooring .content .content-right .content-text-right{
+        margin-right: -110px;
+    }
+    .flooring-raising .slider .siler-list .slider-item .container .slide-content .text .text-title{
+        font-size: 40px;
+        margin-top: -7px;
+
+    }
+}
+
