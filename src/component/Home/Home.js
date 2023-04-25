@@ -21,11 +21,105 @@ import imgservice5 from "./img/wood-services-5.jpg";
 import Slider from "react-slick";
 import "./HomeStyle.scss";
 import { Card } from 'antd';
-
+import { useState } from 'react';
 
 
 function Home() {
   const { Meta } = Card;
+  
+    const [fullName, setFullName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [error, setError] = useState('');
+    const [success, setSuccess] = useState(false);
+  
+    const handleInput = (e) => {
+      const emailValue = e.target.value;
+      setEmail(emailValue);
+  
+      // Kiểm tra tính hợp lệ của email
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail.com$/;
+      if (!emailPattern.test(emailValue)) {
+        setError('Email không hợp lệ');
+      } else {
+        setError('');
+      }
+    };
+
+    const handleFullNameChange = (e) => {
+      const fullNameValue = e.target.value;
+    
+      // Kiểm tra tính hợp lệ của tên đầy đủ chỉ bao gồm chữ cái và dấu
+      const fullNamePattern =/^[\p{L} ]*$/u;
+      const isFullNameValid = fullNamePattern.test(fullNameValue);
+    
+      if (isFullNameValid) {
+        setFullName(fullNameValue);
+      } else {
+        setError('Tên đầy đủ không hợp lệ');
+      }
+    };
+  
+    const handlePhoneChange = (e) => {
+      const phoneValue = e.target.value;
+      
+      // Giới hạn đầu vào của trường Phone Number phải là số và có tối đa 11 chữ số
+      const phonePattern = /^\d{0,11}$/;
+      const isPhoneValid = phonePattern.test(phoneValue);
+      
+      if (isPhoneValid) {
+        setPhone(phoneValue);
+      } else {
+        setError('Số điện thoại không hợp lệ');
+      }
+    };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      // Kiểm tra dữ liệu nhập vào
+      if (!fullName || !email || !phone) {
+        setError('Vui lòng điền đầy đủ thông tin');
+        setSuccess(false);
+        return;
+      }
+      // Kiểm tra đúng định dạng email
+      const emailPattern =/^[a-zA-Z0-9._%+-]+@gmail.com$/;
+      if (!emailPattern.test(email)) {
+        setError('Địa chỉ email không hợp lệ');
+        setSuccess(false);
+        return;
+      }
+
+      // Kiểm tra tính hợp lệ của tên đầy đủ chỉ bao gồm chữ cái
+      const fullNamePattern =/^[\p{L} ]*$/u;
+      if (!fullNamePattern.test(fullName)) {
+        setError('Tên đầy đủ không hợp lệ');
+        setSuccess(false);
+        return;
+      }
+  
+      // Kiểm tra đúng định dạng số điện thoại
+      const phonePattern = /^[0-9]{10,11}$/;
+    if (!phonePattern.test(phone)) {
+      setError('Số điện thoại không hợp lệ');
+      setSuccess(false);
+      return;
+    }
+      // Nếu dữ liệu hợp lệ, thông báo thành công và reset form
+      setError('');
+      setSuccess(true);
+      setFullName('');
+      setEmail('');
+      setPhone('');
+    };
+
+  const handleReset = () => {
+    setFullName('');
+    setEmail('');
+    setPhone('');
+    setError('');
+  };
   
   const contentStyle = {
     height: "100vh",
@@ -42,7 +136,7 @@ function Home() {
     speed: 500,
    swipeToSlide: true,
    arrows: true,
-   autoplay: true,
+   //autoplay: true,
    autoplaySpeed: 2000,
    responsive: [
     {
@@ -52,7 +146,7 @@ function Home() {
         slidesToScroll: 1,
         infinite: true,
         //dots: true,
-        autoplay: true,
+       // autoplay: true,
         autoplaySpeed: 2000,
       }
     },
@@ -688,49 +782,52 @@ function Home() {
                   </p>
                 </div>
                 <div className="form-contact right-contact">
-                  <form>
+                    <form>
                     <div className="d-flex">
                       <div className="form-group col-4">
-                        <input
-                          type="text"
-                          className="form-control input-form"
-                          id="exampleInputName"
-                          // aria-describedby="emailHelp"
-                          placeholder="Full Name"
-                        />
+                          <input
+                            type="text"
+                              className="form-control input-form"
+                              id="exampleInputName"
+                              placeholder="Full Name"
+                              value={fullName}
+                              onChange={handleFullNameChange}
+                            />
+                            
                       </div>
                       <div className="form-group col-4">
-                        <input
-                          type="email"
-                          className="form-control input-form"
-                          id="exampleInputEmail1"
-                          // aria-describedby="emailHelp"
-                          placeholder="Email Address"
-                        />
-                      </div>
+                            <input
+                            type="email"
+                            className="form-control input-form"
+                            id="exampleInputEmail1"
+                            placeholder="Email Address"
+                            value={email}
+                            onInput={handleInput}
+                            />
+                          {error && <div className="error" style={{ color: 'red' }}>{error}</div>}
+                        </div>
                       <div className="form-group col-4">
-                        <input
+                          <input
                           type="text"
                           className="form-control input-form"
                           id="exampleInputPhone"
-                          // aria-describedby="emailHelp"
                           placeholder="Phone Number"
-                        />
-                      </div>
-                    </div>
-                    {/* <div className="form-group">
-                      <label htmlFor="exampleInputPassword1">Password</label>
-                      <input
-                        type="password"
-                        className="form-control"
-                        id="exampleInputPassword1"
-                        placeholder="Password"
-                      />
-                    </div> */}
-                    <button type="submit" className="btn-contact">
-                      Call Back <ArrowRightOutlined />
-                    </button>
-                  </form>
+                          value={phone}
+                          onChange={handlePhoneChange}
+                          inputMode="numeric"
+                          />
+                          
+                          </div>
+                          </div>
+                          <button type="submit" className="btn-contact" onClick={handleSubmit}>
+                          Call Back <ArrowRightOutlined />
+                          </button>
+                          {success && (
+                          <div style={{ color: 'green' }}>
+                          Đã gửi yêu cầu thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.
+                          </div>
+                          )}
+                    </form>
                 </div>
               </div>
             </div>

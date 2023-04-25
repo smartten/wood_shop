@@ -412,7 +412,7 @@
 
     }
     .Product{
-          margin: 10px; 
+          margin-top: 10px; 
           padding-bottom: 80px;
           width          : 100%;
           //justify-content: space-around;
@@ -435,7 +435,7 @@
             border-radius: 5px;
             background-color:#92602d;
             margin-bottom: 20px;
-            margin-left: 360px;
+            margin-left: 50px;
             
 
         }
@@ -444,11 +444,11 @@
             position: relative;
         }
         .contenproduct{
-            width: 71%;
+            width: 95%;
             //height: 100px;
            //margin: auto;
            //margin-left: 10px;
-           margin-left: 340px;
+           margin-left: 35px;
            
            .col-5{
             img{
@@ -1170,7 +1170,16 @@
     }
     .header .menu{
         display: none;
+        //display: block;
+        
     }
+    .header .menu .link{
+        position: relative;
+        z-index: 1;
+        transform: scale(1.2);
+        overflow: visible;
+    }
+    
     .header .phone {
         margin-left: 450px;
     }
@@ -1314,7 +1323,7 @@
     padding-bottom:0px;
     margin-top: 10px;
     //width          : 25%;
-    margin-left: -275px;
+    margin-left: 30px;
     
     .contenproduct{
         width: 75%;
@@ -1522,10 +1531,10 @@ margin-left: -50px;
 }
 .footer .footerv0 {
     height: 444px;
-    margin-top: -240px;
-    margin-left: -191px;
-    margin-right: 620px;
-    width: 358px;
+    margin-top: -240px!important;;
+    margin-left: -191px!important;;
+    margin-right: 620px!important;;
+    width: 370px!important;
 }
 .footer .join{
     height: 400px;
@@ -1678,11 +1687,19 @@ img{
         width: 240px;
     }
 }
-@media  (max-width: 540px){
+@media  (max-width: 400px){
     .footer .join {
         height: 400px;
     margin-top: -130px;
     margin-left: -29px;
-    width: 177%;
+    width: 610px!important;
     }
+    .footer .footerv0{
+       height: 444px;
+    margin-top: -240px!important;
+    margin-left: -191px!important;
+    margin-right: 620px!important;
+    width: 357px!important; 
+    }
+    
 }

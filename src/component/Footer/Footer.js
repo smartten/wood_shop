@@ -8,7 +8,17 @@ import {
 } from "@ant-design/icons";
 import logo1 from "./wood-logo.svg";
 import "./FooterStyle.scss";
+import { useState } from 'react';
 function Footer() {
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+
+  function handleInput(event) {
+    const inputValue = event.target.value;
+    const isValidEmail = /^[a-zA-Z0-9._%+-]+@gmail.com$/.test(inputValue);
+    setEmail(inputValue);
+    setError(isValidEmail ? '' : 'Email invalid');
+  }
   return (
     <div className="footer">
       <div className="footerv0">
@@ -26,11 +36,13 @@ function Footer() {
                   <div className="form-group">
                     <input
                       type="email"
-                      className="form-control"
+                      className="form-control input-form"
                       id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      placeholder="Your Email Address"
-                    />
+                      placeholder="Email Address"
+                      value={email}
+                      onInput={handleInput}
+                      />
+                      <div style={{ color: 'red' }}>{error}</div>
                   </div>
                   <button type="submit" class="btn-send">
                     Send <ArrowRightOutlined />

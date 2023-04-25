@@ -1,8 +1,21 @@
+import React, { useState } from "react";
 import logo from "./wood-logo.svg";
+import logo2 from"./wood-logo2.png";
 import "./HeaderStyle.scss";
 import { Menu, Drawer } from "antd";
-import { MenuOutlined, PhoneOutlined } from "@ant-design/icons";
+import {
+  MenuOutlined,
+  PhoneOutlined,
+  CloseOutlined,
+} from "@ant-design/icons";
+
 function Header() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  function toggleDrawer() {
+    setIsDrawerOpen(!isDrawerOpen);
+  }
+
   function getItem(label, key, children) {
     return {
       key,
@@ -10,6 +23,7 @@ function Header() {
       children,
     };
   }
+
   const items = [
     getItem(
       <a className="link-for-res" href="/">
@@ -18,13 +32,11 @@ function Header() {
       "home"
     ),
     getItem(
-      <a className="link-for-res" href="/">
+      <a className="link-for-res" href="/about-us">
         About Us
       </a>,
       "about"
     ),
-    
-
     getItem(<a className="link-for-res">Services</a>, "services", [
       getItem(
         <a className="link-for-sub" href="/flooring">
@@ -56,7 +68,6 @@ function Header() {
         </a>,
         "4"
       ),
-
       getItem(
         <a className="link-for-sub" href="/all-services">
           All Services
@@ -65,7 +76,7 @@ function Header() {
       ),
     ]),
     getItem(
-      <a className="link-for-res" href="/">
+      <a className="link-for-res" href="/Product">
         Product
       </a>,
       "product"
@@ -83,6 +94,7 @@ function Header() {
       "contact"
     ),
   ];
+
   return (
     <div className="header">
       <div className="header-content">
@@ -90,11 +102,11 @@ function Header() {
           <div className="row">
             <div className="logo col-2">
               <a href="/">
-                <img src={logo} />
+                <img src={logo} alt="Logo" />
               </a>
             </div>
             <div className="menu col-6">
-              <div>
+            <div>
                 <a className="link" href="/">
                   Home
                 </a>
@@ -154,28 +166,57 @@ function Header() {
                   Contact
                 </a>
               </div>
-              {/* <Menu
-                style={{
-                  width: "100%",
-                }}
-                mode="inline"
-                theme="light"
-                items={items}
-              /> */}
             </div>
             <div className="phone d-flex col-3">
-              <div className="icon">
-                <MenuOutlined />
+              <div className="icon" onClick={toggleDrawer}>
+                {isDrawerOpen ? <CloseOutlined /> : <MenuOutlined />}
               </div>
               <div className="phone-number">
-                <PhoneOutlined /> +1 (234) 567 89 10
+                <PhoneOutlined /> +1 (234) 567890
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </div>
+              </div>
+              </div>
+              </div>
+      <div className="drawer" >
+        <Drawer
+                  visible={isDrawerOpen}
+                  onClose={toggleDrawer}
+                  placement="left"
+                >
+              <div className="drawer-menu">
+                <div className="drawer-header">
+              <div className="drawer-logo">
+              <a href="/">
+              <img src={logo2} />
+              </a>
+              </div>
+              <div className="drawer-close" onClick={toggleDrawer}>
+              <CloseOutlined />
+              </div>
+              </div>
+              <Menu mode="vertical" theme="light" defaultSelectedKeys={["home"]}>
+              {items.map((item) => (
+              <Menu.SubMenu
+              key={item.key}
+              title={<span className="submenu-title">{item.label}</span>}
+              >
+              {item.children &&
+              item.children.map((child) => (
+              <Menu.Item key={child.key}>{child.label}</Menu.Item>
+              ))}
+              </Menu.SubMenu>
+              ))}
+              </Menu>
+              </div>
+              </Drawer>
+      
+      
+      </div>        
+            
+            
     </div>
-  );
-}
+    );
+    }
 
-export default Header;
+export default Header; 

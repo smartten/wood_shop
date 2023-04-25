@@ -47,9 +47,9 @@
 
     .footerv0 {
         position   : absolute;
-        margin-left: 250px;
+        margin-left: 0px;
         margin-top : -75px;
-        width      : 1400px;
+        width      : 100%;
     }
 
     .footer-v1 {
@@ -126,13 +126,13 @@
 
 @media (min-width: 1440px) and (max-width: 1600px) {
     .footer {
-       /* .footerv0 {
+        .footerv0 {
             // position   : absolute;
-            margin-left   : 0px !important;
+            margin-left   : 35px !important;
             // margin-top : -75px;
-            width         : 100% !important;
+            width         : 95% !important;
 
-        }*/
+        }
 
         .row {
             justify-content: space-between !important;
@@ -144,5 +144,74 @@
             }
         }
     }
+
+    
+
+
 }
 
+@media (min-width: 1000px) and (max-width: 1440px){
+    .footer {
+        .footerv0 {
+            // position   : absolute;
+            margin-left   : 0px !important;
+            // margin-top : -75px;
+            width         : 100% !important;
+            
+        }
+
+        .row {
+            justify-content: space-between !important;
+
+            .col-5 {
+                .text {
+                    margin-left: 10px !important;
+                }
+                .form-input{
+                    margin-left: -15px !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1700px) {
+    .footer {
+        .footerv0 {
+            // position   : absolute;
+            margin-left   : 210px !important;
+            // margin-top : -75px;
+            width         : 1400px !important;
+            
+        }
+
+        .row {
+            justify-content: space-between !important;
+
+            .col-5 {
+                .text {
+                    margin-left: 20px !important;
+                }
+                .form-input{
+                    margin-left: -15px !important;
+                }
+            }
+        }
+    }
+    .home .Product .contenproduct{
+        width: 77%!important;
+        //height: 100px;
+       //margin: auto;
+       //margin-left: 10px;
+       margin-left: 250px!important;
+    }
+    .home .Product .text-product{
+        width: 300px;
+        border-radius: 5px;
+        background-color:#92602d;
+        margin-bottom: 20px;
+        margin-left: 260px!important;
+    }
+
+}
