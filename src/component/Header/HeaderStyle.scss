@@ -1,3 +1,18 @@
+:where(.css-dev-only-do-not-override-zjzpde).ant-menu-vertical >.ant-menu-submenu>.ant-menu-submenu-title{
+    font-size: 30px;
+    color: #543312;
+}
+:where(.css-dev-only-do-not-override-zjzpde) a {
+    color: #543312!important;
+    font-size  : 16px;
+    font-weight: 800!important;
+    padding    : 10px 20px!important;
+
+}
+ :where(.css-dev-only-do-not-override-zjzpde).drawer-logo {
+     margin-left: 100px!important;
+}
+
 .header {
     background              : #fff !important;
     position                : fixed;
@@ -31,14 +46,6 @@
     svg {
         vertical-align: middle;
     }
-
-
-    .ant-drawer-body{
-        .drawer-header{
-            margin-left: 10px;
-        }
-    }
-
     .header-content {
         background-color      : rgb(255, 255, 255) !important;
         display               : flex;
@@ -52,15 +59,7 @@
         height                : 100px;
         // top                : -20px;
     }
-    .drawer{
-        .drawer-logo{
-            img{
-                width: 100%!important;
-            }
-        }
-
-    }
-
+    
     .logo {
         // margin-right   : auto;
         // padding     : 22px 0;
@@ -100,6 +99,11 @@
                 // font-size                     : 2.5em;
 
             }
+
+        }
+
+        .drawer-list{
+            margin-top: 100px;
 
         }
         
@@ -179,6 +183,8 @@
             font-size    : 17px;
             font-weight  : 600;
             border-radius: 1px;
+            white-space: nowrap;
+            width: 85%;
 
             svg {
                 font-size: 50px;
@@ -190,14 +196,11 @@
             margin-right: 20px;
         }
     }
-
+    // .ant-menu-submenu-title{
+    //     color: #000;
+    // }
     
-    
-    .drawer{
-        .drawer-logo{
-            margin-left: 100px;
-        }
-    }
+   
     
 }
 // .menu-mobile {
@@ -221,3 +224,27 @@
 //       padding: 12px;
 //     }
 //   }
+@media (max-width: 768px){
+    :where(.css-dev-only-do-not-override-zjzpde).ant-menu-vertical >.ant-menu-submenu>.ant-menu-submenu-title{
+        font-size: 30px;
+        color: #543312;
+    }
+    :where(.css-dev-only-do-not-override-zjzpde) a{
+        color: #543312!important;
+    }
+}
+@media (max-width:820px){
+    :where(.css-dev-only-do-not-override-zjzpde) a {
+        color: #543312!important;
+        font-size  : 16px;
+        font-weight: 800!important;
+        padding    : 10px 20px!important;
+    
+    }
+    
+}
+@media (max-with:740px) {
+    .img{
+        width: 60%!important;
+    }
+}

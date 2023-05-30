@@ -118,7 +118,7 @@ function AboutUs() {
                     <span>About Us</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> About Us
+                  <a href="home"> Home </a><RightOutlined /> About Us
                   </p>
                 </div>
               </div>

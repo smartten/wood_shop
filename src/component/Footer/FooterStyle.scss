@@ -44,6 +44,7 @@
 
         }
     }
+    
 
     .footerv0 {
         position   : absolute;
@@ -213,5 +214,24 @@
         margin-bottom: 20px;
         margin-left: 260px!important;
     }
+
+    .Product .Product .contenproduct{
+        width: 77%!important;
+        //height: 100px;
+       //margin: auto;
+       //margin-left: 10px;
+       margin-left: 250px!important;
+    }
+    .Product .Product .text-product{
+        width: 300px;
+        border-radius: 5px;
+        background-color:#92602d;
+        margin-bottom: 20px;
+        margin-left: 260px!important;
+    }
+    .Product .flooring-master .text-content{
+        margin-left: 216px!important;
+    }
+
 
 }

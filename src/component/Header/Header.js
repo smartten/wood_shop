@@ -166,8 +166,8 @@ function Header() {
                   Contact
                 </a>
               </div>
-            </div>
-            <div className="phone d-flex col-3">
+              </div>
+              <div className="phone d-flex col-3">
               <div className="icon" onClick={toggleDrawer}>
                 {isDrawerOpen ? <CloseOutlined /> : <MenuOutlined />}
               </div>
@@ -175,46 +175,45 @@ function Header() {
                 <PhoneOutlined /> +1 (234) 567890
               </div>
               </div>
-              </div>
-              </div>
-              </div>
+          </div>
+        </div>
+      </div>
       <div className="drawer" >
         <Drawer
-                  visible={isDrawerOpen}
-                  onClose={toggleDrawer}
-                  placement="left"
-                >
-              <div className="drawer-menu">
-                <div className="drawer-header">
+          visible={isDrawerOpen}
+          onClose={toggleDrawer}
+          placement="left"
+         >
+          <div className="drawer-menu">
+            <div className="drawer-header">
               <div className="drawer-logo">
-              <a href="/">
-              <img src={logo2} />
-              </a>
+                 <a href="/">
+                  <img src={logo2} />
+                 </a>
               </div>
               <div className="drawer-close" onClick={toggleDrawer}>
               <CloseOutlined />
               </div>
-              </div>
+            </div>
               <Menu mode="vertical" theme="light" defaultSelectedKeys={["home"]}>
-              {items.map((item) => (
-              <Menu.SubMenu
-              key={item.key}
-              title={<span className="submenu-title">{item.label}</span>}
-              >
-              {item.children &&
-              item.children.map((child) => (
-              <Menu.Item key={child.key}>{child.label}</Menu.Item>
-              ))}
-              </Menu.SubMenu>
-              ))}
+                 {items.map((item) => (
+                  <Menu.SubMenu
+                  key={item.key}
+                  title={<span className="submenu-title">{item.label}</span>}
+                  >
+                  {item.children &&
+                  item.children.map((child) => (
+                  <Menu.Item key={child.key}>{child.label}</Menu.Item>
+                  ))}
+                  </Menu.SubMenu>
+                ))}
               </Menu>
-              </div>
-              </Drawer>
-      
-      
-      </div>        
-            
-            
+          </div>
+          <div className="drawer-list">
+            <a>@2023 wood</a>
+          </div>
+        </Drawer>
+      </div>          
     </div>
     );
     }

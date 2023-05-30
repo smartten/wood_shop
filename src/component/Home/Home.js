@@ -30,6 +30,9 @@ function Home() {
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
+    const [fullNameError, setFullNameError] = useState('');
+    const [emailError, setEmailError] = useState('');
+    const [phoneError, setPhoneError] = useState('');
     const [error, setError] = useState('');
     const [success, setSuccess] = useState(false);
   
@@ -40,23 +43,55 @@ function Home() {
       // Kiểm tra tính hợp lệ của email
       const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail.com$/;
       if (!emailPattern.test(emailValue)) {
-        setError('Email không hợp lệ');
+        setEmailError('Email không hợp lệ');
       } else {
-        setError('');
+        setEmailError('');
       }
     };
 
     const handleFullNameChange = (e) => {
       const fullNameValue = e.target.value;
-    
+
       // Kiểm tra tính hợp lệ của tên đầy đủ chỉ bao gồm chữ cái và dấu
-      const fullNamePattern =/^[\p{L} ]*$/u;
+      const fullNamePattern =/^[\p{L}]+([\p{Zs}\p{L}]+)*$/u;
       const isFullNameValid = fullNamePattern.test(fullNameValue);
-    
+
       if (isFullNameValid) {
         setFullName(fullNameValue);
+        setFullNameError('');
       } else {
-        setError('Tên đầy đủ không hợp lệ');
+        setFullNameError('Tên đầy đủ không hợp lệ');
+      }
+    };
+    const handleFullNameBlur = (e) => {
+      const fullNameValue = e.target.value;
+    
+      if (!fullNameValue) {
+        setFullNameError('Tên đầy đủ không hợp lệ');
+      }
+    };
+    const handleKeyDown = (event) => {
+      if (event.key === 'Backspace' || event.key === 'Delete') {
+        event.preventDefault();
+        const input = event.target;
+        const value = input.value;
+        const selectionStart = input.selectionStart;
+        const selectionEnd = input.selectionEnd;
+        const hasSelection = selectionStart !== selectionEnd;
+  
+        if (hasSelection) {
+          const newValue = value.slice(0, selectionStart) + value.slice(selectionEnd);
+          setFullName(newValue);
+          input.setSelectionRange(selectionStart, selectionStart);
+        } else if (event.key === 'Backspace' && selectionStart > 0) {
+          const newValue = value.slice(0, selectionStart - 1) + value.slice(selectionStart);
+          setFullName(newValue);
+          input.setSelectionRange(selectionStart - 1, selectionStart - 1);
+        } else if (event.key === 'Delete' && selectionEnd < value.length) {
+          const newValue = value.slice(0, selectionStart) + value.slice(selectionEnd + 1);
+          setFullName(newValue);
+          input.setSelectionRange(selectionStart, selectionStart);
+        }
       }
     };
   
@@ -69,11 +104,19 @@ function Home() {
       
       if (isPhoneValid) {
         setPhone(phoneValue);
+        setPhoneError('');
       } else {
-        setError('Số điện thoại không hợp lệ');
+        setPhoneError('Số điện thoại không hợp lệ');
       }
     };
-  
+    const handlePhoneBlur = (e) => {
+        const PhoneValue = e.target.value;
+      
+        if (!PhoneValue) {
+          setPhoneError('Số điện thoại không hợp lệ');
+        }
+      };
+
     const handleSubmit = (e) => {
       e.preventDefault();
   
@@ -86,23 +129,31 @@ function Home() {
       // Kiểm tra đúng định dạng email
       const emailPattern =/^[a-zA-Z0-9._%+-]+@gmail.com$/;
       if (!emailPattern.test(email)) {
-        setError('Địa chỉ email không hợp lệ');
+        setEmailError('Địa chỉ email không hợp lệ');
         setSuccess(false);
         return;
       }
 
-      // Kiểm tra tính hợp lệ của tên đầy đủ chỉ bao gồm chữ cái
-      const fullNamePattern =/^[\p{L} ]*$/u;
-      if (!fullNamePattern.test(fullName)) {
-        setError('Tên đầy đủ không hợp lệ');
-        setSuccess(false);
-        return;
-      }
-  
+      const handleInput = (e) => {
+        const EmailValue = e.target.value;
+      
+        if (!EmailValue) {
+          setEmailError('Kiểm tra lại email');
+        }
+      };
+
+      
+      // // Kiểm tra tính hợp lệ của tên đầy đủ chỉ bao gồm chữ cái
+      // const fullNamePattern =/^[\p{L} ]*$/u;
+      // if (!fullNamePattern.test(fullName)) {
+      //   setError('Tên đầy đủ không hợp lệ');
+      //   setSuccess(false);
+      //   return;
+      // }
       // Kiểm tra đúng định dạng số điện thoại
       const phonePattern = /^[0-9]{10,11}$/;
     if (!phonePattern.test(phone)) {
-      setError('Số điện thoại không hợp lệ');
+      setPhoneError('Số điện thoại không hợp lệ');
       setSuccess(false);
       return;
     }
@@ -157,7 +208,7 @@ function Home() {
         slidesToScroll: 1,
         infinite: true,
         //dots: true,
-        autoplay: true,
+        //autoplay: true,
         autoplaySpeed: 2000,
     }
   }
@@ -792,8 +843,10 @@ function Home() {
                               placeholder="Full Name"
                               value={fullName}
                               onChange={handleFullNameChange}
+                              onKeyDown={handleKeyDown}
+                              onBlur={handleFullNameBlur}
                             />
-                            
+                            {fullNameError && <div className="error" style={{ color: 'red' }} >{fullNameError}</div>}
                       </div>
                       <div className="form-group col-4">
                             <input
@@ -803,8 +856,10 @@ function Home() {
                             placeholder="Email Address"
                             value={email}
                             onInput={handleInput}
+                            onBlur={handleInput}
                             />
-                          {error && <div className="error" style={{ color: 'red' }}>{error}</div>}
+                           {emailError && <div className="error" style={{ color: 'red' }} >{emailError}</div>}
+                           
                         </div>
                       <div className="form-group col-4">
                           <input
@@ -814,14 +869,19 @@ function Home() {
                           placeholder="Phone Number"
                           value={phone}
                           onChange={handlePhoneChange}
+                          onBlur={handlePhoneBlur}
                           inputMode="numeric"
                           />
-                          
+                          {phoneError && <div className="error" style={{ color: 'red' }} >{phoneError}</div>}
                           </div>
                           </div>
                           <button type="submit" className="btn-contact" onClick={handleSubmit}>
                           Call Back <ArrowRightOutlined />
-                          </button>
+                         
+                          </button> 
+                          <div style={{ display: 'flex', justifyContent: 'center'}}>
+                            {error && <div className="error" style={{ color: 'red' }}>{error}</div>}
+                          </div>
                           {success && (
                           <div style={{ color: 'green' }}>
                           Đã gửi yêu cầu thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.

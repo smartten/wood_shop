@@ -15,8 +15,155 @@ import img1 from "./imgFlooring/wood-services-big-1.jpg";
 import img2 from "./imgFlooring/divider.jpg";
 import Slider from "react-slick";
 import React, { useEffect } from "react";
+import { useState } from 'react';
 
 function AllServices() {
+
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [fullNameError, setFullNameError] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [phoneError, setPhoneError] = useState('');
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
+
+  const handleInput = (e) => {
+    const emailValue = e.target.value;
+    setEmail(emailValue);
+
+    // Kiểm tra tính hợp lệ của email
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail.com$/;
+    if (!emailPattern.test(emailValue)) {
+      setEmailError('Email không hợp lệ');
+    } else {
+      setEmailError('');
+    }
+  };
+
+  const handleFullNameChange = (e) => {
+    const fullNameValue = e.target.value;
+
+    // Kiểm tra tính hợp lệ của tên đầy đủ chỉ bao gồm chữ cái và dấu
+    const fullNamePattern =/^[\p{L}]+([\p{Zs}\p{L}]+)*$/u;
+    const isFullNameValid = fullNamePattern.test(fullNameValue);
+
+    if (isFullNameValid) {
+      setFullName(fullNameValue);
+      setFullNameError('');
+    } else {
+      setFullNameError('Tên đầy đủ không hợp lệ');
+    }
+  };
+  const handleFullNameBlur = (e) => {
+    const fullNameValue = e.target.value;
+  
+    if (!fullNameValue) {
+      setFullNameError('Tên đầy đủ không hợp lệ');
+    }
+  };
+  const handleKeyDown = (event) => {
+    if (event.key === 'Backspace' || event.key === 'Delete') {
+      event.preventDefault();
+      const input = event.target;
+      const value = input.value;
+      const selectionStart = input.selectionStart;
+      const selectionEnd = input.selectionEnd;
+      const hasSelection = selectionStart !== selectionEnd;
+
+      if (hasSelection) {
+        const newValue = value.slice(0, selectionStart) + value.slice(selectionEnd);
+        setFullName(newValue);
+        input.setSelectionRange(selectionStart, selectionStart);
+      } else if (event.key === 'Backspace' && selectionStart > 0) {
+        const newValue = value.slice(0, selectionStart - 1) + value.slice(selectionStart);
+        setFullName(newValue);
+        input.setSelectionRange(selectionStart - 1, selectionStart - 1);
+      } else if (event.key === 'Delete' && selectionEnd < value.length) {
+        const newValue = value.slice(0, selectionStart) + value.slice(selectionEnd + 1);
+        setFullName(newValue);
+        input.setSelectionRange(selectionStart, selectionStart);
+      }
+    }
+  };
+
+  const handlePhoneChange = (e) => {
+    const phoneValue = e.target.value;
+    
+    // Giới hạn đầu vào của trường Phone Number phải là số và có tối đa 11 chữ số
+    const phonePattern = /^\d{0,11}$/;
+    const isPhoneValid = phonePattern.test(phoneValue);
+    
+    if (isPhoneValid) {
+      setPhone(phoneValue);
+      setPhoneError('');
+    } else {
+      setPhoneError('Số điện thoại không hợp lệ');
+    }
+  };
+  const handlePhoneBlur = (e) => {
+      const PhoneValue = e.target.value;
+    
+      if (!PhoneValue) {
+        setPhoneError('Số điện thoại không hợp lệ');
+      }
+    };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Kiểm tra dữ liệu nhập vào
+    if (!fullName || !email || !phone) {
+      setError('Vui lòng điền đầy đủ thông tin');
+      setSuccess(false);
+      return;
+    }
+    // Kiểm tra đúng định dạng email
+    const emailPattern =/^[a-zA-Z0-9._%+-]+@gmail.com$/;
+    if (!emailPattern.test(email)) {
+      setEmailError('Địa chỉ email không hợp lệ');
+      setSuccess(false);
+      return;
+    }
+
+    const handleInput = (e) => {
+      const EmailValue = e.target.value;
+    
+      if (!EmailValue) {
+        setEmailError('Kiểm tra lại email');
+      }
+    };
+
+    
+    // // Kiểm tra tính hợp lệ của tên đầy đủ chỉ bao gồm chữ cái
+    // const fullNamePattern =/^[\p{L} ]*$/u;
+    // if (!fullNamePattern.test(fullName)) {
+    //   setError('Tên đầy đủ không hợp lệ');
+    //   setSuccess(false);
+    //   return;
+    // }
+    // Kiểm tra đúng định dạng số điện thoại
+    const phonePattern = /^[0-9]{10,11}$/;
+  if (!phonePattern.test(phone)) {
+    setPhoneError('Số điện thoại không hợp lệ');
+    setSuccess(false);
+    return;
+  }
+    // Nếu dữ liệu hợp lệ, thông báo thành công và reset form
+    setError('');
+    setSuccess(true);
+    setFullName('');
+    setEmail('');
+    setPhone('');
+  };
+
+const handleReset = () => {
+  setFullName('');
+  setEmail('');
+  setPhone('');
+  setError('');
+};
+
   const settings = {
     focusOnSelect: true,
     infinite: true,
@@ -118,7 +265,7 @@ function AllServices() {
                     <span>All Services</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> All Services
+                  <a href="home"> Home </a><RightOutlined /> All Services
                   </p>
                 </div>
               </div>
@@ -190,49 +337,61 @@ function AllServices() {
                   </p>
                 </div>
                 <div className="form-contact">
-                  <form>
+                <form>
                     <div className="d-flex">
                       <div className="form-group col-4">
-                        <input
-                          type="text"
-                          className="form-control input-form"
-                          id="exampleInputName"
-                          // aria-describedby="emailHelp"
-                          placeholder="Full Name"
-                        />
+                          <input
+                            type="text"
+                              className="form-control input-form"
+                              id="exampleInputName"
+                              placeholder="Full Name"
+                              value={fullName}
+                              onChange={handleFullNameChange}
+                              onKeyDown={handleKeyDown}
+                              onBlur={handleFullNameBlur}
+                            />
+                            {fullNameError && <div className="error" style={{ color: 'red' }} >{fullNameError}</div>}
                       </div>
                       <div className="form-group col-4">
-                        <input
-                          type="email"
-                          className="form-control input-form"
-                          id="exampleInputEmail1"
-                          // aria-describedby="emailHelp"
-                          placeholder="Email Address"
-                        />
-                      </div>
+                            <input
+                            type="email"
+                            className="form-control input-form"
+                            id="exampleInputEmail1"
+                            placeholder="Email Address"
+                            value={email}
+                            onInput={handleInput}
+                            onBlur={handleInput}
+                            />
+                           {emailError && <div className="error" style={{ color: 'red' }} >{emailError}</div>}
+                           
+                        </div>
                       <div className="form-group col-4">
-                        <input
+                          <input
                           type="text"
                           className="form-control input-form"
                           id="exampleInputPhone"
-                          // aria-describedby="emailHelp"
                           placeholder="Phone Number"
-                        />
-                      </div>
-                    </div>
-                    {/* <div className="form-group">
-                      <label htmlFor="exampleInputPassword1">Password</label>
-                      <input
-                        type="password"
-                        className="form-control"
-                        id="exampleInputPassword1"
-                        placeholder="Password"
-                      />
-                    </div> */}
-                    <button type="submit" className="btn-contact">
-                      Call Back <ArrowRightOutlined />
-                    </button>
-                  </form>
+                          value={phone}
+                          onChange={handlePhoneChange}
+                          onBlur={handlePhoneBlur}
+                          inputMode="numeric"
+                          />
+                          {phoneError && <div className="error" style={{ color: 'red' }} >{phoneError}</div>}
+                          </div>
+                          </div>
+                          <button type="submit" className="btn-contact" onClick={handleSubmit}>
+                          Call Back <ArrowRightOutlined />
+                         
+                          </button> 
+                          <div style={{ display: 'flex', justifyContent: 'center'}}>
+                            {error && <div className="error" style={{ color: 'red' }}>{error}</div>}
+                          </div>
+                          {success && (
+                          <div style={{ color: 'green' }}>
+                          Đã gửi yêu cầu thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.
+                          </div>
+                          )}
+                    </form>
                 </div>
               </div>
             </div>

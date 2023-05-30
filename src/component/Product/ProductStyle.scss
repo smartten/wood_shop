@@ -1,11 +1,15 @@
 .Product {
+    .breadcrumb-text{
+        a{
+            color: #fff;
+        }
+    }
     padding-bottom: 100px;
     .buy-amount{
         display: flex;
         align-items: center;
         //justify-content: center;
-    
-        
+
         button{
 
             width: 35px;
@@ -104,7 +108,7 @@
         }
     }
     .Product{
-        margin: 10px; 
+        //margin: 10px; 
         padding-bottom: 80px;
         width          : 100%;
         //justify-content: space-around;
@@ -128,7 +132,7 @@
           border-radius: 5px;
           background-color:#92602d;
           margin-bottom: 20px;
-          margin-left: 205px;
+          margin-left: 50px;
           
 
       }
@@ -137,11 +141,11 @@
           position: relative;
       }
       .contenproduct{
-          width: 78%;
+          width: 95%;
           //height: 100px;
          //margin: auto;
          //margin-left: 10px;
-         margin-left: 188px;
+         margin-left: 35px;
          
          .col-5{
           img{
@@ -497,7 +501,7 @@
             border-radius: 5px;
             background-color:#92602d;
             margin-bottom: 20px;
-            margin-left: 215px;
+            margin-left: 50px;
             height: 45px;
         }
 
@@ -568,6 +572,9 @@
 }
 
 @media (max-width: 820px){
+    .Product .slider .siler-list .slider-item .container .slide-content .text .text-title{
+        margin-left: 10px;
+    }
     .Product .tablo .tablo-content .img-content img{
         height: 440px;
     margin-left: 10px;
@@ -577,6 +584,13 @@
         width: 90%;
         margin-left: 30px;
     }
+    //  .Product .Product .contenproduct{
+    //     width: 84%;
+    //    height: auto;
+    //     justify-content: space-between;
+    //    align-items: center;
+    //     margin-left: -2px;
+    // }
     :where(.css-dev-only-do-not-override-10ed4xt).ant-rate {
         font-size: 35px;
     }
@@ -588,6 +602,10 @@
     }
     .Product .Product{
         margin: 0px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
+    
     }
     .Product .text-content .input{
         margin-left: 70px;
@@ -620,8 +638,11 @@
     }
    
     .Product .Product .contenproduct {
-        width: 85%;
-        margin-left: 70px;
+        width: 94%;
+        height: auto;
+         justify-content: space-between;
+       align-items: center;
+        margin-left: 24px;
     }
     .Product .tablo .tablo-content .text-content .sub-text{
         margin-top: 20px;
@@ -729,20 +750,18 @@
         display:none;
     }
     .Product .Product .contenproduct{
-        margin-left: 60px;
+        margin-left: 80px;
         width: 70%;
         margin-top: 30px;
-        margin-bottom: -35px;
+        margin-bottom: 10px;
     }
-    .header .logo img {
-
-    }
+   
     .Product .tablo .tablo-content .img-content{
         margin-left: 20px;
 
     }
     .Product .Product .text-product{
-        margin-left: 25px;
+        margin-left: 30px;
     }
       .Product .tablo .tablo-content .img-content img {
         width: 300%;
@@ -787,17 +806,17 @@
             }
           .Product .tablo .content-2 .title-icon{
                 font-size: 1.3rem;
-                margin-left: 5px;
+                margin-left: 20px;
                 white-space: nowrap;
                 margin-top: -25px;
             }
             .Product .tablo .content-icon .text-icon h2{
                 font-size: 1.3rem;
-                margin-left: -95px;
+                margin-left: -60px;
             }
             .Product .tablo .content-icon .text-icon h3{
                 font-size: 1.3rem;
-                margin-left: -190px;
+                margin-left: -160px;
             }
             .Product .buy-amount button{
                 width: 40px;
@@ -809,7 +828,7 @@
                 font-size: 20px;
              }
              .Product .buy-amount{
-                margin-left: 5px;
+                margin-left: 15px;
              }
             .text-icon{
                 font-size: 12px;
@@ -817,7 +836,7 @@
           .Product .tablo .button-get a{
                 padding: 20px 118px;
                 font-size: 16px;
-                margin-left: 5px;
+                margin-left: 15px;
             }
           .Product .tablo {
                 padding-top: 20px;
@@ -838,7 +857,7 @@
             }
             
             img{
-                width: 100%;
+                width: 70%;
             }
            .Product .slider .siler-list .slider-item .container .slide-content .text .text-title{
                 margin-left: 10px;
@@ -852,6 +871,9 @@
            .Product .flooring-master .col-3 .info{
                 bottom: 75px;
                 padding: 5px;
+            }
+            .Product .Product .slick-next:before{
+                margin-left: -45px;
             }
 
 }

@@ -10,15 +10,41 @@ import logo1 from "./wood-logo.svg";
 import "./FooterStyle.scss";
 import { useState } from 'react';
 function Footer() {
-  const [email, setEmail] = useState('');
   const [error, setError] = useState('');
+const [email, setEmail] = useState('');
+const [success, setSuccess] = useState('');
 
-  function handleInput(event) {
-    const inputValue = event.target.value;
-    const isValidEmail = /^[a-zA-Z0-9._%+-]+@gmail.com$/.test(inputValue);
-    setEmail(inputValue);
-    setError(isValidEmail ? '' : 'Email invalid');
+function isValidEmail(inputValue) {
+  return /^[a-zA-Z0-9._%+-]+@gmail.com$/.test(inputValue);
+}
+
+function handleInput(event) {
+  const inputValue = event.target.value;
+  const isValid = isValidEmail(inputValue);
+  setEmail(inputValue);
+  if (inputValue === '') {
+    setError('Vui lòng nhập một địa chỉ email');
+  } else {
+    setError(isValid ? '' : 'Email không hợp lệ');
   }
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  if (email === '') {
+    setError('Vui lòng nhập một địa chỉ email');
+  } else if (!isValidEmail(email)) {
+    setError('Email không hợp lệ');
+  } else {
+    setEmail('');
+    setError('');
+    setSuccess('Thành công! Cảm ơn bạn đã đăng ký.');
+    window.location.reload(); // reload the page to reset the form
+    setTimeout(() => {
+      setSuccess('');
+    }, 900000); // clear success message after 1 minute
+  }
+}
   return (
     <div className="footer">
       <div className="footerv0">
@@ -34,17 +60,19 @@ function Footer() {
               <div className="form-input">
                 <form>
                   <div className="form-group">
-                    <input
+                  <input
                       type="email"
                       className="form-control input-form"
                       id="exampleInputEmail1"
                       placeholder="Email Address"
                       value={email}
                       onInput={handleInput}
-                      />
-                      <div style={{ color: 'red' }}>{error}</div>
+                      onBlur={handleInput}
+                    />
+                    <div className="Notification" style={{ color: 'red' }}>{error}</div>
+                    {success && <div className="Notification" style={{ color: 'green' }}>{success}</div>}
                   </div>
-                  <button type="submit" class="btn-send">
+                  <button type="button" className="btn-send" onClick={handleSubmit}>
                     Send <ArrowRightOutlined />
                   </button>
                 </form>

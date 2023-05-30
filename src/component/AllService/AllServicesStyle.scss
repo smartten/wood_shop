@@ -1,5 +1,10 @@
 .all-services {
     padding-bottom: 20px;
+    .breadcrumb-text{
+        a{
+            color: #fff;
+        }
+    }
 
     .cssanimation {
         animation-duration : 3s;
@@ -421,6 +426,9 @@
 
 }
 @media (max-width: 820px){
+    .all-services .slider .siler-list .slider-item .container .slide-content .text .text-title{
+        margin-left: 10px;
+    }
 
     .all-services .our-services .slick-prev  {
         top: 130px;

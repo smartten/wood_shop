@@ -18,7 +18,7 @@ function Blog() {
                     <span>Blog</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> Blog
+                  <a href="home"> Home </a><RightOutlined /> Blog
                   </p>
                 </div>
               </div>

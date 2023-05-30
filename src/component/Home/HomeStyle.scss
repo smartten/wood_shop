@@ -1181,7 +1181,11 @@
     }
     
     .header .phone {
-        margin-left: 450px;
+        margin-left: 350px;
+        margin-top: 10px
+    }
+    .header .phone .phone-number{
+        width: 135%;
     }
 
   .text-slider {
@@ -1317,6 +1321,9 @@
     width: 30%;
     margin-left: 0px;
 }*/
+.home .Product .slick-prev:before{
+    margin-left: 5px;
+}
 .home .Product{
     //width: 75%;
     margin: 0px; 
@@ -1326,16 +1333,25 @@
     margin-left: 30px;
     
     .contenproduct{
-        width: 75%;
+        width: 85%;
         height: auto;
         //display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-right: 45%;
+        margin-left: -10px
         //flex-wrap: wrap;
         
     }
+    .slick-slider{
+    width: 111%;
+    }
 }
+
+.home .Product .text-product{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
 .home .our-services .title-service h3{
     margin-top: 110px;
 }
@@ -1430,8 +1446,11 @@ margin-top: -90px;
 }
 .footer .join .form-input button{
     margin-left: -689px;
-    margin-top: 255px;
+    margin-top: 270px;
     width: 695px;
+}
+.footer .join .Notification{
+ margin-left: -120px;
 }
 .footer .join .text {
     text-align: center;
@@ -1490,16 +1509,20 @@ margin-top: -90px;
     white-space: nowrap;
 }
 .home .Product .text-product{
-    margin-left: 350px;
+    margin-left: 380px; 
+    width: 240px;
 }
 .home .Product .slick-next:before{
-    margin-left: -55px;
+    margin-left: -230px;
 }
 :where(.css-dev-only-do-not-override-10ed4xt).ant-card .ant-card-cover > *{
     width: 100%;
 }
 .slick-track{
     margin-top: -50px;
+}
+.home .Product .contenproduct{
+    margin-left: 88%;
 }
 .home .tablo .tablo-content .img-content img {
 width: 200%;
@@ -1604,14 +1627,14 @@ img{
 }
 .footer .join .form-input input{
     margin-top: 190px;
-    margin-left: -120px;
-    width: 380px;
+    margin-left: -100px;
+    width: 355px;
     height: 18%;
 }
 .footer .join .form-input button{
-    margin-left: -375px;
-    margin-top: 290px;
-    width: 375px;
+    margin-left: -357px;
+    margin-top: 280px;
+    width: 355px;
     margin-right: -20px;
     height: 55px;
 }
@@ -1682,10 +1705,11 @@ img{
         margin-left: -115px;
 
     }
-   } 
-.home .Product .text-product{
-        width: 240px;
-    }
+   }
+   .footer .join .Notification{
+    margin-left: -50px;
+   }
+    
 }
 @media  (max-width: 400px){
     .footer .join {
@@ -1700,6 +1724,28 @@ img{
     margin-left: -191px!important;
     margin-right: 620px!important;
     width: 357px!important; 
+    }
+    .home .contact .contact-content .input-form{
+        width: 345px;
+        margin-left: 0px;
+    }
+    .header .phone{
+        margin-left: 310px;
+        margin-top: -77px;
+    }
+    .footer .join .form-input input{
+        margin-left: -80px;
+        width: 320px;
+    }
+    .footer .join .Notification{
+        margin-left: -50px;
+    }
+    .footer .join .form-input button {
+        margin-left: -320px;
+        margin-top: 290px;
+        width: 317px;
+        margin-right: -20px;
+        height: 55px;
     }
     
 }

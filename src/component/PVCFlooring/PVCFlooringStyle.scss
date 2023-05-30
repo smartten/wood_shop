@@ -1,4 +1,9 @@
 .pvc-flooring {
+    .breadcrumb-text{
+        a{
+            color: #fff;
+        }
+    }
 
     .cssanimation {
         animation-duration : 3s;
@@ -229,6 +234,10 @@
                         }
                     }
                 }
+                .d-flex{
+                    flex-direction: column!important;
+                }
+
 
                 .input-form {
                     max-width    : 100%;
@@ -366,6 +375,9 @@
     }
 }
 @media (max-width: 820px){
+    .pvc-flooring .slider .siler-list .slider-item .container .slide-content .text .text-title{
+        margin-left: 10px;
+    }
     .pvc-flooring .content-flooring .content{
         flex-direction: column;
     }
