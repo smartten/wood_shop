@@ -76,10 +76,10 @@ function CarpetFlooring() {
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
-                    <span>Carpet Flooring</span>
+                    <span>Thảm Trải Sàn</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> Carpet Flooring
+                    Trang Chủ <RightOutlined /> Thảm Trải Sàn
                   </p>
                 </div>
               </div>
@@ -94,12 +94,12 @@ function CarpetFlooring() {
               <div className="menu-content">
                 <div className="link-menu">
                   <a href="/flooring">
-                    <RightOutlined /> Flooring
+                    <RightOutlined /> lát Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/floor-raising">
-                    <RightOutlined /> Floor Raising
+                    <RightOutlined /> Nâng Sàn
                   </a>
                 </div>
                 <div
@@ -107,27 +107,27 @@ function CarpetFlooring() {
                   style={{ backgroundColor: "#543312" }}
                 >
                   <a href="/carpet-flooring">
-                    <RightOutlined /> Carpet Flooring
+                    <RightOutlined /> Thảm Trải Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/pvc-flooring">
-                    <RightOutlined /> PVC Flooring
+                    <RightOutlined /> Sàn PVC
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/wood-flooring">
-                    <RightOutlined /> Wood Flooring
+                    <RightOutlined /> Sàn Gỗ
                   </a>
                 </div>
               </div>
 
               <div className="form-contact">
                 <div className="title-form">
-                  <h2>Leave Your Number</h2>
+                  <h2>Để Lại Số Của Bạn</h2>
                 </div>
                 <div className="sub-title">
-                  <p>Let's Call You Back</p>
+                  <p>Hãy Gọi Lại Cho Bạn</p>
                 </div>
                 <div className="form-submit">
                   <form>
@@ -138,14 +138,14 @@ function CarpetFlooring() {
                         id="exampleInputName"
                         name="name"
                         // aria-describedby="emailHelp"
-                        placeholder="Full Name"
+                        placeholder="Họ Và Tên"
                       />
                       <input
                         type="text"
                         className="form-control input-form"
                         id="exampleInputEmail"
                         // aria-describedby="emailHelp"
-                        placeholder="Your Email Address"
+                        placeholder="Địa Chỉ Email Của Bạn"
                         name="email"
                       />
                       <input
@@ -153,12 +153,12 @@ function CarpetFlooring() {
                         className="form-control input-form"
                         id="exampleInputPhone"
                         // aria-describedby="emailHelp"
-                        placeholder="Phone Number"
+                        placeholder="Số Điện Thoại"
                         name="phone"
                       />
                     </div>
                     <button type="submit" className="btn-contact">
-                      Submit Form <ArrowRightOutlined />
+                      Gửi Biểu Mẫu <ArrowRightOutlined />
                     </button>
                   </form>
                 </div>
@@ -170,26 +170,34 @@ function CarpetFlooring() {
               </div>
               <div className="content-text-right">
                 <div className="title-right">
-                  <h2>Carpet Flooring</h2>
+                  <h2>Thảm Trải Sàn</h2>
                 </div>
                 <div className="sub-text">
-                  Carpet tile, also known as modular carpet, is a versatile
+                Gạch thảm, còn được gọi là thảm mô-đun, là một lựa chọn sàn linh hoạt đang ngày càng phổ biến cho các dự án thương mại thuộc hầu hết mọi loại hình. 
+                Có thảm ở khắp mọi nơi bạn đi. Thảm có thể được tìm thấy ở nơi làm việc, ở nhà và thậm chí cả trong phòng tắm. 
+                Thảm trải sàn có thể được lắp đặt theo nhiều cách khác nhau để tạo ra những hiệu ứng khác nhau. 
+                Thông thường nhất, cùng một loại gạch được sử dụng cho các phòng có màu đồng nhất hoặc hoa văn đơn giản.
+                  {/* Carpet tile, also known as modular carpet, is a versatile
                   flooring option that is growing in popularity for commercial
                   projects of almost any type. There is carpet everywhere you
                   go. Carpet can be found at work, in your home, and even in
                   bathrooms. Carpet tiles can be installed in numerous
                   configurations to create different effects. Most commonly, the
-                  same tile is used for rooms in a solid color or a simple
-                  pattern.
+                  same tile is used for rooms in a solid color or a simple */}
+                  pattern. 
                 </div>
                 <img className="img-text" src={img2} />
                 <div className="sub-text">
-                  The seams between carpet tiles can be hidden or highlighted
+                Các đường nối giữa các tấm thảm có thể được ẩn hoặc làm nổi bật tùy thuộc vào hiệu ứng 
+                tổng thể mong muốn và tính mô-đun của các tấm thảm có thể khiến nó trở thành công cụ sáng tạo tuyệt vời cho các kiến ​​trúc sư và nhà thiết kế nội thất. 
+                Bên cạnh những hiệu ứng sàn tuyệt vời mà bạn có thể đạt được, 
+                thảm trải sàn còn giúp tiết kiệm đáng kể cả về chi phí và thời gian để trải thảm từ tường này sang tường khác.
+                  {/* The seams between carpet tiles can be hidden or highlighted
                   depending on the overall effect desired, and the modularity of
                   carpet tiles can make it a great creative tool for architects
                   and interior designers. Besides the amazing flooring effects
                   you can achieve, carpet tiles provide significant savings in
-                  terms of both cost and time to wall-to-wall carpet.
+                  terms of both cost and time to wall-to-wall carpet.  */}
                 </div>
               </div>
               <div className="tablo">
@@ -203,7 +211,7 @@ function CarpetFlooring() {
                       <LikeOutlined />
                     </div>
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                   </div>
                   <div
@@ -212,13 +220,14 @@ function CarpetFlooring() {
                     style={{ transform: "rotateX(180deg)" }}
                   >
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                     <div className="content-icon">
                       <p>
-                        Vivamus magna justo, lacinia eget consectetur sed,
-                        convallis at tellus. Cras ultricies ligula sed magna
-                        dictum porta. Proin eget tortor risus.
+                      Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, 
+                      nhưng thung lũng và khu vực. 
+                      Ngày mai cổng nghe nói nhỏ mà lớn. 
+                      Anh ấy cần một nụ cười thật tươi.
                       </p>
                     </div>
                   </div>
@@ -234,7 +243,7 @@ function CarpetFlooring() {
                       <LikeOutlined />
                     </div>
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                   </div>
                   <div
@@ -243,13 +252,14 @@ function CarpetFlooring() {
                     style={{ transform: "rotateX(180deg)" }}
                   >
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                     <div className="content-icon">
                       <p>
-                        Vivamus magna justo, lacinia eget consectetur sed,
-                        convallis at tellus. Cras ultricies ligula sed magna
-                        dictum porta. Proin eget tortor risus.
+                      Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, 
+                      nhưng thung lũng và khu vực. 
+                      Ngày mai cổng nghe nói nhỏ mà lớn. 
+                      Anh ấy cần một nụ cười thật tươi.
                       </p>
                     </div>
                   </div>

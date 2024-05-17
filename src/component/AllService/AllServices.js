@@ -93,10 +93,10 @@ function AllServices() {
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
-                    <span>All Services</span>
+                    <span>Tất Cả Dịch Vụ</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> All Services
+                    Trang Chủ <RightOutlined /> Tất Cả Dịch Vụ
                   </p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ function AllServices() {
                 <img src={imgservice1} />
               </div>
               <div className="text-service">
-                <h2>Flooring</h2>
+                <h2>Lát Sàn</h2>
               </div>
             </div>
             <div className="col-3">
@@ -120,7 +120,7 @@ function AllServices() {
                 <img src={imgservice2} />
               </div>
               <div className="text-service">
-                <h2>Carpet Flooring</h2>
+                <h2>Nâng Sàn</h2>
               </div>
             </div>
             <div className="col-3">
@@ -128,7 +128,7 @@ function AllServices() {
                 <img src={imgservice3} />
               </div>
               <div className="text-service">
-                <h2>Floor Raising</h2>
+                <h2>Thảm Trải Sàn</h2>
               </div>
             </div>
             <div className="col-3">
@@ -136,7 +136,7 @@ function AllServices() {
                 <img src={imgservice4} />
               </div>
               <div className="text-service">
-                <h2>PVC Flooring</h2>
+                <h2>Sàn PVC</h2>
               </div>
             </div>
             <div className="col-3">
@@ -144,7 +144,7 @@ function AllServices() {
                 <img src={imgservice5} />
               </div>
               <div className="text-service">
-                <h2>Wood Flooring</h2>
+                <h2>Sàn Gỗ</h2>
               </div>
             </div>
           </Slider>
@@ -160,11 +160,13 @@ function AllServices() {
               <div className="contact-content">
                 <div className="text-contact">
                   <p className="title-contact">
-                    Let's Create A Great Design Together!
+                  Hãy cùng nhau tạo ra một thiết kế tuyệt vời!
+                    {/* Let's Create A Great Design Together! */}
                   </p>
                   <p className="sub-contact">
-                    Fill out the detailed information form about our flooring
-                    services.
+                  Điền vào mẫu thông tin chi tiết về các dịch vụ sàn của chúng tôi.
+                    {/* Fill out the detailed information form about our flooring
+                    services. */}
                   </p>
                 </div>
                 <div className="form-contact">
@@ -176,7 +178,7 @@ function AllServices() {
                           className="form-control input-form"
                           id="exampleInputName"
                           // aria-describedby="emailHelp"
-                          placeholder="Full Name"
+                          placeholder="Họ Và Tên"
                         />
                       </div>
                       <div className="form-group col-4">
@@ -185,7 +187,7 @@ function AllServices() {
                           className="form-control input-form"
                           id="exampleInputEmail1"
                           // aria-describedby="emailHelp"
-                          placeholder="Email Address"
+                          placeholder="Địa Chỉ Email"
                         />
                       </div>
                       <div className="form-group col-4">
@@ -194,7 +196,7 @@ function AllServices() {
                           className="form-control input-form"
                           id="exampleInputPhone"
                           // aria-describedby="emailHelp"
-                          placeholder="Phone Number"
+                          placeholder="Số Điện Thoại"
                         />
                       </div>
                     </div>
@@ -208,7 +210,7 @@ function AllServices() {
                       />
                     </div> */}
                     <button type="submit" className="btn-contact">
-                      Call Back <ArrowRightOutlined />
+                      Gọi Lại <ArrowRightOutlined />
                     </button>
                   </form>
                 </div>

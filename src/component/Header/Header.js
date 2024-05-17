@@ -13,50 +13,50 @@ function Header() {
   const items = [
     getItem(
       <a className="link-for-res" href="/">
-        Home
+        Trang Chủ
       </a>,
       "home"
     ),
     getItem(
       <a className="link-for-res" href="/">
-        About Us
+        Về Chúng Tôi
       </a>,
       "about"
     ),
     getItem(<a className="link-for-res">Services</a>, "services", [
       getItem(
         <a className="link-for-sub" href="/flooring">
-          Flooring
+          Lát Sàn
         </a>,
         "1"
       ),
       getItem(
         <a className="link-for-sub" href="/floor-raising">
-          Floor Raising
+          Nâng Sàn
         </a>,
         "2"
       ),
       getItem(
         <a className="link-for-sub" href="/carpet-flooring">
-          Carpet Flooring
+          Trải Thảm
         </a>,
         "3"
       ),
       getItem(
         <a className="link-for-sub" href="/pvc-flooring">
-          PVC Flooring
+          Sàn PVC
         </a>,
         "11"
       ),
       getItem(
         <a className="link-for-sub" href="/wood-flooring">
-          Wood Flooring
+          Sàn Gỗ
         </a>,
         "4"
       ),
       getItem(
         <a className="link-for-sub" href="/all-services">
-          All Services
+          Tất Cả Dịch Vụ
         </a>,
         "5"
       ),
@@ -69,7 +69,7 @@ function Header() {
     ),
     getItem(
       <a className="link-for-res" href="/contact">
-        Contact
+        Liên Hệ
       </a>,
       "contact"
     ),
@@ -87,45 +87,45 @@ function Header() {
             <div className="menu col-6">
               <div>
                 <a className="link" href="/">
-                  Home
+                  Trang Chủ
                 </a>
               </div>
               <div>
                 <a className="link" href="/about-us">
-                  About Us
+                  Về Chúng Tôi
                 </a>
               </div>
               <div class="dropdown">
-                <a class="link">Services</a>
+                <a class="link">Dịch Vụ</a>
                 <div class="dropdown-content">
                   <div className="div-for-a">
                     <a href="/flooring" class="link-drop">
-                      Flooring
+                      Lát Sàn
                     </a>
                   </div>
                   <div className="div-for-a">
                     <a href="/floor-raising" class="link-drop">
-                      Floor Raising
+                      Nâng Sàn
                     </a>
                   </div>
                   <div className="div-for-a">
                     <a href="/carpet-flooring" class="link-drop">
-                      Carpet Flooring
+                      Thảm Trải Sàn
                     </a>
                   </div>
                   <div className="div-for-a">
                     <a href="pvc-flooring" class="link-drop">
-                      PVC Flooring
+                      Sàn PVC
                     </a>
                   </div>
                   <div className="div-for-a">
                     <a href="wood-flooring" class="link-drop">
-                      Wood Flooring
+                      Sàn Gỗ
                     </a>
                   </div>
                   <div className="div-for-a">
                     <a href="all-services" class="link-drop">
-                      All Service
+                      Tất Cả Dịch Vụ
                     </a>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ function Header() {
               </div>
               <div>
                 <a className="link" href="/contact">
-                  Contact
+                  Liên Hệ
                 </a>
               </div>
               {/* <Menu

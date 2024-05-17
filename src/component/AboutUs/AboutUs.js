@@ -81,10 +81,10 @@ function AboutUs() {
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
-                    <span>About Us</span>
+                    <span>Về Chúng Tôi</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> About Us
+                    Trang Chủ <RightOutlined /> Về Chúng Tôi
                   </p>
                 </div>
               </div>
@@ -143,7 +143,7 @@ function AboutUs() {
                       </span>
                     </div>
                   </span>
-                  <h6>Private Client Service</h6>
+                  <h6>Dịch Vụ Khách Hàng Cá Nhân</h6>
                 </div>
                 <div
                   className="countt wow fadeInUp"
@@ -186,21 +186,26 @@ function AboutUs() {
                         </span>
                       </div>
                     </span>
-                    <h6>Years of Experience</h6>
+                    <h6>Số Năm Kinh Nghiệm</h6>
                   </div>
                 </div>
               </div>
             </div>
             <div className="text-content">
               <div className="text-title">
-                <h3>Do you need flooring services?</h3>
+                <h3>Bạn Có Cần Dịch Vụ Lát Sàn?</h3>
               </div>
               <div className="sub-text">
                 <p>
-                  With our expert staff, we add a new perspective to your home
+                Với đội ngũ nhân viên chuyên nghiệp của chúng tôi, 
+                chúng tôi mang đến một góc nhìn mới cho ngôi nhà của bạn với các dịch vụ lắp đặt và lát sàn kinh tế, 
+                sang trọng, nhanh chóng và chất lượng. Hãy chọn gói dịch vụ lát sàn phù hợp với túi tiền của bạn, 
+                chúng tôi sẽ đến làm mới ngay.
+
+                  {/*With our expert staff, we add a new perspective to your home
                   in economic, luxury, fast and quality flooring and
                   installation services. Choose the flooring service package
-                  that fits your budget, and we'll come and renew it right away.
+                  that fits your budget, and we'll come and renew it right away. */ }
                 </p>
               </div>
               <div>
@@ -218,10 +223,13 @@ function AboutUs() {
                   <SmileOutlined />
                 </div>
                 <div className="content-icon">
-                  <div className="title-icon">Professional Team</div>
+                  <div className="title-icon">Đội Ngũ Chuyên Nghiệp</div> {/* professional team */}
                   <div className="text-icon">
-                    We produce guaranteed solutions in all flooring works with
-                    our competent and experienced team.
+                  Chúng tôi tạo ra các giải pháp đảm bảo trong mọi công trình lát sàn với 
+                  đội ngũ có năng lực và giàu kinh nghiệm.
+
+                  {/* We produce guaranteed solutions in all flooring works with
+                    our competent and experienced team. */}
                   </div>
                 </div>
               </div>
@@ -230,16 +238,16 @@ function AboutUs() {
                   <ClockCircleOutlined />
                 </div>
                 <div className="content-icon">
-                  <div className="title-icon">Quick Flooring</div>
+                  <div className="title-icon">Lát Sàn Nhanh Chóng</div>
                   <div className="text-icon">
-                    Thanks to our solid expertise, we build custom spaces by
-                    covering your floors very quickly.
+                  Nhờ chuyên môn vững chắc, chúng tôi xây dựng không gian tùy chỉnh 
+                  bằng cách phủ sàn của bạn rất nhanh chóng.
                   </div>
                 </div>
               </div>
               <div className="button-get">
                 <a href="">
-                  Get to know us <ArrowRightOutlined />
+                  Nhận Biết Chúng Tôi Tốt Hơn <ArrowRightOutlined />
                 </a>
               </div>
             </div>
@@ -257,7 +265,7 @@ function AboutUs() {
               <LikeOutlined />
             </div>
             <div className="text-icon">
-              <b>Reliability</b>
+              <b>Độ Tin Cậy</b> {/* Reliability */}
             </div>
           </div>
           <div
@@ -266,13 +274,13 @@ function AboutUs() {
             style={{ transform: "rotateX(180deg)" }}
           >
             <div className="text-icon">
-              <b>Reliability</b>
+              <b>Độ Tin Cậy</b>
             </div>
             <div className="content-icon">
               <p>
-                Vivamus magna justo, lacinia eget consectetur sed, convallis at
-                tellus. Cras ultricies ligula sed magna dictum porta. Proin eget
-                tortor risus.
+              Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, nhưng thung lũng và khu vực. 
+              Ngày mai cổng nghe nói nhỏ mà lớn. 
+              Anh ấy cần một nụ cười thật tươi.
               </p>
             </div>
           </div>
@@ -288,7 +296,7 @@ function AboutUs() {
               <LikeOutlined />
             </div>
             <div className="text-icon">
-              <b>Reliability</b>
+              <b>Độ Tin Cậy</b>
             </div>
           </div>
           <div
@@ -297,13 +305,13 @@ function AboutUs() {
             style={{ transform: "rotateX(180deg)" }}
           >
             <div className="text-icon">
-              <b>Reliability</b>
+              <b>Độ Tin Cậy</b> {/* Reliability */}
             </div>
             <div className="content-icon">
               <p>
-                Vivamus magna justo, lacinia eget consectetur sed, convallis at
-                tellus. Cras ultricies ligula sed magna dictum porta. Proin eget
-                tortor risus.
+              Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, nhưng thung lũng và khu vực. 
+              Ngày mai cổng nghe nói nhỏ mà lớn. 
+              Anh ấy cần một nụ cười thật tươi.
               </p>
             </div>
           </div>
@@ -319,7 +327,7 @@ function AboutUs() {
               <LikeOutlined />
             </div>
             <div className="text-icon">
-              <b>Reliability</b>
+              <b>Độ Tin Cậy</b>
             </div>
           </div>
           <div
@@ -328,13 +336,13 @@ function AboutUs() {
             style={{ transform: "rotateX(180deg)" }}
           >
             <div className="text-icon">
-              <b>Reliability</b>
+              <b>Độ Tin Cậy</b>
             </div>
             <div className="content-icon">
               <p>
-                Vivamus magna justo, lacinia eget consectetur sed, convallis at
-                tellus. Cras ultricies ligula sed magna dictum porta. Proin eget
-                tortor risus.
+              Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, nhưng thung lũng và khu vực. 
+              Ngày mai cổng nghe nói nhỏ mà lớn. 
+              Anh ấy cần một nụ cười thật tươi.
               </p>
             </div>
           </div>
@@ -350,7 +358,7 @@ function AboutUs() {
               <LikeOutlined />
             </div>
             <div className="text-icon">
-              <b>Reliability</b>
+              <b>Độ Tin Cậy</b>
             </div>
           </div>
           <div
@@ -359,13 +367,13 @@ function AboutUs() {
             style={{ transform: "rotateX(180deg)" }}
           >
             <div className="text-icon">
-              <b>Reliability</b>
+              <b>Độ Tin Cậy</b>
             </div>
             <div className="content-icon">
               <p>
-                Vivamus magna justo, lacinia eget consectetur sed, convallis at
-                tellus. Cras ultricies ligula sed magna dictum porta. Proin eget
-                tortor risus.
+              Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, nhưng thung lũng và khu vực. 
+              Ngày mai cổng nghe nói nhỏ mà lớn. 
+              Anh ấy cần một nụ cười thật tươi.
               </p>
             </div>
           </div>
@@ -399,7 +407,7 @@ function AboutUs() {
                     animationName: "fadeInUp",
                   }}
                 >
-                  Our Flooring Masters
+                  Bậc thầy về sàn của chúng tôi {/* Our Flooring Masters */}
                 </h2>
                 <p
                   className="h2-baslik-hizmetler-2__paragraf wow fadeInUp"
@@ -410,7 +418,7 @@ function AboutUs() {
                     animationName: "fadeInUp",
                   }}
                 >
-                  We are at your service with our competent staff.{" "}
+                 Chúng tôi đang phục vụ bạn với đội ngũ nhân viên có thẩm quyền của chúng tôi.{" "} {/* We are at your service with our competent staff. */}
                 </p>
               </div>
             </div>
@@ -424,7 +432,7 @@ function AboutUs() {
               <img src={img2} />
               <div className="info">
                 <p className="name">Hieeus</p>
-                <p className="role">Nhan Vien</p>
+                <p className="role">Nhân Viên</p>
                 <p className="icon">
                   <span>
                     <TwitterOutlined />
@@ -442,7 +450,7 @@ function AboutUs() {
               <img src={img2} />
               <div className="info">
                 <p className="name">Hieeus</p>
-                <p className="role">Nhan Vien</p>
+                <p className="role">Nhân Viên</p>
                 <p className="icon">
                   <span>
                     <TwitterOutlined />
@@ -460,7 +468,7 @@ function AboutUs() {
               <img src={img2} />
               <div className="info">
                 <p className="name">Hieeus</p>
-                <p className="role">Nhan Vien</p>
+                <p className="role">Nhân Viên</p>
                 <p className="icon">
                   <span>
                     <TwitterOutlined />
@@ -478,7 +486,7 @@ function AboutUs() {
               <img src={img2} />
               <div className="info">
                 <p className="name">Hieeus</p>
-                <p className="role">Nhan Vien</p>
+                <p className="role">Nhân Viên</p>
                 <p className="icon">
                   <span>
                     <TwitterOutlined />

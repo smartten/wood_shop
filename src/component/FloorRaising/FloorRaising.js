@@ -76,10 +76,10 @@ function FloorRaising() {
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
-                    <span>Floor Raising</span>
+                    <span>Nâng Sàn</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> Floor Raising
+                    Trang Chủ <RightOutlined /> Nâng Sàn
                   </p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ function FloorRaising() {
               <div className="menu-content">
                 <div className="link-menu">
                   <a href="/flooring">
-                    <RightOutlined /> Flooring
+                    <RightOutlined /> Lát Sàn
                   </a>
                 </div>
                 <div
@@ -102,32 +102,32 @@ function FloorRaising() {
                   style={{ backgroundColor: "#543312" }}
                 >
                   <a href="/floor-raising">
-                    <RightOutlined /> Floor Raising
+                    <RightOutlined /> Nâng Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/carpet-flooring">
-                    <RightOutlined /> Carpet Flooring
+                    <RightOutlined /> Thảm Trải Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/pvc-flooring">
-                    <RightOutlined /> PVC Flooring
+                    <RightOutlined /> Sàn PVC
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/wood-flooring">
-                    <RightOutlined /> Wood Flooring
+                    <RightOutlined /> Sàn Gỗ
                   </a>
                 </div>
               </div>
 
               <div className="form-contact">
                 <div className="title-form">
-                  <h2>Leave Your Number</h2>
+                  <h2>Để Lại Số Của Bạn</h2>
                 </div>
                 <div className="sub-title">
-                  <p>Let's Call You Back</p>
+                  <p>Hãy Gọi Lại Cho Bạn</p>
                 </div>
                 <div className="form-submit">
                   <form>
@@ -138,14 +138,14 @@ function FloorRaising() {
                         id="exampleInputName"
                         name="name"
                         // aria-describedby="emailHelp"
-                        placeholder="Full Name"
+                        placeholder="Họ Và Tên"
                       />
                       <input
                         type="text"
                         className="form-control input-form"
                         id="exampleInputEmail"
                         // aria-describedby="emailHelp"
-                        placeholder="Your Email Address"
+                        placeholder="Địa Chỉ Email Của Bạn"
                         name="email"
                       />
                       <input
@@ -153,12 +153,12 @@ function FloorRaising() {
                         className="form-control input-form"
                         id="exampleInputPhone"
                         // aria-describedby="emailHelp"
-                        placeholder="Phone Number"
+                        placeholder="Số Điện Thoại"
                         name="phone"
                       />
                     </div>
                     <button type="submit" className="btn-contact">
-                      Submit Form <ArrowRightOutlined />
+                      Gửi Biểu Mẫu <ArrowRightOutlined />
                     </button>
                   </form>
                 </div>
@@ -170,22 +170,30 @@ function FloorRaising() {
               </div>
               <div className="content-text-right">
                 <div className="title-right">
-                  <h2>Floor Raising</h2>
+                  <h2>Nâng Sàn</h2>
                 </div>
                 <div className="sub-text">
-                  Raised floor is a modular system of elements designed for the
+                Sàn nâng là một hệ thống mô-đun gồm các thành phần được thiết kế cho các tầng bên trong và bên ngoài của tòa nhà. 
+                Công nghệ rất hiệu quả này cho phép tạo ra một không gian 
+                kỹ thuật không bị gián đoạn bên dưới bề mặt sàn để đặt nhiều loại cáp khác nhau: 
+                điện, hệ thống ống nước, mạng điện thoại và truyền dữ liệu, 
+                kiểm soát khí hậu và an ninh.
+                  {/* Raised floor is a modular system of elements designed for the
                   interior and exterior floors of a building. This very
                   effective technology makes it possible to create an
                   uninterrupted technical space below the surface of the floor
                   for laying various types of cables: electricity, plumbing,
                   telephone and data transmission networks, climate control and
-                  security.
+                  security. */}
                 </div>
                 <img className="img-text" src={img2} />
                 <div className="sub-text">
-                  Thanks to its experience in this field, our company offers
+                Nhờ kinh nghiệm trong lĩnh vực này, 
+                công ty chúng tôi cung cấp các giải pháp sàn nâng hiệu suất cao với cả khả năng chịu lực, 
+                độ bền và tính thẩm mỹ cao.
+                  {/* Thanks to its experience in this field, our company offers
                   high performance raised floor solutions with both resistance,
-                  durability and high aesthetic content.
+                  durability and high aesthetic content. */}
                 </div>
               </div>
               <div className="tablo">
@@ -199,7 +207,7 @@ function FloorRaising() {
                       <LikeOutlined />
                     </div>
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                   </div>
                   <div
@@ -208,13 +216,14 @@ function FloorRaising() {
                     style={{ transform: "rotateX(180deg)" }}
                   >
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                     <div className="content-icon">
                       <p>
-                        Vivamus magna justo, lacinia eget consectetur sed,
-                        convallis at tellus. Cras ultricies ligula sed magna
-                        dictum porta. Proin eget tortor risus.
+                      Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, 
+                      nhưng thung lũng và khu vực. 
+                      Ngày mai cổng nghe nói nhỏ mà lớn. 
+                      Anh ấy cần một nụ cười thật tươi.
                       </p>
                     </div>
                   </div>
@@ -230,7 +239,7 @@ function FloorRaising() {
                       <LikeOutlined />
                     </div>
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                   </div>
                   <div
@@ -239,13 +248,14 @@ function FloorRaising() {
                     style={{ transform: "rotateX(180deg)" }}
                   >
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                     <div className="content-icon">
                       <p>
-                        Vivamus magna justo, lacinia eget consectetur sed,
-                        convallis at tellus. Cras ultricies ligula sed magna
-                        dictum porta. Proin eget tortor risus.
+                      Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, 
+                      nhưng thung lũng và khu vực. 
+                      Ngày mai cổng nghe nói nhỏ mà lớn. 
+                      Anh ấy cần một nụ cười thật tươi.
                       </p>
                     </div>
                   </div>

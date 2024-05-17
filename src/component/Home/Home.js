@@ -144,14 +144,14 @@ function Home() {
                   <div className="slide-content">
                     <div className="text-slider">
                       <p className="text-title">
-                        <span>Innovative Modern </span>
+                        <span>Sáng Tạo Hiện Đại </span>
                       </p>
-                      <p className="text-title">Flooring Service</p>
+                      <p className="text-title">Dịch Vụ Lát Sàn</p>
                       <p className="sub-text">
-                        Custom flooring within your budget.
+                        Lát Sàn Tuỳ Chọn Trong Ngân Sách Của Bạn.
                       </p>
                       <a href="" target="_blank" className="btn btn-detail">
-                        Learn More <ArrowRightOutlined />
+                        Tìm Hiểu Thêm <ArrowRightOutlined />
                       </a>
                     </div>
                   </div>
@@ -168,14 +168,14 @@ function Home() {
                   <div className="slide-content">
                     <div className="text-slider">
                       <p className="text-title">
-                        <span>Do You Need</span>
+                        <span>Bạn Có Cần</span>
                       </p>
-                      <p className="text-title">Flooring Service</p>
+                      <p className="text-title">Dịch Vụ Lát Sàn</p>
                       <p className="sub-text">
-                        Then you are in the right place
+                        Vậy Thì Bạn Đang Ở Đúng Nơi
                       </p>
                       <a href="" target="_blank" className="btn btn-detail">
-                        Learn More <ArrowRightOutlined />
+                        Tìm Hiểu Thêm <ArrowRightOutlined />
                       </a>
                     </div>
                   </div>
@@ -192,14 +192,14 @@ function Home() {
                   <div className="slide-content">
                     <div className="text-slider">
                       <p className="text-title">
-                        <span>Get Flooring</span>
+                        <span>Nhận Lát Sàn</span>
                       </p>
-                      <p className="text-title">Service Now</p>
+                      <p className="text-title">Dịch Vụ Ngay Bây Giờ</p>
                       <p className="sub-text">
-                        Then you are in the right place
+                        Vậy Thì Bạn Đang Ở Đúng Nơi
                       </p>
                       <a href="" target="_blank" className="btn btn-detail">
-                        Learn More <ArrowRightOutlined />
+                        Tìm Hiểu Thêm <ArrowRightOutlined />
                       </a>
                     </div>
                   </div>
@@ -268,7 +268,7 @@ function Home() {
                       </span>
                     </div>
                   </span>
-                  <h6>Private Client Service</h6>
+                  <h6>Dịch Vụ Khách Hàng Cá Nhân</h6>
                 </div>
                 <div
                   className="countt wow fadeInUp"
@@ -311,21 +311,26 @@ function Home() {
                         </span>
                       </div>
                     </span>
-                    <h6>Years of Experience</h6>
+                    <h6>Số Năm Kinh Nghiệm</h6>
                   </div>
                 </div>
               </div>
             </div>
             <div className="text-content">
               <div className="text-title up1">
-                <h3>Do you need flooring services?</h3>
+                <h3>Bạn Có Cần Dịch Vụ Lát Sàn?</h3>
               </div>
               <div className="sub-text up3">
                 <p>
-                  With our expert staff, we add a new perspective to your home
+                Với đội ngũ nhân viên chuyên nghiệp của chúng tôi, 
+                chúng tôi mang đến một góc nhìn mới cho ngôi nhà của bạn với các dịch vụ lắp đặt và lát sàn kinh tế, 
+                sang trọng, nhanh chóng và chất lượng. Hãy chọn gói dịch vụ lát sàn phù hợp với túi tiền của bạn, 
+                chúng tôi sẽ đến làm mới ngay.
+                  
+                  {/* With our expert staff, we add a new perspective to your home
                   in economic, luxury, fast and quality flooring and
                   installation services. Choose the flooring service package
-                  that fits your budget, and we'll come and renew it right away.
+                  that fits your budget, and we'll come and renew it right away. */}
                 </p>
               </div>
               <div>
@@ -343,10 +348,13 @@ function Home() {
                   <SmileOutlined />
                 </div>
                 <div className="content-icon">
-                  <div className="title-icon">Professional Team</div>
+                  <div className="title-icon">Đội Ngũ Chuyên Nghiệp</div>  {/*Professional Team*/ }
                   <div className="text-icon">
-                    We produce guaranteed solutions in all flooring works with
-                    our competent and experienced team.
+                  Chúng tôi tạo ra các giải pháp đảm bảo trong mọi công trình lát sàn với 
+                  đội ngũ có năng lực và giàu kinh nghiệm.
+                   
+                    {/* We produce guaranteed solutions in all flooring works with
+                    our competent and experienced team. */}
                   </div>
                 </div>
               </div>
@@ -355,16 +363,19 @@ function Home() {
                   <ClockCircleOutlined />
                 </div>
                 <div className="content-icon">
-                  <div className="title-icon">Quick Flooring</div>
+                  <div className="title-icon">Lát Sàn Nhanh Chóng</div> {/*Quick Flooring*/ }
                   <div className="text-icon">
-                    Thanks to our solid expertise, we build custom spaces by
-                    covering your floors very quickly.
+                  Nhờ chuyên môn vững chắc, chúng tôi xây dựng không gian tùy chỉnh 
+                  bằng cách phủ sàn của bạn rất nhanh chóng.
+                    
+                    {/* Thanks to our solid expertise, we build custom spaces by
+                    covering your floors very quickly. */}
                   </div>
                 </div>
               </div>
               <div className="button-get up4">
                 <a href="">
-                  Get to know us <ArrowRightOutlined />
+                  Nhận Biết Chúng Tôi Tốt Hơn <ArrowRightOutlined /> {/*Get to know us*/ }
                 </a>
               </div>
             </div>
@@ -374,8 +385,8 @@ function Home() {
       <section className="our-services">
         <div className="container">
           <div className="title-service">
-            <h3>Our Flooring Services</h3>
-            <p>We are at your service for all your flooring.</p>
+            <h3>Dịch Vụ Lát Sàn Của Chúng Tôi</h3>  {/*Our Flooring Services*/ }
+            <p>Chúng tôi luôn sẵn sàng phục vụ cho tất cả các loại sàn của bạn.</p> {/*We are at your service for all your flooring.*/ }
           </div>
 
           <div className="upservices">
@@ -385,7 +396,7 @@ function Home() {
                   <img src={imgservice1} />
                 </div>
                 <div className="text-service">
-                  <h2>Flooring</h2>
+                  <h2>Lát Sàn</h2>  {/*Flooring */ }
                 </div>
               </div>
               <div className="col-3">
@@ -393,7 +404,7 @@ function Home() {
                   <img src={imgservice2} />
                 </div>
                 <div className="text-service">
-                  <h2>Carpet Flooring</h2>
+                  <h2>Nâng Sàn</h2> {/*Floor Raising*/ } 
                 </div>
               </div>
               <div className="col-3">
@@ -401,7 +412,7 @@ function Home() {
                   <img src={imgservice3} />
                 </div>
                 <div className="text-service">
-                  <h2>Floor Raising</h2>
+                  <h2>Thảm Trải Sàn</h2> {/*Carpet Flooring */ }
                 </div>
               </div>
               <div className="col-3">
@@ -409,7 +420,7 @@ function Home() {
                   <img src={imgservice4} />
                 </div>
                 <div className="text-service">
-                  <h2>PVC Flooring</h2>
+                  <h2>Sàn PVC</h2> {/*PVC Flooring */ }
                 </div>
               </div>
               <div className="col-3">
@@ -417,7 +428,7 @@ function Home() {
                   <img src={imgservice5} />
                 </div>
                 <div className="text-service">
-                  <h2>Wood Flooring</h2>
+                  <h2>Sàn Gỗ</h2> {/*Wood Flooring */ }
                 </div>
               </div>
             </Slider>
@@ -442,11 +453,13 @@ function Home() {
               <div className="contact-content">
                 <div className="text-contact up-contact">
                   <p className="title-contact">
-                    Let's Create A Great Design Together!
+                    Hãy Cùng Nhau Tạo Ra Một Thiết Kế Tuyệt Vời! 
+                    {/*Let's Create A Great Design Together!  */ }
                   </p>
                   <p className="sub-contact">
-                    Fill out the detailed information form about our flooring
-                    services.
+                  Điền vào mẫu thông tin chi tiết về các dịch vụ sàn của chúng tôi.
+                    {/*Fill out the detailed information form about our flooring
+                    services. */ }
                   </p>
                 </div>
                 <div className="form-contact right-contact">
@@ -458,7 +471,7 @@ function Home() {
                           className="form-control input-form"
                           id="exampleInputName"
                           // aria-describedby="emailHelp"
-                          placeholder="Full Name"
+                          placeholder="Họ Và Tên"
                         />
                       </div>
                       <div className="form-group col-4">
@@ -467,7 +480,7 @@ function Home() {
                           className="form-control input-form"
                           id="exampleInputEmail1"
                           // aria-describedby="emailHelp"
-                          placeholder="Email Address"
+                          placeholder="Địa Chỉ Email"
                         />
                       </div>
                       <div className="form-group col-4">
@@ -476,7 +489,7 @@ function Home() {
                           className="form-control input-form"
                           id="exampleInputPhone"
                           // aria-describedby="emailHelp"
-                          placeholder="Phone Number"
+                          placeholder="Số Điện Thoại"
                         />
                       </div>
                     </div>
@@ -490,7 +503,8 @@ function Home() {
                       />
                     </div> */}
                     <button type="submit" className="btn-contact">
-                      Call Back <ArrowRightOutlined />
+                      Gọi Lại <ArrowRightOutlined />
+                      {/*Call Back */ }
                     </button>
                   </form>
                 </div>
@@ -505,15 +519,47 @@ function Home() {
             <LikeOutlined />
           </div>
           <div className="title-comment up-comment">
-            <p className="title-text">What Are Our Customers Saying ?</p>
-            <p className="sub-text">Opinions from our happy customers.</p>
+            <p className="title-text">Khách hàng của chúng tôi đang nói gì ?</p> {/*What Are Our Customers Saying ? */ }
+            <p className="sub-text">Ý kiến ​​từ những khách hàng hài lòng của chúng tôi.</p> {/*Opinions from our happy customers. */ }
           </div>
           <div className="row left-comment">
             <div className="col-3">
               <div className="class-box">
                 <div className="testimon-text">
-                  We needed a floor covering for the living room of our house.
-                  They did professional work. Thank you.
+                Chúng tôi cần một tấm trải sàn cho phòng khách của ngôi nhà của chúng tôi. 
+                Họ đã làm công việc chuyên nghiệp. Cảm ơn.
+                  {/*We needed a floor covering for the living room of our house.
+                  They did professional work. Thank you.*/ }
+                  {/* <i class="fas fa-quote-right quote" aria-hidden="true"></i>  */}
+                </div>
+                <div className="img-testimon">
+                  <img src={imgtest} />
+                </div>
+                <div className="name-test">Adam</div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="class-box">
+                <div className="testimon-text">
+                Chúng tôi cần một tấm trải sàn cho phòng khách của ngôi nhà của chúng tôi. 
+                Họ đã làm công việc chuyên nghiệp. Cảm ơn.
+                  {/*We needed a floor covering for the living room of our house.
+                  They did professional work. Thank you. */ }
+                  {/* <i class="fas fa-quote-right quote" aria-hidden="true"></i> */}
+                </div>
+                <div className="img-testimon">
+                  <img src={imgtest} />
+                </div>
+                <div className="name-test">Adam</div> 
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="class-box">
+                <div className="testimon-text">
+                Chúng tôi cần một tấm trải sàn cho phòng khách của ngôi nhà của chúng tôi. 
+                Họ đã làm công việc chuyên nghiệp. Cảm ơn.
+                  {/*We needed a floor covering for the living room of our house.
+                  They did professional work. Thank you. */ }
                   {/* <i class="fas fa-quote-right quote" aria-hidden="true"></i> */}
                 </div>
                 <div className="img-testimon">
@@ -525,34 +571,9 @@ function Home() {
             <div className="col-3">
               <div className="class-box">
                 <div className="testimon-text">
-                  We needed a floor covering for the living room of our house.
-                  They did professional work. Thank you.
-                  {/* <i class="fas fa-quote-right quote" aria-hidden="true"></i> */}
-                </div>
-                <div className="img-testimon">
-                  <img src={imgtest} />
-                </div>
-                <div className="name-test">Adam</div>
-              </div>
-            </div>
-            <div className="col-3">
-              <div className="class-box">
-                <div className="testimon-text">
-                  We needed a floor covering for the living room of our house.
-                  They did professional work. Thank you.
-                  {/* <i class="fas fa-quote-right quote" aria-hidden="true"></i> */}
-                </div>
-                <div className="img-testimon">
-                  <img src={imgtest} />
-                </div>
-                <div className="name-test">Adam</div>
-              </div>
-            </div>
-            <div className="col-3">
-              <div className="class-box">
-                <div className="testimon-text">
-                  We needed a floor covering for the living room of our house.
-                  They did professional work. Thank you.
+                Chúng tôi cần một tấm trải sàn cho phòng khách của ngôi nhà của chúng tôi. 
+                Họ đã làm công việc chuyên nghiệp. Cảm ơn.
+                  {/*Flooring */ }
                   {/* <i class="fas fa-quote-right quote" aria-hidden="true"></i> */}
                 </div>
                 <div className="img-testimon">

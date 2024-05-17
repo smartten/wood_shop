@@ -74,10 +74,10 @@ function WoodFlooring() {
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
-                    <span>Wood Flooring</span>
+                    <span>Sàn Gỗ</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> Wood Flooring
+                    Trang Chủ <RightOutlined /> Sàn Gỗ
                   </p>
                 </div>
               </div>
@@ -92,22 +92,22 @@ function WoodFlooring() {
               <div className="menu-content">
                 <div className="link-menu">
                   <a href="/flooring">
-                    <RightOutlined /> Flooring
+                    <RightOutlined /> Lát Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/floor-raising">
-                    <RightOutlined /> Floor Raising
+                    <RightOutlined /> Nâng Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/carpet-flooring">
-                    <RightOutlined /> Carpet Flooring
+                    <RightOutlined /> Thảm Trải Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/pvc-flooring">
-                    <RightOutlined /> PVC Flooring
+                    <RightOutlined /> Sàn PVC
                   </a>
                 </div>
                 <div
@@ -115,17 +115,17 @@ function WoodFlooring() {
                   style={{ backgroundColor: "#543312" }}
                 >
                   <a href="/wood-flooring">
-                    <RightOutlined /> Wood Flooring
+                    <RightOutlined /> Sàn Gỗ
                   </a>
                 </div>
               </div>
 
               <div className="form-contact">
                 <div className="title-form">
-                  <h2>Leave Your Number</h2>
+                  <h2>Để Lại Số Của Bạn</h2>
                 </div>
                 <div className="sub-title">
-                  <p>Let's Call You Back</p>
+                  <p>Hãy Gọi Lại Cho Bạn</p>
                 </div>
                 <div className="form-submit">
                   <form>
@@ -136,14 +136,14 @@ function WoodFlooring() {
                         id="exampleInputName"
                         name="name"
                         // aria-describedby="emailHelp"
-                        placeholder="Full Name"
+                        placeholder="Họ Và Tên"
                       />
                       <input
                         type="text"
                         className="form-control input-form"
                         id="exampleInputEmail"
                         // aria-describedby="emailHelp"
-                        placeholder="Your Email Address"
+                        placeholder="Địa Chỉ Email Của Bạn"
                         name="email"
                       />
                       <input
@@ -151,12 +151,12 @@ function WoodFlooring() {
                         className="form-control input-form"
                         id="exampleInputPhone"
                         // aria-describedby="emailHelp"
-                        placeholder="Phone Number"
+                        placeholder="Số Điện Thoại"
                         name="phone"
                       />
                     </div>
                     <button type="submit" className="btn-contact">
-                      Submit Form <ArrowRightOutlined />
+                      Gửi Biểu Mẫu <ArrowRightOutlined />
                     </button>
                   </form>
                 </div>
@@ -168,21 +168,28 @@ function WoodFlooring() {
               </div>
               <div className="content-text-right">
                 <div className="title-right">
-                  <h2>Wood Flooring</h2>
+                  <h2>Sàn Gỗ</h2>
                 </div>
                 <div className="sub-text">
-                  Wooden flooring stands out especially with its “durability”.
+                Sàn gỗ nổi bật đặc biệt bởi “độ bền” của nó. Vì lý do này, 
+                nó là một mô hình trải sàn được yêu cầu cao. 
+                Mặt khác, khi xem xét về mặt giá cả, 
+                chúng ta có thể nói rằng có những sản phẩm được chào bán với giá rất hợp lý.
+                  {/* Wooden flooring stands out especially with its “durability”.
                   For this reason, it is a highly demanded floor covering model.
                   On the other hand, when we examine in terms of prices, we can
                   say that there are products offered for sale at very
-                  reasonable prices.
+                  reasonable prices. */}
                 </div>
                 <img className="img-text" src={img2} />
                 <div className="sub-text">
-                  While our company offers you wooden flooring design options,
+                Mặc dù công ty chúng tôi cung cấp cho bạn các tùy chọn thiết kế sàn gỗ nhưng công ty cũng cung cấp dịch vụ giao hàng, 
+                hỗ trợ kỹ thuật mạnh mẽ và các tùy chọn giá cả hợp lý. 
+                Vì vậy chúng tôi luôn làm hài lòng những khách hàng quan tâm đến chất lượng
+                  {/* While our company offers you wooden flooring design options,
                   it also offers delivery, strong technical support and
                   reasonable price options. Therefore, we always satisfy our
-                  customers who care about quality.
+                  customers who care about quality. */}
                 </div>
               </div>
               <div className="tablo">
@@ -196,7 +203,7 @@ function WoodFlooring() {
                       <LikeOutlined />
                     </div>
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                   </div>
                   <div
@@ -205,13 +212,14 @@ function WoodFlooring() {
                     style={{ transform: "rotateX(180deg)" }}
                   >
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                     <div className="content-icon">
                       <p>
-                        Vivamus magna justo, lacinia eget consectetur sed,
-                        convallis at tellus. Cras ultricies ligula sed magna
-                        dictum porta. Proin eget tortor risus.
+                      Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, 
+                      nhưng thung lũng và khu vực. 
+                      Ngày mai cổng nghe nói nhỏ mà lớn. 
+                      Anh ấy cần một nụ cười thật tươi.
                       </p>
                     </div>
                   </div>
@@ -227,7 +235,7 @@ function WoodFlooring() {
                       <LikeOutlined />
                     </div>
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                   </div>
                   <div
@@ -236,13 +244,14 @@ function WoodFlooring() {
                     style={{ transform: "rotateX(180deg)" }}
                   >
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                     <div className="content-icon">
                       <p>
-                        Vivamus magna justo, lacinia eget consectetur sed,
-                        convallis at tellus. Cras ultricies ligula sed magna
-                        dictum porta. Proin eget tortor risus.
+                      Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, 
+                      nhưng thung lũng và khu vực. 
+                      Ngày mai cổng nghe nói nhỏ mà lớn. 
+                      Anh ấy cần một nụ cười thật tươi.
                       </p>
                     </div>
                   </div>

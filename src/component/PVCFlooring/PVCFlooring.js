@@ -74,10 +74,10 @@ function PVCFlooring() {
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
-                    <span>PVC Flooring</span>
+                    <span>Sàn PVC</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> PVC Flooring
+                    Trang Chủ <RightOutlined /> Sàn PVC
                   </p>
                 </div>
               </div>
@@ -92,17 +92,17 @@ function PVCFlooring() {
               <div className="menu-content up2">
                 <div className="link-menu">
                   <a href="/flooring">
-                    <RightOutlined /> Flooring
+                    <RightOutlined /> Lát Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/floor-raising">
-                    <RightOutlined /> Floor Raising
+                    <RightOutlined /> Nâng Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/carpet-flooring">
-                    <RightOutlined /> Carpet Flooring
+                    <RightOutlined /> Thảm Trải Sàn
                   </a>
                 </div>
                 <div
@@ -110,22 +110,22 @@ function PVCFlooring() {
                   style={{ backgroundColor: "#543312" }}
                 >
                   <a href="/pvc-flooring">
-                    <RightOutlined /> PVC Flooring
+                    <RightOutlined /> Sàn PVC
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/wood-flooring">
-                    <RightOutlined /> Wood Flooring
+                    <RightOutlined /> Sàn Gỗ
                   </a>
                 </div>
               </div>
 
               <div className="form-contact">
                 <div className="title-form">
-                  <h2>Leave Your Number</h2>
+                  <h2>Để Lại Số Của Bạn</h2>
                 </div>
                 <div className="sub-title">
-                  <p>Let's Call You Back</p>
+                  <p>Hãy Gọi Lại Cho Bạn</p>
                 </div>
                 <div className="form-submit">
                   <form>
@@ -136,14 +136,14 @@ function PVCFlooring() {
                         id="exampleInputName"
                         name="name"
                         // aria-describedby="emailHelp"
-                        placeholder="Full Name"
+                        placeholder="Họ Và Tên"
                       />
                       <input
                         type="text"
                         className="form-control input-form"
                         id="exampleInputEmail"
                         // aria-describedby="emailHelp"
-                        placeholder="Your Email Address"
+                        placeholder="Địa Chỉ Email Của Bạn"
                         name="email"
                       />
                       <input
@@ -151,12 +151,12 @@ function PVCFlooring() {
                         className="form-control input-form"
                         id="exampleInputPhone"
                         // aria-describedby="emailHelp"
-                        placeholder="Phone Number"
+                        placeholder="Số Điện Thoại"
                         name="phone"
                       />
                     </div>
                     <button type="submit" className="btn-contact">
-                      Submit Form <ArrowRightOutlined />
+                      Gửi Biểu Mẫu <ArrowRightOutlined />
                     </button>
                   </form>
                 </div>
@@ -168,18 +168,27 @@ function PVCFlooring() {
               </div>
               <div className="content-text-right">
                 <div className="title-right">
-                  <h2>PVC Flooring</h2>
+                  <h2>Sàn PVC</h2>
                 </div>
                 <div className="sub-text">
-                  PVC flooring service is a flooring service applied to
+                Dịch vụ lát sàn PVC là dịch vụ lát sàn được công ty chúng tôi áp dụng cho các cơ sở chuyên dùng. 
+                Có nhiều lựa chọn cho sàn. 
+                Ngoài các lựa chọn sàn vật liệu polyurethane hoặc epoxy, 
+                dịch vụ sàn PVC là phương pháp được sử dụng để có được sàn chống tĩnh điện.
+                  {/* PVC flooring service is a flooring service applied to
                   special-purpose facilities by our company. There are many
                   options for flooring. In addition to the polyurethane or epoxy
                   material flooring options, PVC flooring service is a method
-                  used to obtain an anti-static floor.
+                  used to obtain an anti-static floor. */}
                 </div>
                 <img className="img-text" src={img2} />
                 <div className="sub-text">
-                  Static electricity loads can cause very dangerous results in
+                Tải tĩnh điện có thể gây ra kết quả rất nguy hiểm trong các thiết bị điện tử y tế, 
+                cơ sở thiết bị điện tử và một số cơ sở nổ hóa học. Để đạt được mục đích này, 
+                ạn có thể giúp cơ sở của mình an toàn hơn bằng cách tận dụng dịch vụ sàn nhựa PVC do công ty chúng tôi áp dụng. 
+                Dịch vụ nối đất sàn có thể không được cung cấp cho những khách hàng muốn hưởng lợi từ dịch vụ sàn PVC vì mục đích thẩm mỹ. 
+                Bằng cách này, bạn có thể thoát khỏi chi phí cao và chỉ có được một sàn thẩm mỹ và giá cả phải chăng.
+                  {/* Static electricity loads can cause very dangerous results in
                   medical electronic devices, electronic device facilities and
                   some chemical explosive facilities. For this purpose, you can
                   make your facilities safer by taking advantage of the PVC
@@ -187,7 +196,7 @@ function PVCFlooring() {
                   service may not be provided for our customers who want to
                   benefit from PVC flooring services for aesthetic purposes. In
                   this way, you can get rid of high costs and only get an
-                  aesthetic and affordable floor.
+                  aesthetic and affordable floor. */}
                 </div>
               </div>
               <div className="tablo">
@@ -201,7 +210,7 @@ function PVCFlooring() {
                       <LikeOutlined />
                     </div>
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                   </div>
                   <div
@@ -210,13 +219,14 @@ function PVCFlooring() {
                     style={{ transform: "rotateX(180deg)" }}
                   >
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                     <div className="content-icon">
                       <p>
-                        Vivamus magna justo, lacinia eget consectetur sed,
-                        convallis at tellus. Cras ultricies ligula sed magna
-                        dictum porta. Proin eget tortor risus.
+                      Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, 
+                      nhưng thung lũng và khu vực. 
+                      Ngày mai cổng nghe nói nhỏ mà lớn. 
+                      Anh ấy cần một nụ cười thật tươi.
                       </p>
                     </div>
                   </div>
@@ -232,7 +242,7 @@ function PVCFlooring() {
                       <LikeOutlined />
                     </div>
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                   </div>
                   <div
@@ -241,13 +251,14 @@ function PVCFlooring() {
                     style={{ transform: "rotateX(180deg)" }}
                   >
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                     <div className="content-icon">
                       <p>
-                        Vivamus magna justo, lacinia eget consectetur sed,
-                        convallis at tellus. Cras ultricies ligula sed magna
-                        dictum porta. Proin eget tortor risus.
+                      Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, 
+                      nhưng thung lũng và khu vực. 
+                      Ngày mai cổng nghe nói nhỏ mà lớn. 
+                      Anh ấy cần một nụ cười thật tươi.
                       </p>
                     </div>
                   </div>

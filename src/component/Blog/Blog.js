@@ -18,7 +18,7 @@ function Blog() {
                     <span>Blog</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> Blog
+                    Trang Chủ <RightOutlined /> Blog
                   </p>
                 </div>
               </div>
@@ -34,14 +34,15 @@ function Blog() {
                 <img src="https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/08/news-wood-6.jpg" />
               </div>
               <div className="content-new">
-                <p className="time-new">06.08.2022 - Flooring</p>
-                <p className="title-new">What is vinyl flooring?</p>
+                <p className="time-new">06.08.2022 - Lát Sàn</p>
+                <p className="title-new">Sàn vinyl là gì?</p> {/* What is vinyl flooring? */}
                 <p className="sub-new">
-                  Vinyl coating applications are products that can be used in
+                Ứng dụng lớp phủ vinyl là những sản phẩm có thể được sử dụng trong 
+                  {/* Vinyl coating applications are products that can be used in */}
                   […]
                 </p>
                 <a href="/" className="more">
-                  More
+                  Hơn Nữa
                 </a>
               </div>
             </div>
@@ -50,14 +51,14 @@ function Blog() {
                 <img src="https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/08/news-wood-6.jpg" />
               </div>
               <div className="content-new">
-                <p className="time-new">06.08.2022 - Flooring</p>
-                <p className="title-new">What is vinyl flooring?</p>
+                <p className="time-new">06.08.2022 - Lát Sàn</p>
+                <p className="title-new">Sàn vinyl là gì?</p>
                 <p className="sub-new">
-                  Vinyl coating applications are products that can be used in
+                Ứng dụng lớp phủ vinyl là những sản phẩm có thể được sử dụng trong
                   […]
                 </p>
                 <a href="/" className="more">
-                  More
+                Hơn Nữa
                 </a>
               </div>
             </div>
@@ -66,14 +67,14 @@ function Blog() {
                 <img src="https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/08/news-wood-6.jpg" />
               </div>
               <div className="content-new">
-                <p className="time-new">06.08.2022 - Flooring</p>
-                <p className="title-new">What is vinyl flooring?</p>
+                <p className="time-new">06.08.2022 - Lát Sàn</p>
+                <p className="title-new">Sàn vinyl là gì?</p>
                 <p className="sub-new">
-                  Vinyl coating applications are products that can be used in
+                Ứng dụng lớp phủ vinyl là những sản phẩm có thể được sử dụng trong
                   […]
                 </p>
                 <a href="/" className="more">
-                  More
+                Hơn Nữa
                 </a>
               </div>
             </div>
@@ -83,14 +84,14 @@ function Blog() {
                   <img src="https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/08/news-wood-6.jpg" />
                 </div>
                 <div className="content-new">
-                  <p className="time-new">06.08.2022 - Flooring</p>
-                  <p className="title-new">What is vinyl flooring?</p>
+                  <p className="time-new">06.08.2022 - Lát Sàn</p>
+                  <p className="title-new">Sàn vinyl là gì?</p>
                   <p className="sub-new">
-                    Vinyl coating applications are products that can be used in
+                  Ứng dụng lớp phủ vinyl là những sản phẩm có thể được sử dụng trong
                     […]
                   </p>
                   <a href="/" className="more">
-                    More
+                  Hơn Nữa
                   </a>
                 </div>
               </div>
@@ -99,14 +100,14 @@ function Blog() {
                   <img src="https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/08/news-wood-6.jpg" />
                 </div>
                 <div className="content-new">
-                  <p className="time-new">06.08.2022 - Flooring</p>
-                  <p className="title-new">What is vinyl flooring?</p>
+                  <p className="time-new">06.08.2022 - Lát Sàn</p>
+                  <p className="title-new">Sàn vinyl là gì?</p>
                   <p className="sub-new">
-                    Vinyl coating applications are products that can be used in
+                  Ứng dụng lớp phủ vinyl là những sản phẩm có thể được sử dụng trong
                     […]
                   </p>
                   <a href="/" className="more">
-                    More
+                  Hơn Nữa
                   </a>
                 </div>
               </div>
@@ -115,14 +116,14 @@ function Blog() {
                   <img src="https://garantiwebtasarim.com/wordpress/wood/wp-content/uploads/2022/08/news-wood-6.jpg" />
                 </div>
                 <div className="content-new">
-                  <p className="time-new">06.08.2022 - Flooring</p>
-                  <p className="title-new">What is vinyl flooring?</p>
+                  <p className="time-new">06.08.2022 - Lát Sàn</p>
+                  <p className="title-new">Sàn vinyl là gì?</p>
                   <p className="sub-new">
-                    Vinyl coating applications are products that can be used in
+                  Ứng dụng lớp phủ vinyl là những sản phẩm có thể được sử dụng trong
                     […]
                   </p>
                   <a href="/" className="more">
-                    More
+                    Hơn Nữa
                   </a>
                 </div>
               </div>

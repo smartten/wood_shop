@@ -16,8 +16,8 @@ function Footer() {
           <div className="row">
             <div className="col-5">
               <div className="text">
-                <h2>Join Our Newsletter</h2>
-                <p>Subscribe to be informed about our services and products.</p>
+                <h2>Tham gia bản tin của chúng tôi</h2> {/*Join Our Newsletter */}
+                <p>Đăng ký để được thông báo về các dịch vụ và sản phẩm của chúng tôi.</p> {/*Subscribe to be informed about our services and products.*/}
               </div>
             </div>
             <div className="col-5">
@@ -29,11 +29,11 @@ function Footer() {
                       className="form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
-                      placeholder="Your Email Address"
+                      placeholder="Địa Chỉ Email Của Bạn"
                     />
                   </div>
                   <button type="submit" class="btn-send">
-                    Send <ArrowRightOutlined />
+                    Gửi <ArrowRightOutlined />
                   </button>
                 </form>
               </div>
@@ -62,51 +62,51 @@ function Footer() {
               </div>
               <div className="col-3" style={{ marginTop: "150px" }}>
                 <div className="title">
-                  <h2>Services</h2>
+                  <h2>Dịch Vụ</h2>
                 </div>
                 <div className="link-services">
                   <div className="link">
-                    <a href="/">Flooring</a>
+                    <a href="/">Lát Sàn</a>
                   </div>
                   <div className="link">
-                    <a href="/">Floor Raising</a>
+                    <a href="/">Nâng Sàn</a>
                   </div>
                   <div className="link">
-                    <a href="/">Carpet Flooring</a>
+                    <a href="/">Thảm Trải Sàn</a>
                   </div>
                   <div className="link">
-                    <a href="/">PVC Flooring</a>
+                    <a href="/">Sàn PVC</a>
                   </div>
                   <div className="link">
-                    <a href="/">Wood Flooring</a>
+                    <a href="/">Sàn Gỗ</a>
                   </div>
                 </div>
               </div>
               <div className="col-3" style={{ marginTop: "150px" }}>
                 <div className="title">
-                  <h2>Quick Links</h2>
+                  <h2>Đường Dẫn Nhanh</h2>
                 </div>
                 <div className="link-services">
                   <div className="link">
-                    <a href="/">Home</a>
+                    <a href="/">Trang Chủ</a>
                   </div>
                   <div className="link">
-                    <a href="/">About Us</a>
+                    <a href="/">Về Chúng Tôi</a>
                   </div>
                   <div className="link">
                     <a href="/">Blog</a>
                   </div>
                   <div className="link">
-                    <a href="/">Packages</a>
+                    <a href="/">Gói</a>
                   </div>
                   <div className="link">
-                    <a href="/">Contact</a>
+                    <a href="/">Liên Hệ</a>
                   </div>
                 </div>
               </div>
               <div className="col-3" style={{ marginTop: "150px" }}>
                 <div className="title">
-                  <h2>Get In Touch</h2>
+                  <h2>Liên Lạc</h2>
                 </div>
                 <div className="lick-icon">
                   <a className="/">

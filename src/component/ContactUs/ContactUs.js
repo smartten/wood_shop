@@ -16,10 +16,10 @@ function ContactUs() {
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
-                    <span>Contact</span>
+                    <span>Liên Hệ</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> Contact
+                    Trang Chủ <RightOutlined /> Liên Hệ
                   </p>
                 </div>
               </div>
@@ -35,7 +35,7 @@ function ContactUs() {
                 <PhoneOutlined />
               </div>
               <div className="title-tablo">
-                <h3>CUSTOMER SERVICE</h3>
+                <h3>Dịch Vụ Khách Hàng</h3> {/* CUSTOMER SERVICE */}
               </div>
               <div className="content-tablo">
                 <p>+1 (234) 567 89 10</p>
@@ -46,7 +46,7 @@ function ContactUs() {
                 <MailOutlined />
               </div>
               <div className="title-tablo">
-                <h3>MAIL ADDRESS</h3>
+                <h3>ĐỊA CHỈ EMAIL</h3>
               </div>
               <div className="content-tablo">
                 <p>example@example.com</p>
@@ -57,7 +57,7 @@ function ContactUs() {
                 <HomeOutlined />
               </div>
               <div className="title-tablo">
-                <h3>OFFICE</h3>
+                <h3>VĂN PHÒNG</h3>
               </div>
               <div className="content-tablo">
                 <p>Yeşilplnar Mh. Tepe Sk. Eyüp İstanbul</p>
@@ -78,14 +78,14 @@ function ContactUs() {
                     id="exampleInputName"
                     name="name"
                     // aria-describedby="emailHelp"
-                    placeholder="Full Name"
+                    placeholder="Họ Và Tên"
                   />
                   <input
                     type="text"
                     className="form-control input-form"
                     id="exampleInputEmail"
                     // aria-describedby="emailHelp"
-                    placeholder="Your Email Address"
+                    placeholder="Địa Chỉ Email Của Bạn"
                     name="email"
                   />
                   <input
@@ -93,18 +93,18 @@ function ContactUs() {
                     className="form-control input-form"
                     id="exampleInputPhone"
                     // aria-describedby="emailHelp"
-                    placeholder="Phone Number"
+                    placeholder="Số Điện Thoại"
                     name="phone"
                   />
                   <textarea
                     class="form-control"
                     id="exampleFormControlTextarea1"
-                    placeholder="Your Message"
+                    placeholder="Tin Nhắn Của Bạn"
                     rows="5"
                   ></textarea>
                 </div>
                 <button type="submit" className="btn-contact">
-                  Send Form <ArrowRightOutlined />
+                  Gửi Mẫu <ArrowRightOutlined />
                 </button>
               </form>
             </div>

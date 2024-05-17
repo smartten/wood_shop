@@ -76,10 +76,10 @@ function Flooring() {
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
-                    <span>Flooring</span>
+                    <span>Lát Sàn</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> Flooring
+                    Trang Chủ <RightOutlined /> Lát Sàn
                   </p>
                 </div>
               </div>
@@ -97,37 +97,37 @@ function Flooring() {
                   style={{ backgroundColor: "#543312" }}
                 >
                   <a href="/flooring">
-                    <RightOutlined /> Flooring
+                    <RightOutlined /> Lát Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/floor-raising">
-                    <RightOutlined /> Floor Raising
+                    <RightOutlined /> Nâng Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/carpet-flooring">
-                    <RightOutlined /> Carpet Flooring
+                    <RightOutlined /> Thảm Trải Sàn
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/pvc-flooring">
-                    <RightOutlined /> PVC Flooring
+                    <RightOutlined /> Sàn PVC
                   </a>
                 </div>
                 <div className="link-menu">
                   <a href="/wood-flooring">
-                    <RightOutlined /> Wood Flooring
+                    <RightOutlined /> Sàn Gỗ
                   </a>
                 </div>
               </div>
 
               <div className="form-contact">
                 <div className="title-form">
-                  <h2>Leave Your Number</h2>
+                  <h2>Để Lại Số Của Bạn</h2> {/*Leave Your Number */ }
                 </div>
                 <div className="sub-title">
-                  <p>Let's Call You Back</p>
+                  <p>Hãy Gọi Lại Cho Bạn</p> {/*Let's Call You Back<*/ }
                 </div>
                 <div className="form-submit">
                   <form>
@@ -138,14 +138,14 @@ function Flooring() {
                         id="exampleInputName"
                         name="name"
                         // aria-describedby="emailHelp"
-                        placeholder="Full Name"
+                        placeholder="Họ Và Tên"
                       />
                       <input
                         type="text"
                         className="form-control input-form"
                         id="exampleInputEmail"
                         // aria-describedby="emailHelp"
-                        placeholder="Your Email Address"
+                        placeholder="Địa Chỉ Email Của Bạn"
                         name="email"
                       />
                       <input
@@ -153,12 +153,12 @@ function Flooring() {
                         className="form-control input-form"
                         id="exampleInputPhone"
                         // aria-describedby="emailHelp"
-                        placeholder="Phone Number"
+                        placeholder="Số Điện Thoại"
                         name="phone"
                       />
                     </div>
                     <button type="submit" className="btn-contact">
-                      Submit Form <ArrowRightOutlined />
+                      Gửi Biểu Mẫu <ArrowRightOutlined />
                     </button>
                   </form>
                 </div>
@@ -170,26 +170,38 @@ function Flooring() {
               </div>
               <div className="content-text-right up1">
                 <div className="title-right">
-                  <h2>Flooring</h2>
+                  <h2>Lát Sàn</h2>
                 </div>
                 <div className="sub-text">
-                  Industrial flooring is a type of flooring that is generally
+                Sàn công nghiệp là loại sàn được sử dụng phổ biến trong các nhà máy, 
+                nhà kho, nơi làm việc, nhà kho, trạm xăng, bãi đỗ xe. Quá trình sản xuất được thực hiện, 
+                vận chuyển và lưu trữ trên loại sàn này. 
+                Nó phải dễ làm sạch và không trơn trượt vì chúng thường xuyên tiếp xúc với hóa chất.
+                  
+                  {/* Industrial flooring is a type of flooring that is generally
                   used in factories, warehouses, workplaces, warehouses, petrol
                   stations and parking lots. Production is carried out,
                   transported and stored on this type of floor. It should be
                   easy to clean and non-slip since they are frequently exposed
-                  to chemicals.
+                  to chemicals. */}
                 </div>
                 <img className="img-text" src={img2} />
                 <div className="sub-text">
-                  Flooring service, which is the most trendy floor covering type
+                Dịch vụ trải sàn là loại hình trải sàn thịnh hành nhất hiện nay, 
+                là một trong những sản phẩm mới nhất của công nghệ. 
+                Nó có khả năng chống lại các hóa chất khắc nghiệt nhất với cấu trúc có độ bền cao. 
+                Sàn chịu ma sát và mài mòn chủ yếu được sử dụng ở các sàn vận hành cao cấp như nhà máy, nhà chứa máy bay. 
+                Loại sàn này có tuổi thọ lâu dài và có tác dụng tích cực đối với sức khỏe con người, 
+                còn nổi tiếng là rất dễ lau chùi.
+                 
+                  {/* Flooring service, which is the most trendy floor covering type
                   of today, is one of the latest products of technology. It is
                   resistant to the harshest chemicals with a highly durable
                   structure. Friction and abrasion resistant floors are mostly
                   used in high-level operating floors such as factories and
                   hangars. This floor, which is long-lasting and has positive
                   effects on human health, is also known for being very easy to
-                  clean.
+                  clean. */}
                 </div>
               </div>
               <div className="tablo">
@@ -203,7 +215,7 @@ function Flooring() {
                       <LikeOutlined />
                     </div>
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                   </div>
                   <div
@@ -212,13 +224,17 @@ function Flooring() {
                     style={{ transform: "rotateX(180deg)" }}
                   >
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                     <div className="content-icon">
                       <p>
-                        Vivamus magna justo, lacinia eget consectetur sed,
+                      Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, 
+                      nhưng thung lũng và khu vực. 
+                      Ngày mai cổng nghe nói nhỏ mà lớn. 
+                      Anh ấy cần một nụ cười thật tươi.
+                        {/* Vivamus magna justo, lacinia eget consectetur sed,
                         convallis at tellus. Cras ultricies ligula sed magna
-                        dictum porta. Proin eget tortor risus.
+                        dictum porta. Proin eget tortor risus. */}
                       </p>
                     </div>
                   </div>
@@ -234,7 +250,7 @@ function Flooring() {
                       <LikeOutlined />
                     </div>
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                   </div>
                   <div
@@ -243,13 +259,17 @@ function Flooring() {
                     style={{ transform: "rotateX(180deg)" }}
                   >
                     <div className="text-icon">
-                      <b>Reliability</b>
+                      <b>Độ Tin Cậy</b>
                     </div>
                     <div className="content-icon">
                       <p>
-                        Vivamus magna justo, lacinia eget consectetur sed,
+                      Hãy sống công bằng tuyệt vời, Lacinia cần phải được tuân theo, 
+                      nhưng thung lũng và khu vực. 
+                      Ngày mai cổng nghe nói nhỏ mà lớn. 
+                      Anh ấy cần một nụ cười thật tươi.
+                        {/* Vivamus magna justo, lacinia eget consectetur sed,
                         convallis at tellus. Cras ultricies ligula sed magna
-                        dictum porta. Proin eget tortor risus.
+                        dictum porta. Proin eget tortor risus. */}
                       </p>
                     </div>
                   </div>
