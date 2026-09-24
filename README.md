@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Wood Shop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React website whose content is managed in a Strapi CMS (`cms/`).
 
-## Available Scripts
+- `src/` – React frontend (Create React App)
+- `cms/` – Strapi 5 backend and admin panel
 
-In the project directory, you can run:
+## Run with Docker
 
-### `npm start`
+```bash
+docker compose up -d --build
+docker compose exec cms npm run seed   # first run only: loads the current site content
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| URL                          | What                                |
+| ---------------------------- | ----------------------------------- |
+| http://localhost:3000        | Website                             |
+| http://localhost:1337/admin  | CMS admin panel (edit content here) |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The first time you open `/admin` Strapi asks you to create an admin account.
+`cms/.env` holds the Strapi secrets; if you clone the repo fresh, copy
+`cms/.env.example` to `cms/.env` and replace the placeholder secrets.
 
-### `npm test`
+Content, media and the database live in the `db_data` and `cms_uploads` Docker volumes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Run for development
 
-### `npm run build`
+```bash
+cd cms && npm install && npm run seed && npm run develop   # http://localhost:1337/admin
+npm install && npm start                                   # http://localhost:3000
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The frontend proxies `/api` and `/uploads` to Strapi (`proxy` in `package.json`).
+Set `REACT_APP_CMS_URL` at build time to point at a CMS on another origin.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## What you can edit in the CMS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Admin section                 | Controls                                                                  |
+| ----------------------------- | ------------------------------------------------------------------------- |
+| Global                        | Logo, phone, email, address, menu labels, footer, form placeholders       |
+| Home Page                     | Hero slides, intro block, section headings, callback form block           |
+| About Page                    | Title, intro block, "Reliability" cards, team heading                     |
+| Contact Page                  | Title, contact cards, map embed URL, button label                         |
+| Services                      | One entry per service page (also drives menus, footer and sliders)        |
+| Posts                         | Blog posts (shown at `/blog` and `/blog/<slug>`)                          |
+| Testimonials / Team Members   | Customer quotes on Home, staff on About Us                                |
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Add a new service and it appears in the menu, footer, slider and gets its own
+page at `/<slug>` without any code change. Remember to click **Publish** after saving.

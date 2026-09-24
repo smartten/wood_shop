@@ -1,0 +1,1 @@
+{"collectionName":"components_shared_socials","info":{"displayName":"Social","icon":"earth"},"options":{},"attributes":{"platform":{"type":"enumeration","enum":["instagram","twitter","facebook","youtube"],"default":"instagram"},"url":{"type":"string","required":true}}}

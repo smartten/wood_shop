@@ -4,11 +4,14 @@ import {
   EnvironmentOutlined,
   PhoneOutlined,
   MailOutlined,
-  InstagramOutlined,
 } from "@ant-design/icons";
-import logo1 from "./wood-logo-white.png";
+import { mediaUrl } from "../../api/cms";
+import { useSite } from "../../context/SiteContext";
+import Icon from "../common/Icon";
 import "./FooterStyle.scss";
+
 function Footer() {
+  const { global, services } = useSite();
   return (
     <div className="footer">
       <div className="footerv0">
@@ -16,8 +19,8 @@ function Footer() {
           <div className="row">
             <div className="col-5">
               <div className="text">
-                <h2>Join Our Newsletter</h2>
-                <p>Subscribe to be informed about our services and products.</p>
+                <h2>{global.newsletterTitle}</h2>
+                <p>{global.newsletterText}</p>
               </div>
             </div>
             <div className="col-5">
@@ -27,13 +30,11 @@ function Footer() {
                     <input
                       type="email"
                       className="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      placeholder="Your Email Address"
+                      placeholder={global.newsletterPlaceholder}
                     />
                   </div>
-                  <button type="submit" class="btn-send">
-                    Send <ArrowRightOutlined />
+                  <button type="submit" className="btn-send">
+                    {global.newsletterButton} <ArrowRightOutlined />
                   </button>
                 </form>
               </div>
@@ -47,77 +48,53 @@ function Footer() {
             <div className="row">
               <div className="col-3" style={{ marginTop: "150px" }}>
                 <div className="logo">
-                  <img src={logo1} />
+                  <img src={mediaUrl(global.logoWhite)} alt={global.siteName} />
                 </div>
                 <div className="info">
-                  <EnvironmentOutlined /> New Jersey, USA
+                  <EnvironmentOutlined /> {global.address}
                 </div>
                 <div className="info">
                   <PhoneOutlined />
-                  0987654321
+                  {global.phone}
                 </div>
                 <div className="info">
-                  <MailOutlined /> example@mail.com
+                  <MailOutlined /> {global.email}
                 </div>
               </div>
               <div className="col-3" style={{ marginTop: "150px" }}>
                 <div className="title">
-                  <h2>Services</h2>
+                  <h2>{global.footerServicesTitle}</h2>
                 </div>
                 <div className="link-services">
-                  <div className="link">
-                    <a href="/">Flooring</a>
-                  </div>
-                  <div className="link">
-                    <a href="/">Floor Raising</a>
-                  </div>
-                  <div className="link">
-                    <a href="/">Carpet Flooring</a>
-                  </div>
-                  <div className="link">
-                    <a href="/">PVC Flooring</a>
-                  </div>
-                  <div className="link">
-                    <a href="/">Wood Flooring</a>
-                  </div>
+                  {services.map((service) => (
+                    <div className="link" key={service.documentId}>
+                      <a href={`/${service.slug}`}>{service.title}</a>
+                    </div>
+                  ))}
                 </div>
               </div>
               <div className="col-3" style={{ marginTop: "150px" }}>
                 <div className="title">
-                  <h2>Quick Links</h2>
+                  <h2>{global.footerLinksTitle}</h2>
                 </div>
                 <div className="link-services">
-                  <div className="link">
-                    <a href="/">Home</a>
-                  </div>
-                  <div className="link">
-                    <a href="/">About Us</a>
-                  </div>
-                  <div className="link">
-                    <a href="/">Blog</a>
-                  </div>
-                  <div className="link">
-                    <a href="/">Packages</a>
-                  </div>
-                  <div className="link">
-                    <a href="/">Contact</a>
-                  </div>
+                  {global.quickLinks.map((link) => (
+                    <div className="link" key={link.id}>
+                      <a href={link.url}>{link.label}</a>
+                    </div>
+                  ))}
                 </div>
               </div>
               <div className="col-3" style={{ marginTop: "150px" }}>
                 <div className="title">
-                  <h2>Get In Touch</h2>
+                  <h2>{global.footerTouchTitle}</h2>
                 </div>
                 <div className="lick-icon">
-                  <a className="/">
-                    <InstagramOutlined />
-                  </a>
-                  <a className="/">
-                    <InstagramOutlined />
-                  </a>
-                  <a className="/">
-                    <InstagramOutlined />
-                  </a>
+                  {global.socials.map((social) => (
+                    <a href={social.url} key={social.id}>
+                      <Icon name={social.platform} />
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>

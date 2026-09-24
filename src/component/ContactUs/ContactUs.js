@@ -1,12 +1,16 @@
 import "./ContactUsStyle.scss";
-import {
-  RightOutlined,
-  ArrowRightOutlined,
-  PhoneOutlined,
-  MailOutlined,
-  HomeOutlined,
-} from "@ant-design/icons";
+import { RightOutlined, ArrowRightOutlined } from "@ant-design/icons";
+import { useCms } from "../../api/cms";
+import { useSite } from "../../context/SiteContext";
+import Icon from "../common/Icon";
+
 function ContactUs() {
+  const { global } = useSite();
+  const { data: page, error } = useCms("contact-page");
+
+  if (error) return <div style={{ padding: 40 }}>Could not load content: {error.message}</div>;
+  if (!page) return null;
+
   return (
     <div className="contact-us">
       <section className="slider">
@@ -16,10 +20,10 @@ function ContactUs() {
               <div className="slide-content d-flex">
                 <div className="text">
                   <p className="text-title">
-                    <span>Contact</span>
+                    <span>{page.title}</span>
                   </p>
                   <p className="breadcrumb-text">
-                    Home <RightOutlined /> Contact
+                    {global.navHome} <RightOutlined /> {page.title}
                   </p>
                 </div>
               </div>
@@ -30,39 +34,19 @@ function ContactUs() {
       <section className="tablo">
         <div className="container">
           <div className="row">
-            <div className="col-4">
-              <div className="icon">
-                <PhoneOutlined />
+            {page.cards.map((card) => (
+              <div className="col-4" key={card.id}>
+                <div className="icon">
+                  <Icon name={card.icon} />
+                </div>
+                <div className="title-tablo">
+                  <h3>{card.title}</h3>
+                </div>
+                <div className="content-tablo">
+                  <p>{card.text}</p>
+                </div>
               </div>
-              <div className="title-tablo">
-                <h3>CUSTOMER SERVICE</h3>
-              </div>
-              <div className="content-tablo">
-                <p>+1 (234) 567 89 10</p>
-              </div>
-            </div>
-            <div className="col-4">
-              <div className="icon">
-                <MailOutlined />
-              </div>
-              <div className="title-tablo">
-                <h3>MAIL ADDRESS</h3>
-              </div>
-              <div className="content-tablo">
-                <p>example@example.com</p>
-              </div>
-            </div>
-            <div className="col-4">
-              <div className="icon">
-                <HomeOutlined />
-              </div>
-              <div className="title-tablo">
-                <h3>OFFICE</h3>
-              </div>
-              <div className="content-tablo">
-                <p>Yeşilplnar Mh. Tepe Sk. Eyüp İstanbul</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -75,51 +59,47 @@ function ContactUs() {
                   <input
                     type="text"
                     className="form-control input-form"
-                    id="exampleInputName"
                     name="name"
-                    // aria-describedby="emailHelp"
-                    placeholder="Full Name"
+                    placeholder={global.namePlaceholder}
                   />
                   <input
                     type="text"
                     className="form-control input-form"
-                    id="exampleInputEmail"
-                    // aria-describedby="emailHelp"
-                    placeholder="Your Email Address"
+                    placeholder={global.emailPlaceholder}
                     name="email"
                   />
                   <input
                     type="text"
                     className="form-control input-form"
-                    id="exampleInputPhone"
-                    // aria-describedby="emailHelp"
-                    placeholder="Phone Number"
+                    placeholder={global.phonePlaceholder}
                     name="phone"
                   />
                   <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    placeholder="Your Message"
+                    className="form-control"
+                    placeholder={global.messagePlaceholder}
                     rows="5"
                   ></textarea>
                 </div>
                 <button type="submit" className="btn-contact">
-                  Send Form <ArrowRightOutlined />
+                  {page.submitLabel} <ArrowRightOutlined />
                 </button>
               </form>
             </div>
           </div>
         </div>
       </section>
-      <section className="maps">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14896.603644108816!2d105.77032909999998!3d21.02664685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1678332636542!5m2!1svi!2s"
-          style={{ border: 0, width: "100%" }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
-      </section>
+      {page.mapEmbedUrl && (
+        <section className="maps">
+          <iframe
+            title="Map"
+            src={page.mapEmbedUrl}
+            style={{ border: 0, width: "100%" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </section>
+      )}
     </div>
   );
 }

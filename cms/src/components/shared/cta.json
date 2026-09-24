@@ -1,0 +1,1 @@
+{"collectionName":"components_shared_ctas","info":{"displayName":"Call To Action","icon":"phone"},"options":{},"attributes":{"image":{"type":"media","multiple":false,"allowedTypes":["images"]},"title":{"type":"string","required":true},"subtitle":{"type":"string"},"buttonText":{"type":"string"}}}

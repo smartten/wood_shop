@@ -1,0 +1,1 @@
+{"collectionName":"components_shared_icon_texts","info":{"displayName":"Icon Text","icon":"star"},"options":{},"attributes":{"icon":{"type":"enumeration","enum":["smile","clock","like","phone","mail","home","environment"],"default":"like"},"title":{"type":"string","required":true},"text":{"type":"text"}}}

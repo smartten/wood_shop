@@ -1,0 +1,1 @@
+{"collectionName":"components_home_slides","info":{"displayName":"Hero Slide","icon":"picture"},"options":{},"attributes":{"lineOne":{"type":"string","required":true},"lineTwo":{"type":"string"},"subtitle":{"type":"string"},"buttonText":{"type":"string"},"buttonUrl":{"type":"string"},"image":{"type":"media","multiple":false,"allowedTypes":["images"]}}}

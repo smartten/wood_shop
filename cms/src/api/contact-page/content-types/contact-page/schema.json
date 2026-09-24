@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_pages",
+  "info": {
+    "singularName": "contact-page",
+    "pluralName": "contact-pages",
+    "displayName": "Contact Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon-text"
+    },
+    "submitLabel": {
+      "type": "string"
+    },
+    "mapEmbedUrl": {
+      "type": "text"
+    }
+  }
+}

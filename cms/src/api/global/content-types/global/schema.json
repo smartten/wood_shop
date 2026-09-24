@@ -1,0 +1,118 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoWhite": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "navHome": {
+      "type": "string",
+      "default": "Home"
+    },
+    "navAbout": {
+      "type": "string",
+      "default": "About Us"
+    },
+    "navServices": {
+      "type": "string",
+      "default": "Services"
+    },
+    "navAllServices": {
+      "type": "string",
+      "default": "All Services"
+    },
+    "navBlog": {
+      "type": "string",
+      "default": "Blog"
+    },
+    "navContact": {
+      "type": "string",
+      "default": "Contact"
+    },
+    "newsletterTitle": {
+      "type": "string"
+    },
+    "newsletterText": {
+      "type": "string"
+    },
+    "newsletterPlaceholder": {
+      "type": "string"
+    },
+    "newsletterButton": {
+      "type": "string"
+    },
+    "footerServicesTitle": {
+      "type": "string"
+    },
+    "footerLinksTitle": {
+      "type": "string"
+    },
+    "footerTouchTitle": {
+      "type": "string"
+    },
+    "quickLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social"
+    },
+    "namePlaceholder": {
+      "type": "string"
+    },
+    "emailPlaceholder": {
+      "type": "string"
+    },
+    "phonePlaceholder": {
+      "type": "string"
+    },
+    "messagePlaceholder": {
+      "type": "string"
+    },
+    "sidebarFormTitle": {
+      "type": "string"
+    },
+    "sidebarFormSubtitle": {
+      "type": "string"
+    },
+    "sidebarFormButton": {
+      "type": "string"
+    }
+  }
+}

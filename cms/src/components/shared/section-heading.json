@@ -1,0 +1,1 @@
+{"collectionName":"components_shared_section_headings","info":{"displayName":"Section Heading","icon":"heading"},"options":{},"attributes":{"title":{"type":"string","required":true},"subtitle":{"type":"string"}}}
